@@ -37,7 +37,7 @@ const UI = {
   en: {
     title: "World Map",
     subtitle:
-      "Click a pin to open a travel log. Add photos and stories later from a static JSON file — no backend needed.",
+      "",
     hint: "Tip: tap a pin to view details",
     close: "Close",
     photos: "Photos",

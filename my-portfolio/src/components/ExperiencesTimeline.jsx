@@ -1,3 +1,24 @@
+// Local i18n for modal section titles
+const MODAL_I18N = {
+  highlights: {
+    en: "Highlights",
+    es: "Aspectos destacados",
+    ja: "ハイライト",
+    ko: "주요 내용",
+  },
+  technologies: {
+    en: "Technologies",
+    es: "Tecnologías",
+    ja: "使用技術",
+    ko: "사용 기술",
+  },
+  noDescription: {
+    en: "No description available yet.",
+    es: "Aún no hay una descripción disponible.",
+    ja: "まだ説明がありません。",
+    ko: "아직 설명이 없습니다.",
+  },
+};
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -114,9 +135,16 @@ function parseDateLike(v) {
   return new Date(Date.UTC(y, m, d));
 }
 
-function formatDuration(dates = {}) {
+function formatDuration(dates = {}, lang = "en") {
   const start = parseDateLike(dates.start);
   const end = dates.end ? parseDateLike(dates.end) : null;
+  const units = {
+    en: { day: "day", days: "days", mo: "mo", y: "y" },
+    es: { day: "día", days: "días", mo: "meses", y: "años" },
+    ja: { day: "日", days: "日", mo: "ヶ月", y: "年" },
+    ko: { day: "일", days: "일", mo: "개월", y: "년" },
+  };
+  const u = units[lang] || units.en;
   if (!start) return "";
   if (!end) {
     const now = new Date();
@@ -124,17 +152,17 @@ function formatDuration(dates = {}) {
     const totalMonths = Math.max(1, Math.round(days / 30.437));
     const years = Math.floor(totalMonths / 12);
     const months = totalMonths % 12;
-    if (years >= 1) return months ? `${years}y ${months}mo` : `${years}y`;
-    return `${totalMonths}mo`;
+    if (years >= 1) return months ? `${years}${u.y} ${months}${u.mo}` : `${years}${u.y}`;
+    return `${totalMonths}${u.mo}`;
   }
   const days = diffInDays(start, end);
   if (days <= 2) return ""; // treat as one-day/very short -> no duration
-  if (days < 31) return `${days} days`;
+  if (days < 31) return `${days} ${days === 1 ? u.day : u.days}`;
   const totalMonths = Math.max(1, Math.round(days / 30.437));
   const years = Math.floor(totalMonths / 12);
   const months = totalMonths % 12;
-  if (years >= 1) return months ? `${years}y ${months}mo` : `${years}y`;
-  return `${totalMonths}mo`;
+  if (years >= 1) return months ? `${years}${u.y} ${months}${u.mo}` : `${years}${u.y}`;
+  return `${totalMonths}${u.mo}`;
 }
 
 function useMediaQuery(query) {
@@ -178,6 +206,7 @@ function countryToFlagEmoji(country) {
     "argentina": "🇦🇷",
     "chile": "🇨🇱",
     "peru": "🇵🇪",
+    "netherlands": "🇳🇱",
   };
 
   if (map[c]) return map[c];
@@ -190,7 +219,7 @@ function countryToFlagEmoji(country) {
 
 /* ----------------------- Modal (reused style) ----------------------- */
 
-function ExperienceModal({ item, onClose }) {
+function ExperienceModal({ item, onClose, lang }) {
   return (
     <AnimatePresence>
       {item && (
@@ -217,8 +246,8 @@ function ExperienceModal({ item, onClose }) {
                   {item.typeLabel || item.type}
                 </p>
                 <p className="mt-0.5 text-lg sm:text-xl font-semibold text-slate-900 dark:text-white break-words leading-snug pr-4">
-                  {item.title}
-                  {item.organization ? ` • ${item.organization}` : ""}
+                  {pickLang(item.title, lang) || item.title}
+                  {(pickLang(item.organization, lang) || item.organization) ? ` • ${pickLang(item.organization, lang) || item.organization}` : ""}
                 </p>
               </div>
               <button
@@ -226,7 +255,7 @@ function ExperienceModal({ item, onClose }) {
                 className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/15 px-3 py-2 text-sm font-semibold text-cyan-800 dark:text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <HiOutlineXMark className="h-5 w-5" />
-                <span className="hidden sm:inline">Close</span>
+                <span className="hidden sm:inline">{pickLang(item.ui?.close, lang) || "Close"}</span>
               </button>
             </div>
 
@@ -252,7 +281,10 @@ function ExperienceModal({ item, onClose }) {
                     <div className="flex items-center gap-2">
                       <span aria-hidden="true">📍</span>
                       <span>
-                        {[item.location, item.country].filter(Boolean).join(" • ")}
+                        {[
+                          pickLang(item.locationLabel, lang) || item.location,
+                          item.country,
+                        ].filter(Boolean).join(" • ")}
                       </span>
                     </div>
                   )}
@@ -262,10 +294,10 @@ function ExperienceModal({ item, onClose }) {
                       <span>{formatPeriod(item.dates)}</span>
                     </div>
                   )}
-                  {item.dates && formatDuration(item.dates) && (
+                  {item.dates && formatDuration(item.dates, lang) && (
                     <div className="flex items-center gap-2">
                       <span aria-hidden="true">⏱️</span>
-                      <span>{formatDuration(item.dates)}</span>
+                      <span>{formatDuration(item.dates, lang)}</span>
                     </div>
                   )}
                 </div>
@@ -273,11 +305,11 @@ function ExperienceModal({ item, onClose }) {
                 {/* Summary */}
                 {item.summary ? (
                   <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300/85">
-                    {item.summary}
+                    {pickLang(item.summary, lang) || item.summary}
                   </p>
                 ) : (
                   <p className="text-sm text-slate-600 dark:text-slate-300/70">
-                    No description available yet.
+                    {pickLang(MODAL_I18N.noDescription, lang)}
                   </p>
                 )}
 
@@ -285,13 +317,13 @@ function ExperienceModal({ item, onClose }) {
                 {item.bullets?.length > 0 && (
                   <div>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white">
-                      Highlights
+                      {pickLang(MODAL_I18N.highlights, lang)}
                     </p>
                     <ul className="mt-2 space-y-2 text-sm text-slate-700 dark:text-slate-300/85">
                       {item.bullets.slice(0, 10).map((h, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-500" />
-                          <span>{h}</span>
+                          <span>{pickLang(h, lang) || h}</span>
                         </li>
                       ))}
                     </ul>
@@ -302,7 +334,7 @@ function ExperienceModal({ item, onClose }) {
                 {item.technologies?.length > 0 && (
                   <div>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white">
-                      Technologies
+                      {pickLang(MODAL_I18N.technologies, lang)}
                     </p>
                     <div className="mt-2 flex flex-wrap gap-2">
                       {item.technologies.slice(0, 14).map((t) => (
@@ -339,9 +371,8 @@ function ExperienceModal({ item, onClose }) {
 
 /* ----------------------- Timeline Item Card ----------------------- */
 
-function ExpandableMarker({ item, hovered, onOpen }) {
+function ExpandableMarker({ item, hovered, onOpen, lang }) {
   const src = item.logo;
-
   return (
     <motion.div
       layout
@@ -365,8 +396,7 @@ function ExpandableMarker({ item, hovered, onOpen }) {
         <div className="relative shrink-0">
           <div
             className={[
-              "grid place-items-center",
-              "h-11 w-11 rounded-2xl",
+              "h-11 w-11 overflow-hidden rounded-2xl",
               "border border-black/10 dark:border-white/10",
               hovered
                 ? "bg-cyan-500/15 ring-2 ring-cyan-300/40 shadow-[0_0_22px_rgba(34,211,238,0.25)]"
@@ -378,7 +408,7 @@ function ExpandableMarker({ item, hovered, onOpen }) {
               <img
                 src={src}
                 alt={item.organization || item.title}
-                className="h-7 w-7 object-contain"
+                className="h-full w-full object-contain"
                 draggable={false}
               />
             ) : (
@@ -405,10 +435,10 @@ function ExpandableMarker({ item, hovered, onOpen }) {
           >
             <div>
               <p className="text-base font-semibold leading-snug text-white break-words">
-                {item.title}
+                {pickLang(item.title, lang) || item.title}
               </p>
               <p className="text-sm text-white/70">
-                {item.organization || "—"}
+                {pickLang(item.organization, lang) || item.organization || "—"}
               </p>
             </div>
 
@@ -417,7 +447,7 @@ function ExpandableMarker({ item, hovered, onOpen }) {
               onClick={onOpen}
               className="mt-1 w-full rounded-2xl bg-cyan-500/15 px-4 py-3 text-sm font-semibold text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
             >
-              Show more details
+              {pickLang(item.ui?.showMore, lang) || "Show more details"}
             </button>
           </motion.div>
         )}
@@ -855,6 +885,7 @@ export default function ExperiencesTimeline() {
                       item={it}
                       hovered={hovered}
                       onOpen={() => setActive(it)}
+                      lang={lang}
                     />
                   </div>
 
@@ -882,13 +913,13 @@ export default function ExperiencesTimeline() {
 
             {/* bottom padding spacer */}
             <div className="absolute bottom-4 left-4 text-xs text-slate-600 dark:text-slate-300/70">
-              Months are the unit on the X axis • {items.length} experiences
+              {`Months are the unit on the X axis • ${items.length} experiences`}
             </div>
           </div>
         </div>
       </div>
 
-      <ExperienceModal item={active} onClose={() => setActive(null)} />
+      <ExperienceModal item={active} onClose={() => setActive(null)} lang={lang} />
     </section>
   );
 }

@@ -3,22 +3,47 @@
     "id": "gorom-seed-alumni-coordinator",
     "type": "work",
     "typeLabel": { "en": "Work", "es": "Trabajo", "ja": "仕事", "ko": "업무" },
-    "organization": "GOROM Association",
+    "organization": {
+      "en": "GOROM Association",
+      "es": "Asociación GOROM",
+      "ja": "GOROM協会",
+      "ko": "GOROM 협회"
+    },
     "organizationWebsite": "https://gorom.org/",
     "location": "Tokyo, Japan (Remote)",
+    "locationLabel": {
+      "en": "Tokyo, Japan (Remote)",
+      "es": "Tokio, Japón (Remoto)",
+      "ja": "東京（日本）（リモート）",
+      "ko": "도쿄, 일본(원격)"
+    },
     "city": "Tokyo",
     "country": "Japan",
     "countryCode": "JP",
     "logo": "/assets/logos/gorom.png",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Coordinator — SEED Alumni Project",
       "es": "Coordinador — Proyecto SEED Alumni",
       "ja": "コーディネーター — SEED Alumni",
       "ko": "코디네이터 — SEED Alumni"
     },
     "employmentType": "Part-time",
+    "employmentTypeLabel": {
+      "en": "Part-time",
+      "es": "Medio tiempo",
+      "ja": "パートタイム",
+      "ko": "파트타임"
+    },
     "dates": { "start": "2024-03", "end": null },
-    "featuredImage": "/assets/images/experience/gorom-seed-alumni-coordinator-banner.jpg",
+    "featuredImage": "/assets/images/experiences/seed-coordinator.jpeg",
     "summary": {
       "en": "Co-founded and coordinated the SEED Alumni initiative to connect former and current SEED Program participants through community activities and a digital platform.",
       "es": "Cofundé y coordiné la iniciativa SEED Alumni para conectar participantes actuales y antiguos del Programa SEED mediante actividades comunitarias y una plataforma digital.",
@@ -40,8 +65,19 @@
       }
     ],
     "skills": ["Community", "Program Coordination", "Web Platforms", "Content"],
+    "skillsLabel": [
+      { "en": "Community", "es": "Comunidad", "ja": "コミュニティ", "ko": "커뮤니티" },
+      { "en": "Program Coordination", "es": "Coordinación de programas", "ja": "プログラム運営", "ko": "프로그램 코디네이션" },
+      { "en": "Web Platforms", "es": "Plataformas web", "ja": "Webプラットフォーム", "ko": "웹 플랫폼" },
+      { "en": "Content", "es": "Contenido", "ja": "コンテンツ", "ko": "콘텐츠" }
+    ],
     "technologies": ["React", "Django", "TailwindCSS", "Auth0"],
     "tags": ["Japan", "Community", "Leadership"],
+    "tagsLabel": [
+      { "en": "Japan", "es": "Japón", "ja": "日本", "ko": "일본" },
+      { "en": "Community", "es": "Comunidad", "ja": "コミュニティ", "ko": "커뮤니티" },
+      { "en": "Leadership", "es": "Liderazgo", "ja": "リーダーシップ", "ko": "리더십" }
+    ],
     "links": [{ "label": { "en": "GOROM", "es": "GOROM", "ja": "GOROM", "ko": "GOROM" }, "url": "https://gorom.org/" }],
     "media": [],
     "order": 100
@@ -50,22 +86,47 @@
     "id": "gorom-it-coordinator",
     "type": "work",
     "typeLabel": { "en": "Work", "es": "Trabajo", "ja": "仕事", "ko": "업무" },
-    "organization": "GOROM Association",
+    "organization": {
+      "en": "GOROM Association",
+      "es": "Asociación GOROM",
+      "ja": "GOROM協会",
+      "ko": "GOROM 협회"
+    },
     "organizationWebsite": "https://gorom.org/",
     "location": "Tokyo, Japan (Hybrid)",
+    "locationLabel": {
+      "en": "Tokyo, Japan (Hybrid)",
+      "es": "Tokio, Japón (Híbrido)",
+      "ja": "東京（日本）（ハイブリッド）",
+      "ko": "도쿄, 일본(하이브리드)"
+    },
     "city": "Tokyo",
     "country": "Japan",
     "countryCode": "JP",
     "logo": "/assets/logos/gorom.png",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "IT Coordinator",
       "es": "Coordinador TI",
       "ja": "ITコーディネーター",
       "ko": "IT 코디네이터"
     },
     "employmentType": "Part-time",
+    "employmentTypeLabel": {
+      "en": "Part-time",
+      "es": "Medio tiempo",
+      "ja": "パートタイム",
+      "ko": "파트타임"
+    },
     "dates": { "start": "2024-04", "end": null },
-    "featuredImage": "/assets/images/experience/gorom-it-coordinator-banner.jpg",
+    "featuredImage": "/assets/images/experiences/it-coordinator.png",
     "summary": {
       "en": "IT coordination and digital platform ownership for GOROM: intranet development, website operations, and strategic content planning.",
       "es": "Coordinación TI y liderazgo de la plataforma digital de GOROM: intranet, operación del sitio web y estrategia de contenidos.",
@@ -87,8 +148,19 @@
       }
     ],
     "skills": ["Web Platforms", "Operations", "UI/UX", "Coordination"],
+    "skillsLabel": [
+      { "en": "Web Platforms", "es": "Plataformas web", "ja": "Webプラットフォーム", "ko": "웹 플랫폼" },
+      { "en": "Operations", "es": "Operaciones", "ja": "運用", "ko": "운영" },
+      { "en": "UI/UX", "es": "UI/UX", "ja": "UI/UX", "ko": "UI/UX" },
+      { "en": "Coordination", "es": "Coordinación", "ja": "調整", "ko": "코디네이션" }
+    ],
     "technologies": ["React", "Django", "REST APIs"],
     "tags": ["Japan", "Intranet", "Product"],
+    "tagsLabel": [
+      { "en": "Japan", "es": "Japón", "ja": "日本", "ko": "일본" },
+      { "en": "Intranet", "es": "Intranet", "ja": "イントラネット", "ko": "인트라넷" },
+      { "en": "Product", "es": "Producto", "ja": "プロダクト", "ko": "프로덕트" }
+    ],
     "links": [{ "label": { "en": "GOROM", "es": "GOROM", "ja": "GOROM", "ko": "GOROM" }, "url": "https://gorom.org/" }],
     "media": [],
     "order": 95
@@ -97,20 +169,45 @@
     "id": "snu-exchange-student-cse",
     "type": "exchange",
     "typeLabel": { "en": "Exchange", "es": "Intercambio", "ja": "交換留学", "ko": "교환" },
-    "organization": "Seoul National University",
+    "organization": {
+      "en": "Seoul National University",
+      "es": "Universidad Nacional de Seúl",
+      "ja": "ソウル大学校",
+      "ko": "서울대학교"
+    },
     "organizationWebsite": "https://www.snu.ac.kr",
     "location": "Seoul, South Korea",
+    "locationLabel": {
+      "en": "Seoul, South Korea",
+      "es": "Seúl, Corea del Sur",
+      "ja": "韓国・ソウル",
+      "ko": "대한민국 서울"
+    },
     "city": "Seoul",
     "country": "South Korea",
     "countryCode": "KR",
     "logo": "/assets/logos/snu.jpeg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Exchange Student — Computer Science & Engineering",
       "es": "Estudiante de intercambio — Ciencias e Ingeniería de la Computación",
       "ja": "交換留学生 — コンピュータサイエンス＆工学",
       "ko": "교환학생 — 컴퓨터공학"
     },
     "employmentType": "Academic",
+    "employmentTypeLabel": {
+      "en": "Academic",
+      "es": "Académico",
+      "ja": "学術",
+      "ko": "학술"
+    },
     "dates": { "start": "2025-02", "end": "2025-06" },
     "featuredImage": "/assets/images/experiences/snu-exchange.jpeg",
     "summary": {
@@ -128,8 +225,19 @@
       }
     ],
     "skills": ["Robotics", "AI", "Deep Learning", "Research"],
+    "skillsLabel": [
+      { "en": "Robotics", "es": "Robótica", "ja": "ロボティクス", "ko": "로보틱스" },
+      { "en": "AI", "es": "IA", "ja": "AI", "ko": "AI" },
+      { "en": "Deep Learning", "es": "Deep Learning", "ja": "深層学習", "ko": "딥러닝" },
+      { "en": "Research", "es": "Investigación", "ja": "研究", "ko": "연구" }
+    ],
     "technologies": ["PyTorch", "Python"],
     "tags": ["Korea", "Scholarship", "Graduate-level"],
+    "tagsLabel": [
+      { "en": "Korea", "es": "Corea", "ja": "韓国", "ko": "한국" },
+      { "en": "Scholarship", "es": "Beca", "ja": "奨学金", "ko": "장학금" },
+      { "en": "Graduate-level", "es": "Nivel posgrado", "ja": "大学院レベル", "ko": "대학원 수준" }
+    ],
     "links": [],
     "media": [],
     "order": 92
@@ -138,20 +246,45 @@
     "id": "snu-robot-learning-poster-fair",
     "type": "research",
     "typeLabel": { "en": "Research", "es": "Investigación", "ja": "研究", "ko": "연구" },
-    "organization": "Seoul National University",
+    "organization": {
+      "en": "Seoul National University",
+      "es": "Universidad Nacional de Seúl",
+      "ja": "ソウル大学校",
+      "ko": "서울대학교"
+    },
     "organizationWebsite": "https://www.snu.ac.kr",
     "location": "Seoul, South Korea",
+    "locationLabel": {
+      "en": "Seoul, South Korea",
+      "es": "Seúl, Corea del Sur",
+      "ja": "韓国・ソウル",
+      "ko": "대한민국 서울"
+    },
     "city": "Seoul",
     "country": "South Korea",
     "countryCode": "KR",
     "logo": "/assets/logos/snu.jpeg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Presenter — Robot Learning Poster Fair (COMPASS)",
       "es": "Ponente — Robot Learning Poster Fair (COMPASS)",
       "ja": "発表者 — Robot Learning Poster Fair（COMPASS）",
       "ko": "발표자 — Robot Learning Poster Fair(COMPASS)"
     },
     "employmentType": "Apprenticeship",
+    "employmentTypeLabel": {
+      "en": "Apprenticeship",
+      "es": "Pasantía",
+      "ja": "インターン／研修",
+      "ko": "인턴십/연수"
+    },
     "dates": { "start": "2025-06", "end": "2025-06" },
     "featuredImage": "/assets/images/experiences/snu-poster.jpeg",
     "summary": {
@@ -175,8 +308,18 @@
       }
     ],
     "skills": ["Imitation Learning", "Robot Learning", "Machine Learning", "Research"],
+    "skillsLabel": [
+      { "en": "Imitation Learning", "es": "Aprendizaje por imitación", "ja": "模倣学習", "ko": "모방학습" },
+      { "en": "Robot Learning", "es": "Robot Learning", "ja": "ロボット学習", "ko": "로봇 학습" },
+      { "en": "Machine Learning", "es": "Aprendizaje automático", "ja": "機械学習", "ko": "머신러닝" },
+      { "en": "Research", "es": "Investigación", "ja": "研究", "ko": "연구" }
+    ],
     "technologies": ["Python", "PyTorch"],
     "tags": ["Poster", "Research"],
+    "tagsLabel": [
+      { "en": "Poster", "es": "Póster", "ja": "ポスター", "ko": "포스터" },
+      { "en": "Research", "es": "Investigación", "ja": "研究", "ko": "연구" }
+    ],
     "links": [],
     "media": [
       "/assets/images/research/compass-poster.jpg",
@@ -191,17 +334,37 @@
     "organization": "SinfonIA Uniandes",
     "organizationWebsite": "https://uniandes.edu.co",
     "location": "Bogotá, Colombia",
+    "locationLabel": {
+      "en": "Bogotá, Colombia",
+      "es": "Bogotá, Colombia",
+      "ja": "コロンビア・ボゴタ",
+      "ko": "콜롬비아 보고타"
+    },
     "city": "Bogotá",
     "country": "Colombia",
     "countryCode": "CO",
     "logo": "/assets/logos/sinfonia.jpg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Software Developer — Pepper Robot (SoftBank Robotics) & Research",
       "es": "Desarrollador de software — Robot Pepper (SoftBank Robotics) e investigación",
       "ja": "開発者 — Pepper（SoftBank Robotics）& 研究",
       "ko": "소프트웨어 개발 — Pepper 로봇(SoftBank Robotics) 및 연구"
     },
     "employmentType": "Research",
+    "employmentTypeLabel": {
+      "en": "Research",
+      "es": "Investigación",
+      "ja": "研究",
+      "ko": "연구"
+    },
     "dates": { "start": "2024-02", "end": "2024-12" },
     "featuredImage": "/assets/images/experiences/nova.png",
     "summary": {
@@ -225,8 +388,18 @@
       }
     ],
     "skills": ["Robotics", "ROS", "Python", "AI"],
+    "skillsLabel": [
+      { "en": "Robotics", "es": "Robótica", "ja": "ロボティクス", "ko": "로보틱스" },
+      { "en": "ROS", "es": "ROS", "ja": "ROS", "ko": "ROS" },
+      { "en": "Python", "es": "Python", "ja": "Python", "ko": "Python" },
+      { "en": "AI", "es": "IA", "ja": "AI", "ko": "AI" }
+    ],
     "technologies": ["ROS", "Python", "C++", "YOLO", "TensorFlow"],
     "tags": ["Humanoid", "HRI"],
+    "tagsLabel": [
+      { "en": "Humanoid", "es": "Humanoide", "ja": "ヒューマノイド", "ko": "휴머노이드" },
+      { "en": "HRI", "es": "HRI", "ja": "HRI", "ko": "HRI" }
+    ],
     "links": [],
     "media": [],
     "order": 88
@@ -238,17 +411,37 @@
     "organization": "SinfonIA Uniandes",
     "organizationWebsite": "https://uniandes.edu.co",
     "location": "Eindhoven, Netherlands",
+    "locationLabel": {
+      "en": "Eindhoven, Netherlands",
+      "es": "Eindhoven, Países Bajos",
+      "ja": "オランダ・アイントホーフェン",
+      "ko": "네덜란드 에인트호번"
+    },
     "city": "Eindhoven",
     "country": "Netherlands",
     "countryCode": "NL",
     "logo": "/assets/logos/sinfonia.jpg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "First Place Winner — RoboCup 2024 SSPL (Pepper Robot)",
       "es": "1er Lugar — RoboCup 2024 SSPL (Robot Pepper)",
       "ja": "RoboCup 2024 SSPL 優勝（Pepper）",
       "ko": "RoboCup 2024 SSPL 1위(페퍼 로봇)"
     },
     "employmentType": "Seasonal",
+    "employmentTypeLabel": {
+      "en": "Seasonal",
+      "es": "Temporal",
+      "ja": "短期",
+      "ko": "단기"
+    },
     "dates": { "start": "2024-07", "end": "2024-07" },
     "featuredImage": "/assets/images/experiences/robocup.jpeg",
     "summary": {
@@ -266,8 +459,18 @@
       }
     ],
     "skills": ["Robotics", "ROS", "Python", "Public Speaking"],
+    "skillsLabel": [
+      { "en": "Robotics", "es": "Robótica", "ja": "ロボティクス", "ko": "로보틱스" },
+      { "en": "ROS", "es": "ROS", "ja": "ROS", "ko": "ROS" },
+      { "en": "Python", "es": "Python", "ja": "Python", "ko": "Python" },
+      { "en": "Public Speaking", "es": "Oratoria", "ja": "スピーチ", "ko": "발표" }
+    ],
     "technologies": ["ROS", "Python", "OpenAI API"],
     "tags": ["Winner", "International"],
+    "tagsLabel": [
+      { "en": "Winner", "es": "Ganador", "ja": "優勝", "ko": "우승" },
+      { "en": "International", "es": "Internacional", "ja": "国際", "ko": "국제" }
+    ],
     "links": [],
     "media": [],
     "order": 86
@@ -276,20 +479,45 @@
     "id": "uniandes-ta-webapps",
     "type": "teaching",
     "typeLabel": { "en": "Teaching", "es": "Docencia", "ja": "教育", "ko": "교육" },
-    "organization": "Universidad de los Andes",
+    "organization": {
+      "en": "Universidad de los Andes",
+      "es": "Universidad de los Andes",
+      "ja": "コロンビア・ロス・アンデ스大学",
+      "ko": "콜롬비아 로스안데스대학교"
+    },
     "organizationWebsite": "https://uniandes.edu.co",
     "location": "Bogotá, Colombia (On-site)",
+    "locationLabel": {
+      "en": "Bogotá, Colombia (On-site)",
+      "es": "Bogotá, Colombia (Presencial)",
+      "ja": "コロンビア・ボゴタ（対面）",
+      "ko": "콜롬비아 보고타(대면)"
+    },
     "city": "Bogotá",
     "country": "Colombia",
     "countryCode": "CO",
     "logo": "/assets/logos/uniandes.jpg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Teaching Assistant — Web Application Programming",
       "es": "Monitor — Programación de Aplicaciones Web",
       "ja": "TA — Webアプリ開発",
       "ko": "조교 — 웹 애플리케이션 프로그래밍"
     },
     "employmentType": "Part-time",
+    "employmentTypeLabel": {
+      "en": "Part-time",
+      "es": "Medio tiempo",
+      "ja": "パートタイム",
+      "ko": "파트타임"
+    },
     "dates": { "start": "2024-08", "end": "2024-12" },
     "featuredImage": "/assets/images/experiences/uniandes-instructor.jpg",
     "summary": {
@@ -302,8 +530,18 @@
       { "en": "Student support, Q&A, and practical guidance on best practices.", "es": "Soporte a estudiantes, resolución de dudas y guía de buenas prácticas.", "ja": "Q&Aとベストプラクティスの指導。", "ko": "질의응답 및 베스트 프랙티스 지도." }
     ],
     "skills": ["React", "JavaScript", "NestJS", "UI/UX", "Teaching"],
+    "skillsLabel": [
+      { "en": "React", "es": "React", "ja": "React", "ko": "React" },
+      { "en": "JavaScript", "es": "JavaScript", "ja": "JavaScript", "ko": "JavaScript" },
+      { "en": "NestJS", "es": "NestJS", "ja": "NestJS", "ko": "NestJS" },
+      { "en": "UI/UX", "es": "UI/UX", "ja": "UI/UX", "ko": "UI/UX" },
+      { "en": "Teaching", "es": "Docencia", "ja": "教育", "ko": "교육" }
+    ],
     "technologies": ["React", "Node.js", "NestJS"],
     "tags": ["Mentoring"],
+    "tagsLabel": [
+      { "en": "Mentoring", "es": "Mentoría", "ja": "メンタリング", "ko": "멘토링" }
+    ],
     "links": [],
     "media": [],
     "order": 80
@@ -312,20 +550,45 @@
     "id": "uniandes-support-instructor-teams",
     "type": "teaching",
     "typeLabel": { "en": "Teaching", "es": "Docencia", "ja": "教育", "ko": "교육" },
-    "organization": "Universidad de los Andes",
+    "organization": {
+      "en": "Universidad de los Andes",
+      "es": "Universidad de los Andes",
+      "ja": "コロンビア・ロ스・アンデ스大学",
+      "ko": "콜롬비아 로스안데스대학교"
+    },
     "organizationWebsite": "https://uniandes.edu.co",
     "location": "Bogotá, Colombia (On-site)",
+    "locationLabel": {
+      "en": "Bogotá, Colombia (On-site)",
+      "es": "Bogotá, Colombia (Presencial)",
+      "ja": "コロンビア・ボゴタ（対面）",
+      "ko": "콜롬비아 보고타(대면)"
+    },
     "city": "Bogotá",
     "country": "Colombia",
     "countryCode": "CO",
     "logo": "/assets/logos/uniandes.jpg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Support Instructor — Software Development in Teams",
       "es": "Monitor de Apoyo — Desarrollo de Software en Equipos",
       "ja": "サポート講師 — チーム開発",
       "ko": "지원 강사 — 팀 소프트웨어 개발"
     },
     "employmentType": "Part-time",
+    "employmentTypeLabel": {
+      "en": "Part-time",
+      "es": "Medio tiempo",
+      "ja": "パートタイム",
+      "ko": "파트타임"
+    },
     "dates": { "start": "2023-08", "end": "2024-12" },
     "featuredImage": "/assets/images/experiences/uniandes-instructor.jpg",
     "summary": {
@@ -339,8 +602,17 @@
       { "en": "Graded team progress submissions and practical programming challenges.", "es": "Califiqué entregas de avance y retos de programación.", "ja": "進捗提出とプログラミング課題の評価。", "ko": "팀 진척 제출물 및 코딩 과제 채점." }
     ],
     "skills": ["Spring Boot", "Angular", "Teaching", "Teamwork"],
+    "skillsLabel": [
+      { "en": "Spring Boot", "es": "Spring Boot", "ja": "Spring Boot", "ko": "Spring Boot" },
+      { "en": "Angular", "es": "Angular", "ja": "Angular", "ko": "Angular" },
+      { "en": "Teaching", "es": "Docencia", "ja": "教育", "ko": "교육" },
+      { "en": "Teamwork", "es": "Trabajo en equipo", "ja": "チームワーク", "ko": "팀워크" }
+    ],
     "technologies": ["Spring Boot", "Angular"],
     "tags": ["University"],
+    "tagsLabel": [
+      { "en": "University", "es": "Universidad", "ja": "大学", "ko": "대학" }
+    ],
     "links": [],
     "media": [],
     "order": 78
@@ -349,20 +621,45 @@
     "id": "uplan-shark-tank-finalist",
     "type": "entrepreneurship",
     "typeLabel": { "en": "Entrepreneurship", "es": "Emprendimiento", "ja": "起業", "ko": "창업" },
-    "organization": "UNIANDINOS (Universidad de los Andes)",
+    "organization": {
+      "en": "UNIANDINOS (Universidad de los Andes)",
+      "es": "UNIANDINOS (Universidad de los Andes)",
+      "ja": "UNIANDINOS（ロス・アンデ스大学）",
+      "ko": "UNIANDINOS(로스안데스대학교)"
+    },
     "organizationWebsite": "https://www.uniandinos.org.co/",
     "location": "Bogotá, Colombia (On-site)",
+    "locationLabel": {
+      "en": "Bogotá, Colombia (On-site)",
+      "es": "Bogotá, Colombia (Presencial)",
+      "ja": "コロンビア・ボゴタ（対面）",
+      "ko": "콜롬비아 보고타(대면)"
+    },
     "city": "Bogotá",
     "country": "Colombia",
     "countryCode": "CO",
     "logo": "/assets/logos/uniandes.jpg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Finalist — Startup Competition (Shark Tank Pitch) · UPlan",
       "es": "Finalista — Competencia de emprendimiento (Pitch estilo Shark Tank) · UPlan",
       "ja": "ファイナリスト — スタートアップ大会（Shark Tank Pitch）· UPlan",
       "ko": "결승 진출 — 스타트업 대회(Shark Tank 피치) · UPlan"
     },
     "employmentType": "Part-time",
+    "employmentTypeLabel": {
+      "en": "Part-time",
+      "es": "Medio tiempo",
+      "ja": "パートタイム",
+      "ko": "파트타임"
+    },
     "dates": { "start": "2023-11", "end": "2023-11" },
     "featuredImage": "/assets/images/experiences/uplan.png",
     "summary": {
@@ -375,8 +672,16 @@
       { "en": "Reached final stage and presented to investors and entrepreneurship professionals.", "es": "Llegué a la fase final y presenté ante inversionistas y profesionales.", "ja": "最終段階で投資家・専門家にプレゼン。", "ko": "최종 단계에서 투자자 및 전문가에게 발표." }
     ],
     "skills": ["Entrepreneurship", "Pitching", "Market Analysis"],
+    "skillsLabel": [
+      { "en": "Entrepreneurship", "es": "Emprendimiento", "ja": "起業", "ko": "창업" },
+      { "en": "Pitching", "es": "Pitch", "ja": "ピッチ", "ko": "피칭" },
+      { "en": "Market Analysis", "es": "Análisis de mercado", "ja": "市場分析", "ko": "시장 분석" }
+    ],
     "technologies": [],
     "tags": ["Finalist"],
+    "tagsLabel": [
+      { "en": "Finalist", "es": "Finalista", "ja": "ファイナリスト", "ko": "결승 진출" }
+    ],
     "links": [],
     "media": [
       "/assets/images/experience/uplan-pitch-1.jpg",
@@ -389,20 +694,45 @@
     "id": "uniandes-webapp-project-leader",
     "type": "project",
     "typeLabel": { "en": "Project", "es": "Proyecto", "ja": "プロジェクト", "ko": "프로젝트" },
-    "organization": "Universidad de los Andes",
+    "organization": {
+      "en": "Universidad de los Andes",
+      "es": "Universidad de los Andes",
+      "ja": "コロンビア・ロス・アンデ스大学",
+      "ko": "콜롬비아 로스안데스대학교"
+    },
     "organizationWebsite": "https://uniandes.edu.co",
     "location": "Bogotá, Colombia (Hybrid)",
+    "locationLabel": {
+      "en": "Bogotá, Colombia (Hybrid)",
+      "es": "Bogotá, Colombia (Híbrido)",
+      "ja": "コロンビア・ボゴタ（ハイブリッド）",
+      "ko": "콜롬비아 보고타(하이브리드)"
+    },
     "city": "Bogotá",
     "country": "Colombia",
     "countryCode": "CO",
     "logo": "/assets/logos/uniandes.jpg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Web Application Project Leader — Esports History Platform",
       "es": "Líder de proyecto web — Plataforma de historia de esports",
       "ja": "Webプロジェクトリーダー — Esports履歴プラットフォーム",
       "ko": "웹 프로젝트 리더 — 이스포츠 기록 플랫폼"
     },
     "employmentType": "Academic Project",
+    "employmentTypeLabel": {
+      "en": "Academic Project",
+      "es": "Proyecto académico",
+      "ja": "学術プロジェクト",
+      "ko": "학술 프로젝트"
+    },
     "dates": { "start": "2023-01", "end": "2023-05" },
     "featuredImage": "/assets/images/experiences/esports.png",
     "summary": {
@@ -416,8 +746,17 @@
       { "en": "Back-end: Spring Framework (Java) + persistence API.", "es": "Back-end: Spring (Java) + API.", "ja": "バック：Spring（Java）+ API。", "ko": "백엔드: Spring(Java) + API." }
     ],
     "skills": ["Leadership", "Angular", "Spring Boot", "Planning"],
+    "skillsLabel": [
+      { "en": "Leadership", "es": "Liderazgo", "ja": "リーダーシップ", "ko": "리더십" },
+      { "en": "Angular", "es": "Angular", "ja": "Angular", "ko": "Angular" },
+      { "en": "Spring Boot", "es": "Spring Boot", "ja": "Spring Boot", "ko": "Spring Boot" },
+      { "en": "Planning", "es": "Planeación", "ja": "計画", "ko": "기획" }
+    ],
     "technologies": ["Angular", "Java", "Spring"],
     "tags": ["Team Project"],
+    "tagsLabel": [
+      { "en": "Team Project", "es": "Proyecto en equipo", "ja": "チームプロジェクト", "ko": "팀 프로젝트" }
+    ],
     "links": [],
     "media": [],
     "order": 70
@@ -426,20 +765,45 @@
     "id": "seed-program-2023",
     "type": "program",
     "typeLabel": { "en": "Program", "es": "Programa", "ja": "プログラム", "ko": "프로그램" },
-    "organization": "GOROM Association",
+    "organization": {
+      "en": "GOROM Association",
+      "es": "Asociación GOROM",
+      "ja": "GOROM協会",
+      "ko": "GOROM 협회"
+    },
     "organizationWebsite": "https://gorom.org/en/seed/",
     "location": "Kofu (Yamanashi), Japan (Hybrid)",
+    "locationLabel": {
+      "en": "Kofu (Yamanashi), Japan (Hybrid)",
+      "es": "Kofu (Yamanashi), Japón (Híbrido)",
+      "ja": "甲府（山梨）（日本）（ハイブリッド）",
+      "ko": "일본 야마나시현 고후(하이브리드)"
+    },
     "city": "Kofu",
     "country": "Japan",
     "countryCode": "JP",
     "logo": "/assets/logos/gorom.png",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Elected Participant — SEED Program 2023 (Social Entrepreneurship)",
       "es": "Participante seleccionado — SEED Program 2023 (Emprendimiento Social)",
       "ja": "選抜参加者 — SEED Program 2023（社会起業）",
       "ko": "선발 참가자 — SEED Program 2023(사회적 기업가정신)"
     },
     "employmentType": "Program",
+    "employmentTypeLabel": {
+      "en": "Program",
+      "es": "Programa",
+      "ja": "プログラム",
+      "ko": "프로그램"
+    },
     "dates": { "start": "2023-07", "end": "2023-12" },
     "featuredImage": "/assets/images/experiences/seed-interview.jpeg",
     "summary": {
@@ -453,8 +817,17 @@
       { "en": "Featured by NHK in a program report; interviewed in Japanese about the experience.", "es": "Fuimos destacados por NHK; me entrevistaron en japonés sobre la experiencia.", "ja": "NHKレポートに掲載され、日本語で取材を受けた。", "ko": "NHK 리포트에 소개되고 일본어 인터뷰를 진행." }
     ],
     "skills": ["Social Entrepreneurship", "Market Research", "Pitching"],
+    "skillsLabel": [
+      { "en": "Social Entrepreneurship", "es": "Emprendimiento social", "ja": "社会起業", "ko": "사회적 기업가정신" },
+      { "en": "Market Research", "es": "Investigación de mercado", "ja": "市場調査", "ko": "시장 조사" },
+      { "en": "Pitching", "es": "Pitch", "ja": "ピッチ", "ko": "피칭" }
+    ],
     "technologies": [],
     "tags": ["Japan", "SDGs"],
+    "tagsLabel": [
+      { "en": "Japan", "es": "Japón", "ja": "日本", "ko": "일본" },
+      { "en": "SDGs", "es": "ODS", "ja": "SDGs", "ko": "SDGs" }
+    ],
     "links": [{ "label": { "en": "SEED Program", "es": "Programa SEED", "ja": "SEEDプログラム", "ko": "SEED 프로그램" }, "url": "https://gorom.org/en/seed/" }],
     "media": [],
     "order": 66
@@ -463,20 +836,45 @@
     "id": "tsukuba-latam-online-exchange-2022",
     "type": "exchange",
     "typeLabel": { "en": "Exchange", "es": "Intercambio", "ja": "交換", "ko": "교류" },
-    "organization": "University of Tsukuba",
+    "organization": {
+      "en": "University of Tsukuba",
+      "es": "Universidad de Tsukuba",
+      "ja": "筑波大学",
+      "ko": "츠쿠바대학교"
+    },
     "organizationWebsite": "https://www.tsukuba.ac.jp/en/",
     "location": "Tsukuba, Ibaraki, Japan (Remote)",
+    "locationLabel": {
+      "en": "Tsukuba, Ibaraki, Japan (Remote)",
+      "es": "Tsukuba, Ibaraki, Japón (Remoto)",
+      "ja": "つくば（茨城）（日本）（リモート）",
+      "ko": "일본 이바라키현 쓰쿠바(원격)"
+    },
     "city": "Tsukuba",
     "country": "Japan",
     "countryCode": "JP",
     "logo": "/assets/logos/tsukuba.png",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Participant — Tsukuba × Latin America Online Exchange (SDGs)",
       "es": "Participante — Intercambio online Tsukuba × Latinoamérica (ODS)",
       "ja": "参加者 — つくば×中南米オンライン交流（SDGs）",
       "ko": "참가자 — Tsukuba × 라틴아메리카 온라인 교류(SDGs)"
     },
     "employmentType": "Apprenticeship",
+    "employmentTypeLabel": {
+      "en": "Apprenticeship",
+      "es": "Pasantía",
+      "ja": "インターン／研修",
+      "ko": "인턴십/연수"
+    },
     "dates": { "start": "2022-03", "end": "2022-03" },
     "featuredImage": "/assets/images/experiences/tsukuba-exchange.png",
     "summary": {
@@ -489,8 +887,16 @@
       { "en": "Explored SDG progress and challenges across Latin America and Japan.", "es": "Analicé avances y retos de ODS en Latinoamérica y Japón.", "ja": "中南米と日本のSDGs課題を比較検討。", "ko": "라틴아메리카·일본의 SDGs 현황/과제를 비교." }
     ],
     "skills": ["SDGs", "Cross-cultural Communication", "Teamwork"],
+    "skillsLabel": [
+      { "en": "SDGs", "es": "ODS", "ja": "SDGs", "ko": "SDGs" },
+      { "en": "Cross-cultural Communication", "es": "Comunicación intercultural", "ja": "異文化コミュニケーション", "ko": "다문화 커뮤니케이션" },
+      { "en": "Teamwork", "es": "Trabajo en equipo", "ja": "チームワーク", "ko": "팀워크" }
+    ],
     "technologies": [],
     "tags": ["Remote"],
+    "tagsLabel": [
+      { "en": "Remote", "es": "Remoto", "ja": "リモート", "ko": "원격" }
+    ],
     "links": [],
     "media": [],
     "order": 58
@@ -499,20 +905,45 @@
     "id": "ef-exchange-uk-2018",
     "type": "exchange",
     "typeLabel": { "en": "Exchange", "es": "Intercambio", "ja": "留学", "ko": "교환" },
-    "organization": "EF Education First",
+    "organization": {
+      "en": "EF Education First",
+      "es": "EF Education First",
+      "ja": "EFエデュケーション・ファースト",
+      "ko": "EF Education First"
+    },
     "organizationWebsite": "https://www.ef.com/",
     "location": "London, United Kingdom",
+    "locationLabel": {
+      "en": "London, United Kingdom",
+      "es": "Londres, Reino Unido",
+      "ja": "イギリス・ロンドン",
+      "ko": "영국 런던"
+    },
     "city": "London",
     "country": "England",
     "countryCode": "GB",
     "logo": "/assets/logos/ef.jpeg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Academic Exchange — English B2–C1 (University of East London)",
       "es": "Intercambio académico — Inglés B2–C1 (University of East London)",
       "ja": "短期交換 — 英語B2–C1（University of East London）",
       "ko": "학술 교류 — 영어 B2–C1(University of East London)"
     },
     "employmentType": "Program",
+    "employmentTypeLabel": {
+      "en": "Program",
+      "es": "Programa",
+      "ja": "プログラム",
+      "ko": "프로그램"
+    },
     "dates": { "start": "2018-07", "end": "2018-08" },
     "featuredImage": "/assets/images/experiences/london-exchange.png",
     "summary": {
@@ -523,8 +954,15 @@
     },
     "bullets": [],
     "skills": ["English", "Intercultural"],
+    "skillsLabel": [
+      { "en": "English", "es": "Inglés", "ja": "英語", "ko": "영어" },
+      { "en": "Intercultural", "es": "Intercultural", "ja": "異文化", "ko": "다문화" }
+    ],
     "technologies": [],
     "tags": ["UK"],
+    "tagsLabel": [
+      { "en": "UK", "es": "Reino Unido", "ja": "英国", "ko": "영국" }
+    ],
     "links": [],
     "media": [],
     "order": 40
@@ -533,20 +971,45 @@
     "id": "divino-nino-student",
     "type": "education",
     "typeLabel": { "en": "Education", "es": "Educación", "ja": "教育", "ko": "교육" },
-    "organization": "Colegio Bilingüe Divino Niño",
+    "organization": {
+      "en": "Divino Niño Bilingual School",
+      "es": "Colegio Bilingüe Divino Niño",
+      "ja": "ディビノ・ニーニョ・バイリンガル校",
+      "ko": "디비노 니뇨 이중언어 학교"
+    },
     "organizationWebsite": "https://cbdn.edu.co/",
     "location": "Bucaramanga, Santander, Colombia (On-site)",
+    "locationLabel": {
+      "en": "Bucaramanga, Santander, Colombia (On-site)",
+      "es": "Bucaramanga, Santander, Colombia (Presencial)",
+      "ja": "コロンビア・ブカラマンガ（対面）",
+      "ko": "콜롬비아 부카라망가(대면)"
+    },
     "city": "Bucaramanga",
     "country": "Colombia",
     "countryCode": "CO",
     "logo": "/assets/logos/cbdn.jpeg",
     "title": {
+    "ui": {
+      "showMore": {
+        "en": "Show more details",
+        "es": "Ver más detalles",
+        "ja": "詳細を見る",
+        "ko": "자세히 보기"
+      }
+    },
       "en": "Student — High School (Graduation with Honors)",
       "es": "Estudiante — Bachillerato (Graduación con honores)",
       "ja": "学生 — 高校（優等で卒業）",
       "ko": "학생 — 고등학교(우등 졸업)"
     },
     "employmentType": "Full-time",
+    "employmentTypeLabel": {
+      "en": "Full-time",
+      "es": "Tiempo completo",
+      "ja": "フルタイム",
+      "ko": "풀타임"
+    },
     "dates": { "start": "2013-01", "end": "2019-11" },
     "featuredImage": "/assets/images/experiences/cbdn.jpg",
     "summary": {
@@ -557,8 +1020,15 @@
     },
     "bullets": [],
     "skills": ["Leadership", "Communication"],
+    "skillsLabel": [
+      { "en": "Leadership", "es": "Liderazgo", "ja": "リーダーシップ", "ko": "리더십" },
+      { "en": "Communication", "es": "Comunicación", "ja": "コミュニケーション", "ko": "커뮤니케이션" }
+    ],
     "technologies": [],
     "tags": ["Honors"],
+    "tagsLabel": [
+      { "en": "Honors", "es": "Honores", "ja": "優等", "ko": "우등" }
+    ],
     "links": [],
     "media": [],
     "order": 10
