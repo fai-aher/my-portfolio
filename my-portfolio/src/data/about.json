@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "en": "My name is Alonso, welcome to my portfolio. I am a Systems and Computer Engineer from Universidad de los Andes in Colombia, with a Minor in Japanese Language and Culture, and a strong focus on both cloud-deployed web application development and social robotics. I consider discipline to be one of my most outstanding qualities, as it is the pillar of my everyday behavior. Learning is one of my greatest passions in life, and I describe myself as a lifelong learner.\n\nI am a physically active person; I dedicate time every day to exercise and, on occasion, get together with friends or colleagues to play volleyball or golf.\n\nI enjoy staying up to date with world news, watching videos related to geography and geopolitics, reading motivational books, and learning Japanese through news and articles.",
+    "es": "Mi nombre es Alonso, bienvenido a mi portafolio. Soy Ingeniero de Sistemas y Computación egresado de la Universidad de los Andes en Colombia con un Minor en Lengua y Cultura Japonesa y un enfoque tanto en el desarrollo de aplicaciones web con despliegue en Cloud como en robótica social. Considero que la disciplina es una de mis cualidades más destacadas, ya que es el pilar de mi comportamiento diario. El aprendizaje es una de mis grandes pasiones en la vida y me describo como un aprendiz de por vida.\n\nSoy una persona físicamente activa; dedico tiempo todos los días al ejercicio y, en ocasiones, me reúno con amigos o colegas para jugar voleibol o golf.\n\nMe gusta mantenerme al día con las noticias del mundo, ver videos relacionados con geografía y geopolítica, leer libros de motivación y aprender japonés a través de noticias y artículos.",
+    "ja": "私の名前はアロンソです。ポートフォリオへようこそ。私はコロンビアのロス・アンデス大学でシステム・計算機工学を専攻し、日本語・日本文化のマイナーを修了しました。クラウド上で展開されるWebアプリケーション開発とソーシャルロボティクスの両方に強い関心を持っています。規律は日々の行動の基盤であり、私の最も優れた強みの一つだと考えています。学ぶことは人生における大きな情熱であり、自分自身を生涯学習者だと捉えています。\n\n私は身体的にアクティブな人間で、毎日運動の時間を確保し、時には友人や同僚と集まってバレーボールやゴルフを楽しんでいます。\n\n世界のニュースを追い、地理や地政学に関する動画を視聴し、モチベーションに関する本を読み、ニュースや記事、大学の授業を通じて日本語を学ぶことが好きです。",
+    "ko": "제 이름은 알론소입니다. 제 포트폴리오에 오신 것을 환영합니다. 저는 콜롬비아 로스 안데스 대학교에서 시스템 및 컴퓨터 공학을 전공했으며, 일본어 및 일본 문화 부전공을 이수했습니다. 클라우드에 배포되는 웹 애플리케이션 개발과 소셜 로보틱스 두 분야 모두에 관심과 전문성을 가지고 있습니다. 저는 규율이 일상적인 행동의 기반이 되는 가장 뛰어난 강점 중 하나라고 생각합니다. 배움은 제 삶에서 가장 큰 열정 중 하나이며, 스스로를 평생 학습자라고 정의합니다.\n\n저는 신체적으로 활동적인 사람으로, 매일 운동하는 시간을 갖고 있으며 때때로 친구나 동료들과 함께 배구나 골프를 즐깁니다.\n\n전 세계의 뉴스를 따라가고, 지리와 지정학 관련 영상을 시청하며, 동기 부여 서적을 읽고, 뉴스와 기사, 대학 수업을 통해 일본어를 배우는 것을 좋아합니다."
+  },
+  "highlights": [
+    {
+      "key": "robotics",
+      "text": {
+        "en": "Humanoid robotics research and robot learning focus.",
+        "es": "Enfoque en investigación de robótica humanoide y robot learning.",
+        "ja": "ヒューマノイド研究とロボット学習に注力。",
+        "ko": "휴머노이드 로보틱스 및 로봇 러닝 중심."
+      }
+    },
+    {
+      "key": "web",
+      "text": {
+        "en": "Modern web engineering with strong UI/UX and reliable architecture.",
+        "es": "Ingeniería web moderna con UI/UX fuerte y arquitectura confiable.",
+        "ja": "強いUI/UXと堅牢な設計のWeb開発。",
+        "ko": "강한 UI/UX와 안정적인 아키텍처의 웹 개발."
+      }
+    },
+    {
+      "key": "japan",
+      "text": {
+        "en": "Japan-related programs and language study (JLPT N4).",
+        "es": "Programas relacionados con Japón y estudio del idioma (JLPT N4).",
+        "ja": "日本関連のプログラムと語学学習（JLPT N4）。",
+        "ko": "일본 관련 프로그램 및 언어 학습(JLPT N4)."
+      }
+    }
+  ],
+  "hobbies": {
+    "en": [
+      "Gym, volleyball, golf",
+      "World news and geopolitics",
+      "Geography videos & exploring Google Maps",
+      "Learning Japanese through news/articles",
+      "Meeting people from other cultures"
+    ],
+    "es": [
+      "Gimnasio, voleibol, golf",
+      "Noticias del mundo y geopolítica",
+      "Videos de geografía y explorar Google Maps",
+      "Aprender japonés con noticias/artículos",
+      "Conocer personas de otras culturas"
+    ],
+    "ja": [
+      "ジム、バレー、ゴルフ",
+      "世界のニュース・地政学",
+      "地理動画とGoogleマップ探索",
+      "ニュース/記事で日本語学習",
+      "異文化の人と交流"
+    ],
+    "ko": [
+      "헬스, 배구, 골프",
+      "세계 뉴스/지정학",
+      "지리 콘텐츠 & Google Maps 탐험",
+      "뉴스/기사로 일본어 학습",
+      "다른 문화권 사람들과 교류"
+    ]
+  }
+}

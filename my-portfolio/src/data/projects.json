@@ -1,0 +1,60 @@
+[
+  {
+    "id": "seed-alumni-platform",
+    "category": "web",
+    "featured": true,
+    "title": {
+      "en": "SEED Alumni Platform (GOROM)",
+      "es": "Plataforma SEED Alumni (GOROM)",
+      "ja": "SEED Alumni プラットフォーム（GOROM）",
+      "ko": "SEED Alumni 플랫폼(GOROM)"
+    },
+    "subtitle": {
+      "en": "Community • Collaboration • Content",
+      "es": "Comunidad • Colaboración • Contenido",
+      "ja": "コミュニティ • 協働 • コンテンツ",
+      "ko": "커뮤니티 • 협업 • 콘텐츠"
+    },
+    "description": {
+      "en": "A community platform for SEED participants/alumni, designed for coordination, content sharing, and collaboration workflows.",
+      "es": "Plataforma comunitaria para participantes/alumni SEED, enfocada en coordinación, contenido y flujos de colaboración.",
+      "ja": "SEED参加者/卒業生向けコミュニティ基盤（調整・共有・協働）。",
+      "ko": "SEED 참가자/알럼나이를 위한 커뮤니티 플랫폼(운영/공유/협업)."
+    },
+    "tags": ["Web", "Community", "UI/UX", "Collaboration"],
+    "stack": ["react", "tailwind"],
+    "links": { "liveUrl": "https://gorom.org/", "repoUrl": null },
+    "images": [
+      { "id": "seed-1", "caption": "Dashboard placeholder", "src": "assets/images/projects/seed/1.jpg" }
+    ]
+  },
+  {
+    "id": "compass-robot-learning",
+    "category": "research",
+    "featured": false,
+    "title": {
+      "en": "COMPASS — Robust Imitation Learning (Poster Fair)",
+      "es": "COMPASS — Imitación Robusta (Poster Fair)",
+      "ja": "COMPASS — 頑健な模倣学習（ポスター）",
+      "ko": "COMPASS — 강건한 모방학습(포스터)"
+    },
+    "subtitle": {
+      "en": "Robot Learning • Research • Evaluation",
+      "es": "Robot Learning • Investigación • Evaluación",
+      "ja": "Robot Learning • 研究 • 評価",
+      "ko": "로봇 러닝 • 연구 • 평가"
+    },
+    "description": {
+      "en": "Comparative framework/meta-algorithm for robust imitation learning from imperfect demonstrations.",
+      "es": "Framework/meta-algoritmo comparativo para imitación robusta con demostraciones imperfectas.",
+      "ja": "不完全デモからの頑健な模倣学習を比較する枠組み。",
+      "ko": "불완전 시연 데이터에서 강건한 모방학습 비교 프레임워크."
+    },
+    "tags": ["Imitation Learning", "Experiments", "Robot Learning"],
+    "stack": ["python"],
+    "links": { "liveUrl": null, "repoUrl": null },
+    "images": [
+      { "id": "compass-1", "caption": "Poster placeholder", "src": "assets/images/research/compass-poster.jpg" }
+    ]
+  }
+]

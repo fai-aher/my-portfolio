@@ -1,0 +1,54 @@
+[
+  {
+    "id": "snu-korean-level-ii",
+    "title": {
+      "en": "Korean Language and Culture — Level II",
+      "es": "Lengua y Cultura Coreana — Nivel II",
+      "ja": "韓国語・韓国文化 — レベルII",
+      "ko": "한국어·한국문화 — 레벨 II"
+    },
+    "issuer": "Seoul National University",
+    "issued": "2025-05",
+    "credentialId": null,
+    "evidenceImage": "/assets/images/certificates/snu-korean-level2.jpg"
+  },
+  {
+    "id": "jlpt-n4",
+    "title": {
+      "en": "JLPT N4 — Passed",
+      "es": "JLPT N4 — Aprobado",
+      "ja": "JLPT N4 合格",
+      "ko": "JLPT N4 합격"
+    },
+    "issuer": "Japan Ministry of Education, Culture, Sports, Science and Technology (MEXT)",
+    "issued": "2022-08",
+    "credentialId": "N4A250975A",
+    "evidenceImage": "/assets/images/certificates/jlpt-n4.jpg"
+  },
+  {
+    "id": "toefl-ibt",
+    "title": {
+      "en": "TOEFL iBT — C1 (95/120)",
+      "es": "TOEFL iBT — C1 (95/120)",
+      "ja": "TOEFL iBT — C1（95/120）",
+      "ko": "TOEFL iBT — C1 (95/120)"
+    },
+    "issuer": "ETS",
+    "issued": "2025-05",
+    "credentialId": null,
+    "evidenceImage": "/assets/images/certificates/toefl.jpg"
+  },
+  {
+    "id": "ielts",
+    "title": {
+      "en": "IELTS — C1",
+      "es": "IELTS — C1",
+      "ja": "IELTS — C1",
+      "ko": "IELTS — C1"
+    },
+    "issuer": "British Council",
+    "issued": "2019-10",
+    "credentialId": "19CO005794HERF001G",
+    "evidenceImage": "/assets/images/certificates/ielts.jpg"
+  }
+]

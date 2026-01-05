@@ -1,0 +1,31 @@
+[
+  {
+    "id": "robocup-2024-sspl-first",
+    "title": {
+      "en": "First Place Winner — RoboCup 2024 SSPL",
+      "es": "1er Lugar — RoboCup 2024 SSPL",
+      "ja": "RoboCup 2024 SSPL 優勝",
+      "ko": "RoboCup 2024 SSPL 1위"
+    },
+    "date": "2024-07",
+    "location": "Eindhoven, Netherlands",
+    "organization": "RoboCup / Team SinfonIA",
+    "images": [
+      "/assets/images/awards/robocup-2024-1.jpg",
+      "/assets/images/awards/robocup-2024-2.jpg"
+    ]
+  },
+  {
+    "id": "high-school-honors",
+    "title": {
+      "en": "Graduation with honors — Highest GPA (Class of 2019)",
+      "es": "Graduación con honores — Mejor promedio (Promoción 2019)",
+      "ja": "優秀成績で卒業（2019年度 最優秀GPA）",
+      "ko": "우수 졸업(2019년 최고 GPA)"
+    },
+    "date": "2019-11",
+    "location": "Bucaramanga, Colombia",
+    "organization": "Colegio Bilingüe Divino Niño",
+    "images": ["/assets/images/awards/divino-nino-2019.jpg"]
+  }
+]

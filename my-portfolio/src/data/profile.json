@@ -1,0 +1,187 @@
+{
+  "id": "alonso-hernandez-tavera",
+  "fullName": {
+    "en": "Alonso Hernandez Tavera",
+    "es": "Alonso Hernandez Tavera",
+    "ja": "アロンソ・エルナンデス",
+    "ko": "알론소 에르난데스 타베라"
+  },
+  "headline": {
+    "en": "Systems & Computer Engineer • IT Coordinator @ GOROM (Japan) • Humanoid Robotics Researcher",
+    "es": "Ingeniero de Sistemas y Computación • Coordinador TI en GOROM (Japón) • Investigador en Robótica Humanoide",
+    "ja": "システム・コンピュータ工学 • GOROM（日本）ITコーディネーター • ヒューマノイドロボティクス研究",
+    "ko": "시스템/컴퓨터공학 • GOROM(일본) IT 코디네이터 • 휴머노이드 로보틱스 연구"
+  },
+  "tagline": {
+    "en": "Robotics mindset × product-grade web engineering",
+    "es": "Mentalidad robótica × ingeniería web a nivel producto",
+    "ja": "ロボティクス思考 × プロダクト品質のWeb開発",
+    "ko": "로보틱스 마인드 × 프로덕트급 웹 엔지니어링"
+  },
+  "location": {
+    "en": "Bogotá, Colombia",
+    "es": "Bogotá, Colombia",
+    "ja": "コロンビア・ボゴタ",
+    "ko": "콜롬비아 보고타"
+  },
+  "contact": {
+    "emails": [
+      { "label": "Personal", "value": "fai@ahernandezt.com" },
+      { "label": "University", "value": "f.hernandezt@uniandes.edu.co" }
+    ],
+    "social": {
+      "github": {
+        "url": "https://github.com/fai-aher",
+        "icon": "/assets/icons/github.jpg"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/a-hernandezt/",
+        "icon": "/assets/icons/linkedin.png"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/fai.aher/",
+        "icon": "/assets/icons/instagram.png"
+      },
+      "pexels": {
+        "url": "https://www.pexels.com/es-es/@alonso-hernandez-2158451473/",
+        "icon": "/assets/icons/pexels.png"
+      },
+      "platzi": {
+        "url": "https://platzi.com/p/fai.aher/",
+        "icon": "/assets/icons/platzi.jpg"
+      }
+    }
+  },
+  "assets": {
+    "profileImage": "assets/images/profile/profile.jpg",
+    "signatureLogo": "assets/brand/signature.svg"
+  },
+  "ui": {
+    "quickFactsTitle": { "en": "Quick facts", "es": "Datos rápidos", "ja": "クイック情報", "ko": "한눈에 보기" },
+    "visitedCountriesTitle": { "en": "Visited countries", "es": "Países visitados", "ja": "訪問した国", "ko": "방문한 국가" },
+    "stackTitle": { "en": "Stack", "es": "Stack", "ja": "スタック", "ko": "기술 스택" },
+    "showAll": { "en": "Show all", "es": "Ver todo", "ja": "すべて見る", "ko": "전체 보기" }
+  },
+  "quickFacts": [
+    {
+      "id": "fullstack",
+      "k": { "en": "2+", "es": "2+", "ja": "2+", "ko": "2+" },
+      "v": {
+        "en": "Years working as a full-stack web developer",
+        "es": "Años trabajando como desarrollador web full-stack",
+        "ja": "フルスタックWeb開発（年）",
+        "ko": "풀스택 웹 개발 경력(년)"
+      }
+    },
+    {
+      "id": "robocup",
+      "k": { "en": "#1", "es": "#1", "ja": "1位", "ko": "1위" },
+      "v": {
+        "en": "RoboCup International Robotics Competition (2024)",
+        "es": "Competencia Internacional de Robótica RoboCup (2024)",
+        "ja": "RoboCup 国際ロボット競技（2024）",
+        "ko": "로보컵 국제 로봇 대회(2024)"
+      }
+    },
+    {
+      "id": "ta",
+      "k": { "en": "2+", "es": "2+", "ja": "2+", "ko": "2+" },
+      "v": {
+        "en": "Years as a university teaching assistant",
+        "es": "Años como asistente de docencia universitaria",
+        "ja": "大学のティーチングアシスタント（年）",
+        "ko": "대학 조교 경력(년)"
+      }
+    }
+  ],
+  "visitedCountries": [
+    { "code": "CO", "emoji": "🇨🇴", "name": { "en": "Colombia", "es": "Colombia", "ja": "コロンビア", "ko": "콜롬비아" } },
+    { "code": "AR", "emoji": "🇦🇷", "name": { "en": "Argentina", "es": "Argentina", "ja": "アルゼンチン", "ko": "아르헨티나" } },
+    { "code": "BR", "emoji": "🇧🇷", "name": { "en": "Brazil", "es": "Brasil", "ja": "ブラジル", "ko": "브라질" } },
+    { "code": "PA", "emoji": "🇵🇦", "name": { "en": "Panama", "es": "Panamá", "ja": "パナマ", "ko": "파나마" } },
+    { "code": "MX", "emoji": "🇲🇽", "name": { "en": "Mexico", "es": "México", "ja": "メキシコ", "ko": "멕시코" } },
+    { "code": "US", "emoji": "🇺🇸", "name": { "en": "United States", "es": "Estados Unidos", "ja": "アメリカ合衆国", "ko": "미국" } },
+    { "code": "CA", "emoji": "🇨🇦", "name": { "en": "Canada", "es": "Canadá", "ja": "カナダ", "ko": "캐나다" } },
+    { "code": "GB", "emoji": "🇬🇧", "name": { "en": "England", "es": "Inglaterra", "ja": "イングランド", "ko": "잉글랜드" } },
+    { "code": "FR", "emoji": "🇫🇷", "name": { "en": "France", "es": "Francia", "ja": "フランス", "ko": "프랑스" } },
+    { "code": "ES", "emoji": "🇪🇸", "name": { "en": "Spain", "es": "España", "ja": "スペイン", "ko": "스페인" } },
+    { "code": "NL", "emoji": "🇳🇱", "name": { "en": "Netherlands", "es": "Países Bajos", "ja": "オランダ", "ko": "네덜란드" } },
+    { "code": "BE", "emoji": "🇧🇪", "name": { "en": "Belgium", "es": "Bélgica", "ja": "ベルギー", "ko": "벨기에" } },
+    { "code": "HK", "emoji": "🇭🇰", "name": { "en": "Hong Kong", "es": "Hong Kong", "ja": "香港", "ko": "홍콩" } },
+    { "code": "KR", "emoji": "🇰🇷", "name": { "en": "South Korea", "es": "Corea del Sur", "ja": "韓国", "ko": "대한민국" } },
+    { "code": "JP", "emoji": "🇯🇵", "name": { "en": "Japan", "es": "Japón", "ja": "日本", "ko": "일본" } }
+  ]
+  ,
+  "ui": {
+    "quickFactsTitle": { "en": "Quick facts", "es": "Datos rápidos", "ja": "クイック情報", "ko": "한눈에 보기" },
+    "visitedCountriesTitle": { "en": "Visited countries", "es": "Países visitados", "ja": "訪問した国", "ko": "방문한 국가" },
+    "stackTitle": { "en": "Stack", "es": "Stack", "ja": "スタック", "ko": "기술 스택" },
+    "showAll": { "en": "Show all", "es": "Ver todo", "ja": "すべて見る", "ko": "전체 보기" },
+    "currentFocusTitle": {
+      "en": "Current focus",
+      "es": "Enfoque actual",
+      "ja": "現在の注力分野",
+      "ko": "현재 집중 분야"
+    },
+    "currentlyWorkingOnTitle": {
+      "en": "Currently working on",
+      "es": "Actualmente trabajando en",
+      "ja": "現在取り組んでいること",
+      "ko": "현재 진행 중인 작업"
+    }
+  }
+  ,
+  "currentFocus": [
+    {
+      "id": "robotics",
+      "text": {
+        "en": "Humanoid robotics and embodied intelligence research",
+        "es": "Investigación en robótica humanoide e inteligencia incorporada",
+        "ja": "ヒューマノイドロボティクスと身体性知能の研究",
+        "ko": "휴머노이드 로보틱스 및 체화 지능 연구"
+      }
+    },
+    {
+      "id": "web",
+      "text": {
+        "en": "Product-grade full-stack web platforms with cloud deployment",
+        "es": "Plataformas web full-stack a nivel producto con despliegue en la nube",
+        "ja": "クラウド展開を伴うプロダクト品質のフルスタックWebプラットフォーム",
+        "ko": "클라우드 배포를 포함한 프로덕트급 풀스택 웹 플랫폼"
+      }
+    }
+  ]
+  ,
+  "currentlyWorkingOn": [
+    {
+      "id": "humanoid",
+      "title": {
+        "en": "Humanoid robotics research",
+        "es": "Investigación en robótica humanoide",
+        "ja": "ヒューマノイドロボット研究",
+        "ko": "휴머노이드 로봇 연구"
+      },
+      "description": {
+        "en": "Control, perception, and embodied intelligence systems",
+        "es": "Sistemas de control, percepción e inteligencia incorporada",
+        "ja": "制御・知覚・身体性知能システム",
+        "ko": "제어·인지·체화 지능 시스템"
+      }
+    },
+    {
+      "id": "fullstack",
+      "title": {
+        "en": "Full-stack web platforms",
+        "es": "Plataformas web full-stack",
+        "ja": "フルスタックWebプラットフォーム",
+        "ko": "풀스택 웹 플랫폼"
+      },
+      "description": {
+        "en": "React, Django, scalable dashboards and cloud-native systems",
+        "es": "React, Django, paneles escalables y sistemas cloud-native",
+        "ja": "React・Django・スケーラブルなダッシュボードとクラウドネイティブシステム",
+        "ko": "React, Django, 확장 가능한 대시보드 및 클라우드 네이티브 시스템"
+      }
+    }
+  ]
+}

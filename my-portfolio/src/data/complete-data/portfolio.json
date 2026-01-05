@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-25",
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en", "es", "ja", "ko"]
+  },
+  "person": {
+    "id": "alonso-hernandez-tavera",
+    "displayName": "Fai Hernandez",
+    "legalName": "Alonso Hernandez Tavera",
+    "tagline": {
+      "en": "Systems & Computer Engineer • IT Coordinator @ GOROM (Japan) • Humanoid Robotics Researcher",
+      "es": "Ingeniero de Sistemas y Computación • Coordinador TI en GOROM (Japón) • Investigador en Robótica Humanoide",
+      "ja": "システム・コンピュータ工学 • GOROM（日本）ITコーディネーター • ヒューマノイドロボティクス研究",
+      "ko": "시스템/컴퓨터공학 • GOROM(일본) IT 코디네이터 • 휴머노이드 로보틱스 연구"
+    },
+    "headline": {
+      "en": "Humanoid Robotics + Product-Grade Web Engineering",
+      "es": "Robótica Humanoide + Ingeniería Web a nivel producto",
+      "ja": "ヒューマノイドロボティクス × プロダクト品質のWeb開発",
+      "ko": "휴머노이드 로보틱스 × 프로덕트급 웹 엔지니어링"
+    },
+    "location": {
+      "city": "Bogotá",
+      "region": "Bogotá, D.C.",
+      "country": "Colombia",
+      "remote": true
+    },
+    "contact": {
+      "emails": [
+        { "label": "Personal", "value": "fai.ahertz@gmail.com" },
+        { "label": "University", "value": "f.hernandezt@uniandes.edu.co" }
+      ],
+      "social": {
+        "github": "https://github.com/fai-aher",
+        "linkedin": "https://www.linkedin.com/in/a-hernandezt/",
+        "instagram": "fai.aher"
+      }
+    },
+    "hero": {
+      "profileImage": "assets/images/profile/profile.jpg",
+      "signatureLogo": "assets/brand/signature.svg",
+      "availability": {
+        "status": "open_to_opportunities",
+        "notes": {
+          "en": "Open to freelance projects and robotics research opportunities.",
+          "es": "Disponible para proyectos freelance y oportunidades de investigación en robótica.",
+          "ja": "フリーランス案件・ロボティクス研究の機会を歓迎します。",
+          "ko": "프리랜스 프로젝트 및 로보틱스 연구 기회를 환영합니다."
+        }
+      }
+    }
+  },
+  "about": {
+    "summary": {
+      "en": "Discipline is one of my greatest qualities and the pillar of my everyday behavior. I’m a lifelong learner, building technical and soft skills through university and self-learning. I enjoy staying active, learning languages, and connecting with people across cultures.",
+      "es": "La disciplina es una de mis mayores cualidades y el pilar de mi vida diaria. Soy un aprendiz de por vida, desarrollando habilidades técnicas y blandas mediante la universidad y el autoaprendizaje. Me gusta mantenerme activo, aprender idiomas y conectar con personas de distintas culturas.",
+      "ja": "規律は私の強みで、日々の行動の柱です。大学と自己学習を通して技術・ソフトスキルを磨く「生涯学習者」です。運動、語学、異文化交流が好きです。",
+      "ko": "규율은 제 강점이며 일상 행동의 기반입니다. 대학과 자기주도 학습을 통해 기술/소프트 스킬을 꾸준히 성장시키는 평생 학습자입니다. 운동, 언어 학습, 다양한 문화권 사람들과의 교류를 즐깁니다."
+    },
+    "highlights": [
+      {
+        "iconKey": "robotics",
+        "en": "Humanoid robotics research: imitation learning & walking control topics.",
+        "es": "Investigación en robótica humanoide: aprendizaje por imitación y control de caminata.",
+        "ja": "ヒューマノイド研究：模倣学習や歩行制御など。",
+        "ko": "휴머노이드 연구: 모방학습 및 보행 제어 주제."
+      },
+      {
+        "iconKey": "web",
+        "en": "Product-grade web apps with modern UI/UX and robust architecture.",
+        "es": "Aplicaciones web de nivel producto con UI/UX moderno y arquitectura robusta.",
+        "ja": "モダンなUI/UXと堅牢な設計のプロダクト品質Webアプリ。",
+        "ko": "모던 UI/UX와 안정적인 아키텍처의 프로덕트급 웹앱."
+      },
+      {
+        "iconKey": "japan",
+        "en": "Japan-focused international programs & language studies (JLPT N4).",
+        "es": "Programas internacionales enfocados en Japón y estudios de idioma (JLPT N4).",
+        "ja": "日本関連の国際プログラム・語学学習（JLPT N4）。",
+        "ko": "일본 관련 국제 프로그램 및 언어 학습(JLPT N4)."
+      }
+    ],
+    "hobbies": {
+      "en": [
+        "Meeting people from other countries and cultures",
+        "Reading and watching news in Japanese",
+        "Watching geography videos and exploring Google Maps",
+        "Gym and sports (volleyball, golf)",
+        "Learning Japanese grammar and vocabulary"
+      ],
+      "es": [
+        "Conocer personas de otros países y culturas",
+        "Leer y ver noticias en japonés",
+        "Ver videos de geografía y explorar Google Maps",
+        "Gimnasio y deportes (voleibol, golf)",
+        "Aprender gramática y vocabulario en japonés"
+      ],
+      "ja": [
+        "異文化の人と交流する",
+        "日本語でニュースを読む・見る",
+        "地理動画・Googleマップ探索",
+        "ジムやスポーツ（バレーボール、ゴルフ）",
+        "日本語の文法・語彙学習"
+      ],
+      "ko": [
+        "다양한 문화권 사람들과의 교류",
+        "일본어로 뉴스 보기/읽기",
+        "지리 콘텐츠 시청 및 Google Maps 탐험",
+        "헬스 및 스포츠(배구, 골프)",
+        "일본어 문법/어휘 학습"
+      ]
+    }
+  },
+  "education": [
+    {
+      "id": "uniandes-bsc",
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "logo": "assets/logos/uniandes.png",
+      "degree": {
+        "en": "Bachelor's Degree, Systems and Computer Engineering (Computer Software Engineering)",
+        "es": "Pregrado, Ingeniería de Sistemas y Computación (Ingeniería de Software)",
+        "ja": "学士：システム・コンピュータ工学（ソフトウェア工学）",
+        "ko": "학사: 시스템/컴퓨터공학(소프트웨어 공학)"
+      },
+      "dates": { "start": "2020-01", "end": "2025-10" },
+      "grade": { "value": 4.52, "scale": 5.0 },
+      "details": {
+        "en": [
+          "Python, Java, C, JavaScript, TypeScript, SQL, HTML",
+          "Frameworks: Angular, Django, Java Spring",
+          "Infrastructure, algorithms, networks",
+          "Entrepreneurship and innovation",
+          "Presentation and teamwork"
+        ],
+        "es": [
+          "Python, Java, C, JavaScript, TypeScript, SQL, HTML",
+          "Frameworks: Angular, Django, Java Spring",
+          "Infraestructura, algoritmos, redes",
+          "Emprendimiento e innovación",
+          "Presentaciones y trabajo en equipo"
+        ],
+        "ja": [
+          "Python/Java/C/JavaScript/TypeScript/SQL/HTML",
+          "フレームワーク：Angular/Django/Java Spring",
+          "インフラ、アルゴリズム、ネットワーク",
+          "起業・イノベーション",
+          "発表・チームワーク"
+        ],
+        "ko": [
+          "Python, Java, C, JavaScript, TypeScript, SQL, HTML",
+          "프레임워크: Angular, Django, Java Spring",
+          "인프라/알고리즘/네트워크",
+          "창업/혁신",
+          "발표/팀워크"
+        ]
+      }
+    },
+    {
+      "id": "snu-exchange",
+      "institution": "Seoul National University",
+      "location": "Seoul, South Korea",
+      "logo": "assets/logos/snu.png",
+      "program": {
+        "en": "Exchange Student, Computer Science & Engineering",
+        "es": "Estudiante de intercambio, Ciencia e Ingeniería de la Computación",
+        "ja": "交換留学生：コンピュータサイエンス＆エンジニアリング",
+        "ko": "교환학생: 컴퓨터공학/컴퓨터과학"
+      },
+      "dates": { "start": "2025-03", "end": "2025-06" },
+      "grade": { "value": 4.28, "scale": 5.0 },
+      "courses": [
+        "Elementary Korean",
+        "Basics of Deep Learning",
+        "Robot Learning",
+        "Space Dynamics (Aerospace Engineering)",
+        "Theory and Practice of Humanoid Walking Control"
+      ],
+      "notes": {
+        "en": "Graduate-level AI and robotics focus during the exchange semester.",
+        "es": "Enfoque en cursos de posgrado de IA y robótica durante el semestre de intercambio.",
+        "ja": "交換留学で大学院レベルのAI/ロボティクス科目を履修。",
+        "ko": "교환학기 동안 대학원 수준 AI/로보틱스 과목 수강."
+      }
+    },
+    {
+      "id": "divino-nino",
+      "institution": "Colegio Bilingüe Divino Niño",
+      "location": "Bucaramanga, Santander, Colombia",
+      "logo": "assets/logos/divino-nino.png",
+      "program": {
+        "en": "High School Diploma (Graduation with honors)",
+        "es": "Bachillerato (Graduación con honores)",
+        "ja": "高校卒業（優秀成績）",
+        "ko": "고등학교 졸업(우수 성적)"
+      },
+      "dates": { "start": "2013-01", "end": "2019-11" },
+      "grade": { "value": 4.9, "scale": 5.0 },
+      "awards": [
+        {
+          "en": "Highest GPA of the Class of 2019",
+          "es": "Mejor promedio de la promoción 2019",
+          "ja": "2019年度 最優秀GPA",
+          "ko": "2019년 졸업생 최고 GPA"
+        },
+        {
+          "en": "Most collaborative student award",
+          "es": "Reconocimiento al estudiante más colaborativo",
+          "ja": "協力的な学生として表彰",
+          "ko": "가장 협력적인 학생상"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "snu-korean-level-ii",
+      "title": {
+        "en": "Korean Language and Culture (Level II) Program",
+        "es": "Programa de Lengua y Cultura Coreana (Nivel II)",
+        "ja": "韓国語・韓国文化（レベルII）",
+        "ko": "한국어·한국문화 (레벨 II)"
+      },
+      "issuer": "Seoul National University",
+      "issued": "2025-05",
+      "credentialId": null,
+      "evidence": { "url": null, "image": "assets/images/certificates/snu-korean-level2.jpg" }
+    },
+    {
+      "id": "jlpt-n4",
+      "title": {
+        "en": "Japanese-Language Proficiency Test (JLPT) N4 — Passed",
+        "es": "Examen de Japonés JLPT N4 — Aprobado",
+        "ja": "日本語能力試験（JLPT）N4 合格",
+        "ko": "일본어능력시험(JLPT) N4 합격"
+      },
+      "issuer": "MEXT (Japan Ministry of Education, Culture, Sports, Science and Technology)",
+      "issued": "2022-08",
+      "credentialId": "N4A250975A",
+      "evidence": { "url": null, "image": "assets/images/certificates/jlpt-n4.jpg" }
+    },
+    {
+      "id": "ielts-c1",
+      "title": {
+        "en": "IELTS General Training — Level C1",
+        "es": "IELTS General Training — Nivel C1",
+        "ja": "IELTS（General Training）C1",
+        "ko": "IELTS General Training — C1"
+      },
+      "issuer": "British Council",
+      "issued": "2019-10",
+      "credentialId": "19CO005794HERF001G",
+      "score": "7.5/9 (C1)",
+      "evidence": { "url": null, "image": "assets/images/certificates/ielts.jpg" }
+    },
+    {
+      "id": "toefl-ibt",
+      "title": {
+        "en": "TOEFL iBT — C1 (95/120)",
+        "es": "TOEFL iBT — C1 (95/120)",
+        "ja": "TOEFL iBT — C1（95/120）",
+        "ko": "TOEFL iBT — C1 (95/120)"
+      },
+      "issuer": "ETS",
+      "issued": "2025-05",
+      "credentialId": null,
+      "evidence": { "url": null, "image": "assets/images/certificates/toefl.jpg" }
+    }
+  ],
+  "experience": [
+    {
+      "id": "gorom-seed-alumni-coordinator",
+      "company": "GOROM Association",
+      "location": "Tokyo, Japan (Remote)",
+      "logo": "assets/logos/gorom.png",
+      "role": "Coordinator of the SEED Alumni Project / IT Coordinator",
+      "employmentType": "Part-time",
+      "dates": { "start": "2024-03", "end": null },
+      "description": {
+        "en": "Co-founded and built the SEED Alumni intranet platform; managed GOROM’s official website and supported program logistics and community growth.",
+        "es": "Co-creé y desarrollé la intranet de SEED Alumni; administré el sitio web de GOROM y apoyé la logística del programa y el crecimiento de la comunidad.",
+        "ja": "SEED Alumniのイントラネットを立ち上げ・開発。GOROM公式サイト運用、プログラム運営支援。",
+        "ko": "SEED Alumni 인트라넷 구축/운영. GOROM 공식 웹사이트 관리, 프로그램 운영 및 커뮤니티 성장 지원."
+      },
+      "responsibilities": [
+        "Build and manage an intranet-style web application for SEED participants and alumni",
+        "Manage and maintain the official website (gorom.org)",
+        "Develop strategic content plans for social media",
+        "Support program logistics and participants"
+      ],
+      "skills": [
+        "React",
+        "UI/UX",
+        "Web Platforms",
+        "Content Strategy",
+        "Community Operations"
+      ],
+      "links": [{ "label": "GOROM", "url": "https://gorom.org/" }]
+    },
+    {
+      "id": "uniandes-ta-webapps",
+      "company": "Universidad de los Andes",
+      "location": "Bogotá, Colombia (On-site)",
+      "logo": "assets/logos/uniandes.png",
+      "role": "Teaching Assistant — Web Application Programming",
+      "employmentType": "Part-time",
+      "dates": { "start": "2024-08", "end": "2024-12" },
+      "description": {
+        "en": "Supported students in modern web application development topics (React, Node/NestJS, UI/UX, testing).",
+        "es": "Apoyé a estudiantes en temas modernos de desarrollo web (React, Node/NestJS, UI/UX, testing).",
+        "ja": "モダンWeb開発（React, Node/NestJS, UI/UX, テスト）を指導補助。",
+        "ko": "모던 웹 개발(React, Node/NestJS, UI/UX, 테스트) 학습 지원."
+      },
+      "skills": [
+        "React",
+        "JavaScript",
+        "NestJS",
+        "Relational Databases",
+        "UI/UX",
+        "Testing"
+      ]
+    },
+    {
+      "id": "uniandes-support-instructor-teams",
+      "company": "Universidad de los Andes",
+      "location": "Bogotá, Colombia (On-site)",
+      "logo": "assets/logos/uniandes.png",
+      "role": "Support Instructor — Team Software Development",
+      "employmentType": "Part-time",
+      "dates": { "start": "2023-08", "end": "2024-12" },
+      "description": {
+        "en": "Answered inquiries, graded submissions and assessments, and provided weekly support for team-based software development.",
+        "es": "Resolví dudas, califiqué entregas y evaluaciones, y brindé soporte semanal en desarrollo de software en equipos.",
+        "ja": "質問対応、提出物/評価の採点、週次サポート。",
+        "ko": "질문 대응, 과제/평가 채점, 주간 지원 제공."
+      },
+      "skills": ["Spring Boot", "Angular", "Web Development", "Teamwork", "Communication"]
+    },
+    {
+      "id": "robocup-2024-sinfonia",
+      "company": "SinfonIA Uniandes",
+      "location": "Eindhoven, Netherlands",
+      "logo": "assets/logos/sinfonia.png",
+      "role": "RoboCup 2024 SSPL — Team Member (Pepper Robot)",
+      "employmentType": "Seasonal",
+      "dates": { "start": "2024-07", "end": "2024-07" },
+      "description": {
+        "en": "First Place Winner at RoboCup 2024 Social Standard Platform League (SSPL) — programming domestic tasks and presenting to jury.",
+        "es": "Ganadores del 1er lugar en RoboCup 2024 SSPL — programación de tareas domésticas y presentación ante jurado.",
+        "ja": "RoboCup 2024 SSPLで優勝（Pepperロボットのタスク開発・審査発表）。",
+        "ko": "RoboCup 2024 SSPL 1위 수상(태스크 개발 및 심사 발표)."
+      },
+      "achievements": [
+        {
+          "en": "First Place — RoboCup 2024 SSPL",
+          "es": "1er lugar — RoboCup 2024 SSPL",
+          "ja": "RoboCup 2024 SSPL 優勝",
+          "ko": "RoboCup 2024 SSPL 1위"
+        }
+      ],
+      "skills": ["Robotics", "ROS", "Python", "Public Speaking", "Competitive Programming"]
+    },
+    {
+      "id": "snu-robot-learning-poster-fair",
+      "company": "Seoul National University",
+      "location": "Seoul, South Korea",
+      "logo": "assets/logos/snu.png",
+      "role": "Presenter — Robot Learning 2025 Poster Fair",
+      "employmentType": "Apprenticeship",
+      "dates": { "start": "2025-06", "end": "2025-06" },
+      "description": {
+        "en": "Presented research titled “COMPASS: A Comparative Framework and Meta-Algorithm for Robust Imitation Learning from Imperfect Demonstrations”.",
+        "es": "Presenté la investigación “COMPASS: A Comparative Framework and Meta-Algorithm for Robust Imitation Learning from Imperfect Demonstrations”.",
+        "ja": "研究発表：「COMPASS：不完全デモからの頑健な模倣学習の比較フレームワーク」。",
+        "ko": "연구 발표: “COMPASS: 불완전 시연 데이터에서 강건한 모방학습 비교 프레임워크”."
+      },
+      "links": [{ "label": "Poster", "url": null }],
+      "media": [
+        "assets/images/research/compass-poster.jpg",
+        "assets/images/research/poster-fair.jpg"
+      ]
+    },
+    {
+      "id": "seed-program-2023",
+      "company": "GOROM Association",
+      "location": "Kofu, Yamanashi, Japan (Hybrid)",
+      "logo": "assets/logos/gorom.png",
+      "role": "Elected Participant — SEED Program 2023 (Social Entrepreneurship)",
+      "employmentType": "Apprenticeship",
+      "dates": { "start": "2023-07", "end": "2023-12" },
+      "description": {
+        "en": "Study trip to Japan and entrepreneurship work with an international team; pitched business ideas to a textile company in Yamanashi (HIKARI ORIMONO / 光織物).",
+        "es": "Viaje de estudio a Japón y trabajo de emprendimiento social con un equipo internacional; pitch a una empresa textil en Yamanashi (HIKARI ORIMONO / 光織物).",
+        "ja": "国際チームで山梨の繊維企業（光織物）へ提案・ピッチ。",
+        "ko": "국제팀으로 야마나시 섬유기업(光織物) 대상 아이디어 제안 및 피치."
+      },
+      "links": [{ "label": "SEED Program", "url": "https://gorom.org/en/seed/" }]
+    },
+    {
+      "id": "tsukuba-online-exchange-2022",
+      "company": "University of Tsukuba",
+      "location": "Tsukuba, Ibaraki, Japan (Remote)",
+      "logo": "assets/logos/tsukuba.png",
+      "role": "Participant — Tsukuba × Latin America Online Exchange 2022 (SDGs)",
+      "employmentType": "Apprenticeship",
+      "dates": { "start": "2022-03", "end": "2022-03" },
+      "description": {
+        "en": "Participated in SDGs-focused exchange discussing development goals across countries and proposing solutions in groups.",
+        "es": "Participé en un intercambio enfocado en ODS, discutiendo metas de desarrollo y proponiendo soluciones en equipos.",
+        "ja": "SDGsをテーマに議論し、グループで提案を作成。",
+        "ko": "SDGs 중심 교류 프로그램 참여 및 그룹 제안 도출."
+      }
+    }
+  ],
+  "skills": {
+    "hard": [
+      "Machine Learning & AI model training",
+      "Robot Operating System (ROS)",
+      "Pepper robot software development",
+      "Backend development (Java, NestJS)",
+      "Frontend development (Angular, React)",
+      "Cloud procurement/management (AWS, GCP)",
+      "Databases (Oracle, MySQL, MongoDB)",
+      "Ubuntu / server management",
+      "Project planning (Azure DevOps, GitHub Projects)",
+      "Software architecture & agile practices"
+    ],
+    "soft": [
+      "Team leadership",
+      "Autonomy / fast learning",
+      "Adaptability",
+      "Teaching ability",
+      "Active listening, respect & empathy",
+      "Assertive communication",
+      "Organization & responsibility",
+      "Emotional intelligence",
+      "Self-motivation and motivating others",
+      "Curiosity"
+    ],
+    "languages": [
+      { "name": "Spanish", "level": "Native" },
+      { "name": "English", "level": "C1" },
+      { "name": "Japanese", "level": "JLPT N4" },
+      { "name": "Korean", "level": "Elementary" }
+    ],
+    "featuredLogos": [
+      { "key": "react", "label": "React", "logo": "assets/logos/skills/react.svg" },
+      { "key": "tailwind", "label": "Tailwind", "logo": "assets/logos/skills/tailwind.svg" },
+      { "key": "django", "label": "Django", "logo": "assets/logos/skills/django.svg" },
+      { "key": "python", "label": "Python", "logo": "assets/logos/skills/python.svg" },
+      { "key": "ros", "label": "ROS", "logo": "assets/logos/skills/ros.svg" }
+    ]
+  },
+  "awardsAndRecognitions": [
+    {
+      "id": "robocup-2024-sspl-first-place",
+      "title": {
+        "en": "First Place Winner — RoboCup 2024 SSPL (Eindhoven, Netherlands)",
+        "es": "1er Lugar — RoboCup 2024 SSPL (Eindhoven, Países Bajos)",
+        "ja": "RoboCup 2024 SSPL 優勝（オランダ・アイントホーフェン）",
+        "ko": "RoboCup 2024 SSPL 1위(네덜란드 아인트호번)"
+      },
+      "date": "2024-07",
+      "organization": "RoboCup / Team SinfonIA",
+      "images": [
+        "assets/images/awards/robocup-2024-1.jpg",
+        "assets/images/awards/robocup-2024-2.jpg"
+      ]
+    },
+    {
+      "id": "uplan-shark-tank-finalist",
+      "title": {
+        "en": "Finalist — Entrepreneurship Competition (Shark Tank Pitch)",
+        "es": "Finalista — Competencia de emprendimiento (Pitch estilo Shark Tank)",
+        "ja": "起業コンペ最終選考（Shark Tank形式ピッチ）",
+        "ko": "창업 경진대회 파이널리스트(Shark Tank 피치)"
+      },
+      "date": "2023-11",
+      "organization": "UNIANDINOS / Universidad de los Andes",
+      "images": [
+        "assets/images/awards/uplan-pitch-1.jpg",
+        "assets/images/awards/uplan-team-1.jpg",
+        "assets/images/awards/uplan-event-1.jpg"
+      ]
+    },
+    {
+      "id": "divino-nino-honors",
+      "title": {
+        "en": "Graduation with honors — Highest GPA (Class of 2019)",
+        "es": "Graduación con honores — Mejor promedio (Promoción 2019)",
+        "ja": "優秀成績で卒業（2019年度 最優秀GPA）",
+        "ko": "우수 졸업(2019년 최고 GPA)"
+      },
+      "date": "2019-11",
+      "organization": "Colegio Bilingüe Divino Niño",
+      "images": ["assets/images/awards/divino-nino-2019.jpg"]
+    }
+  ],
+  "travel": {
+    "map": {
+      "defaultZoom": 1.0,
+      "pins": [
+        {
+          "id": "colombia",
+          "region": "americas",
+          "country": "Colombia",
+          "city": "Bogotá",
+          "x": 33,
+          "y": 56,
+          "date": "2019–Now",
+          "highlights": {
+            "en": ["Home base", "Projects + teaching", "Mountains + city life"],
+            "es": ["Base principal", "Proyectos + docencia", "Montañas + ciudad"],
+            "ja": ["拠点", "開発と指導", "山と都市の暮らし"],
+            "ko": ["거점", "프로젝트/교육", "산과 도시"]
+          },
+          "story": {
+            "en": "Placeholder story — replace with your real experiences and photos.",
+            "es": "Historia placeholder — reemplaza con tus experiencias y fotos reales.",
+            "ja": "仮のストーリー。後で写真と体験を追加してください。",
+            "ko": "플레이스홀더 스토리 — 추후 사진/경험으로 교체하세요."
+          },
+          "albumUrl": null,
+          "photos": [
+            { "id": "co-1", "src": "assets/images/travel/colombia/1.jpg", "caption": { "en": "Bogotá skyline", "es": "Panorama de Bogotá", "ja": "ボゴタの景色", "ko": "보고타 전경" } }
+          ]
+        },
+        {
+          "id": "japan",
+          "region": "asia",
+          "country": "Japan",
+          "city": "Tokyo / Yamanashi",
+          "x": 82,
+          "y": 46,
+          "date": "2023–2025",
+          "highlights": {
+            "en": ["SEED Program 2023", "GOROM work (remote/hybrid)", "Culture & language growth"],
+            "es": ["Programa SEED 2023", "Trabajo con GOROM (remoto/híbrido)", "Cultura e idioma"],
+            "ja": ["SEED 2023", "GOROMでの活動", "文化・語学の成長"],
+            "ko": ["SEED 2023", "GOROM 활동", "문화/언어 성장"]
+          },
+          "story": {
+            "en": "Placeholder story — you can add your NHK mention, Yamanashi pitch, and favorite travel moments here later.",
+            "es": "Historia placeholder — luego puedes agregar lo de NHK, el pitch en Yamanashi y tus momentos favoritos.",
+            "ja": "仮のストーリー。NHK出演や山梨でのピッチなどを後で追加できます。",
+            "ko": "플레이스홀더 스토리 — NHK, 야마나시 피치, 여행 경험 등을 추후 추가하세요."
+          },
+          "albumUrl": null,
+          "photos": [
+            { "id": "jp-1", "src": "assets/images/travel/japan/1.jpg", "caption": { "en": "Tokyo night", "es": "Noche en Tokio", "ja": "東京の夜", "ko": "도쿄의 밤" } }
+          ]
+        },
+        {
+          "id": "south-korea",
+          "region": "asia",
+          "country": "South Korea",
+          "city": "Seoul",
+          "x": 78,
+          "y": 42,
+          "date": "2025",
+          "highlights": {
+            "en": ["Exchange semester at SNU", "Graduate-level robotics/AI courses", "Poster fair presentation"],
+            "es": ["Intercambio en SNU", "Cursos de robótica/IA", "Presentación en poster fair"],
+            "ja": ["SNU交換留学", "AI/ロボティクス科目", "ポスター発表"],
+            "ko": ["SNU 교환", "AI/로보틱스 수업", "포스터 발표"]
+          },
+          "story": {
+            "en": "Placeholder story — replace with your personal highlights from Seoul and your research experience.",
+            "es": "Historia placeholder — reemplaza con tus mejores momentos en Seúl y tu experiencia de investigación.",
+            "ja": "仮のストーリー。ソウルでの体験を追加してください。",
+            "ko": "플레이스홀더 스토리 — 서울 경험을 추후 추가하세요."
+          },
+          "albumUrl": null,
+          "photos": [
+            { "id": "kr-1", "src": "assets/images/travel/korea/1.jpg", "caption": { "en": "Campus moment", "es": "Momento en campus", "ja": "キャンパスの一瞬", "ko": "캠퍼스" } }
+          ]
+        },
+        {
+          "id": "netherlands",
+          "region": "europe",
+          "country": "Netherlands",
+          "city": "Eindhoven",
+          "x": 49,
+          "y": 33,
+          "date": "2024",
+          "highlights": {
+            "en": ["RoboCup 2024", "Competition week", "International robotics community"],
+            "es": ["RoboCup 2024", "Semana de competencia", "Comunidad internacional de robótica"],
+            "ja": ["RoboCup 2024", "競技週間", "国際ロボティクス交流"],
+            "ko": ["RoboCup 2024", "대회 주간", "국제 로보틱스 커뮤니티"]
+          },
+          "story": {
+            "en": "Placeholder story — add your favorite RoboCup moments and photos later.",
+            "es": "Historia placeholder — agrega tus mejores momentos de RoboCup y fotos luego.",
+            "ja": "仮のストーリー。RoboCupの写真を後で追加。",
+            "ko": "플레이스홀더 스토리 — RoboCup 사진/경험 추가."
+          },
+          "albumUrl": null,
+          "photos": []
+        },
+        {
+          "id": "united-kingdom",
+          "region": "europe",
+          "country": "United Kingdom",
+          "city": "London (University of East London)",
+          "x": 46,
+          "y": 30,
+          "date": "2018",
+          "highlights": {
+            "en": ["EF academic exchange", "B2–C1 English classes", "First international academic experience"],
+            "es": ["Intercambio académico EF", "Clases de inglés B2–C1", "Primera experiencia académica internacional"],
+            "ja": ["EF交換", "英語クラス", "初の国際学習体験"],
+            "ko": ["EF 교환", "영어 수업", "첫 국제 학습 경험"]
+          },
+          "story": {
+            "en": "Placeholder story — add cities visited and what you learned later.",
+            "es": "Historia placeholder — agrega ciudades visitadas y aprendizajes luego.",
+            "ja": "仮のストーリー。訪問都市など追加可能。",
+            "ko": "플레이스홀더 스토리 — 방문 도시/배운 점 추가."
+          },
+          "albumUrl": null,
+          "photos": []
+        }
+      ]
+    }
+  },
+  "projects": [
+    {
+      "id": "seed-alumni-intranet",
+      "category": "web",
+      "featured": true,
+      "title": {
+        "en": "SEED Alumni Intranet (GOROM)",
+        "es": "Intranet SEED Alumni (GOROM)",
+        "ja": "SEED Alumni イントラネット（GOROM）",
+        "ko": "SEED Alumni 인트라넷(GOROM)"
+      },
+      "subtitle": {
+        "en": "Community platform • Communication • Content",
+        "es": "Plataforma comunitaria • Comunicación • Contenido",
+        "ja": "コミュニティ基盤 • コミュニケーション • コンテンツ",
+        "ko": "커뮤니티 플랫폼 • 커뮤니케이션 • 콘텐츠"
+      },
+      "description": {
+        "en": "Intranet platform for SEED participants and alumni: news, assignments, recommendations, video calls, and community clubs.",
+        "es": "Plataforma tipo intranet para participantes y alumni SEED: noticias, tareas, recomendaciones, videollamadas y clubes.",
+        "ja": "SEED参加者/卒業生のためのイントラネット：ニュース、課題、推薦、通話、クラブ。",
+        "ko": "SEED 참가자/알럼나이를 위한 인트라넷: 뉴스, 과제, 추천, 영상통화, 클럽."
+      },
+      "tags": ["React", "UI/UX", "Community", "Intranet"],
+      "stack": ["react", "tailwind"],
+      "links": { "liveUrl": "https://gorom.org/", "repoUrl": null },
+      "gallery": [
+        { "id": "seed-1", "src": "assets/images/projects/seed/1.jpg", "caption": { "en": "Dashboard", "es": "Panel", "ja": "ダッシュボード", "ko": "대시보드" } }
+      ]
+    },
+    {
+      "id": "compass-research",
+      "category": "research",
+      "featured": false,
+      "title": {
+        "en": "COMPASS — Robust Imitation Learning (Poster Fair)",
+        "es": "COMPASS — Aprendizaje por Imitación Robusto (Poster Fair)",
+        "ja": "COMPASS — 頑健な模倣学習（ポスター発表）",
+        "ko": "COMPASS — 강건한 모방학습(포스터 발표)"
+      },
+      "subtitle": {
+        "en": "Research • Experiments • Evaluation framework",
+        "es": "Investigación • Experimentos • Framework de evaluación",
+        "ja": "研究 • 実験 • 評価フレームワーク",
+        "ko": "연구 • 실험 • 평가 프레임워크"
+      },
+      "description": {
+        "en": "Framework/meta-algorithm to evaluate robustness of imitation learning methods under noisy and imperfect demonstrations.",
+        "es": "Framework/meta-algoritmo para evaluar robustez de métodos de imitación ante demostraciones imperfectas.",
+        "ja": "不完全デモに対する模倣学習の頑健性を体系評価する枠組み。",
+        "ko": "불완전 시연 데이터에서 모방학습 방법의 강건성을 체계적으로 평가."
+      },
+      "tags": ["Robot Learning", "Imitation Learning", "Experiments"],
+      "stack": ["python"],
+      "links": { "liveUrl": null, "repoUrl": null },
+      "gallery": [
+        { "id": "compass-1", "src": "assets/images/research/compass-poster.jpg", "caption": { "en": "Poster", "es": "Póster", "ja": "ポスター", "ko": "포스터" } }
+      ]
+    }
+  ]
+}

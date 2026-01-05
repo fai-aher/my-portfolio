@@ -1,0 +1,566 @@
+[
+  {
+    "id": "gorom-seed-alumni-coordinator",
+    "type": "work",
+    "typeLabel": { "en": "Work", "es": "Trabajo", "ja": "仕事", "ko": "업무" },
+    "organization": "GOROM Association",
+    "organizationWebsite": "https://gorom.org/",
+    "location": "Tokyo, Japan (Remote)",
+    "city": "Tokyo",
+    "country": "Japan",
+    "countryCode": "JP",
+    "logo": "/assets/logos/gorom.png",
+    "title": {
+      "en": "Coordinator — SEED Alumni Project",
+      "es": "Coordinador — Proyecto SEED Alumni",
+      "ja": "コーディネーター — SEED Alumni",
+      "ko": "코디네이터 — SEED Alumni"
+    },
+    "employmentType": "Part-time",
+    "dates": { "start": "2024-03", "end": null },
+    "featuredImage": "/assets/images/experience/gorom-seed-alumni-coordinator-banner.jpg",
+    "summary": {
+      "en": "Co-founded and coordinated the SEED Alumni initiative to connect former and current SEED Program participants through community activities and a digital platform.",
+      "es": "Cofundé y coordiné la iniciativa SEED Alumni para conectar participantes actuales y antiguos del Programa SEED mediante actividades comunitarias y una plataforma digital.",
+      "ja": "SEED Alumniの立ち上げと運営を行い、活動とデジタル基盤で参加者同士のつながりを継続。",
+      "ko": "SEED Alumni 이니셔티브를 기획·운영하며 활동과 디지털 플랫폼을 통해 참가자 네트워크를 강화."
+    },
+    "bullets": [
+      {
+        "en": "Conceived and established the SEED Alumni project with GOROM founder Goro Mutsuura (2024).",
+        "es": "Concebí y establecí el proyecto SEED Alumni con el fundador de GOROM, Goro Mutsuura (2024).",
+        "ja": "GOROM創設者の睦浦五郎氏と共にSEED Alumniを立ち上げ（2024）。",
+        "ko": "GOROM 창립자 고로 무츠우라와 함께 SEED Alumni 프로젝트를 기획·출범(2024)."
+      },
+      {
+        "en": "Helped create cultural interest clubs (geography, work culture, food, cinema, language) for the broader SEED community.",
+        "es": "Apoyé la creación de clubes culturales (geografía, cultura laboral, comida, cine, idioma) para la comunidad SEED.",
+        "ja": "地理・仕事文化・食・映画・言語などの文化クラブ企画を推進。",
+        "ko": "지리·직장 문화·음식·영화·언어 등 문화 관심 클럽 기획을 지원."
+      }
+    ],
+    "skills": ["Community", "Program Coordination", "Web Platforms", "Content"],
+    "technologies": ["React", "Django", "TailwindCSS", "Auth0"],
+    "tags": ["Japan", "Community", "Leadership"],
+    "links": [{ "label": { "en": "GOROM", "es": "GOROM", "ja": "GOROM", "ko": "GOROM" }, "url": "https://gorom.org/" }],
+    "media": [],
+    "order": 100
+  },
+  {
+    "id": "gorom-it-coordinator",
+    "type": "work",
+    "typeLabel": { "en": "Work", "es": "Trabajo", "ja": "仕事", "ko": "업무" },
+    "organization": "GOROM Association",
+    "organizationWebsite": "https://gorom.org/",
+    "location": "Tokyo, Japan (Hybrid)",
+    "city": "Tokyo",
+    "country": "Japan",
+    "countryCode": "JP",
+    "logo": "/assets/logos/gorom.png",
+    "title": {
+      "en": "IT Coordinator",
+      "es": "Coordinador TI",
+      "ja": "ITコーディネーター",
+      "ko": "IT 코디네이터"
+    },
+    "employmentType": "Part-time",
+    "dates": { "start": "2024-04", "end": null },
+    "featuredImage": "/assets/images/experience/gorom-it-coordinator-banner.jpg",
+    "summary": {
+      "en": "IT coordination and digital platform ownership for GOROM: intranet development, website operations, and strategic content planning.",
+      "es": "Coordinación TI y liderazgo de la plataforma digital de GOROM: intranet, operación del sitio web y estrategia de contenidos.",
+      "ja": "GOROMのIT運用：イントラ開発、公式サイト管理、コンテンツ戦略。",
+      "ko": "GOROM의 IT 운영: 인트라넷 개발, 공식 웹사이트 관리, 콘텐츠 전략."
+    },
+    "bullets": [
+      {
+        "en": "Built and maintained an intranet web application for SEED participants and alumni.",
+        "es": "Desarrollé y mantuve una aplicación tipo intranet para participantes y alumni de SEED.",
+        "ja": "SEED参加者・卒業生向けイントラWebアプリを開発・運用。",
+        "ko": "SEED 참가자/동문을 위한 인트라넷 웹앱을 개발·운영."
+      },
+      {
+        "en": "Managed gorom.org website and supported yearly program logistics and participant success.",
+        "es": "Gestioné el sitio gorom.org y apoyé logística anual y acompañamiento a participantes.",
+        "ja": "gorom.orgの運用とプログラム運営・参加者支援。",
+        "ko": "gorom.org 운영 및 프로그램 운영·참가자 지원."
+      }
+    ],
+    "skills": ["Web Platforms", "Operations", "UI/UX", "Coordination"],
+    "technologies": ["React", "Django", "REST APIs"],
+    "tags": ["Japan", "Intranet", "Product"],
+    "links": [{ "label": { "en": "GOROM", "es": "GOROM", "ja": "GOROM", "ko": "GOROM" }, "url": "https://gorom.org/" }],
+    "media": [],
+    "order": 95
+  },
+  {
+    "id": "snu-exchange-student-cse",
+    "type": "exchange",
+    "typeLabel": { "en": "Exchange", "es": "Intercambio", "ja": "交換留学", "ko": "교환" },
+    "organization": "Seoul National University",
+    "organizationWebsite": "https://www.snu.ac.kr",
+    "location": "Seoul, South Korea",
+    "city": "Seoul",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "logo": "/assets/logos/snu.jpeg",
+    "title": {
+      "en": "Exchange Student — Computer Science & Engineering",
+      "es": "Estudiante de intercambio — Ciencias e Ingeniería de la Computación",
+      "ja": "交換留学生 — コンピュータサイエンス＆工学",
+      "ko": "교환학생 — 컴퓨터공학"
+    },
+    "employmentType": "Academic",
+    "dates": { "start": "2025-02", "end": "2025-06" },
+    "featuredImage": "/assets/images/experiences/snu-exchange.jpeg",
+    "summary": {
+      "en": "Completed an exchange semester focused on graduate-level AI and robotics courses; selected as the only student from Colombia and supported by a scholarship.",
+      "es": "Realicé un semestre de intercambio enfocado en cursos de IA y robótica a nivel posgrado; fui el único estudiante seleccionado de Colombia y recibí apoyo por beca.",
+      "ja": "AI・ロボティクス中心の大学院レベル科目で交換留学。コロンビア代表として選抜・奨学金支援。",
+      "ko": "대학원 수준 AI·로보틱스 과목 중심의 교환학기를 수료. 콜롬비아 대표로 선발 및 장학금 지원."
+    },
+    "bullets": [
+      {
+        "en": "Courses: Elementary Korean, Basics of Deep Learning, Robot Learning, Space Dynamics, Humanoid Walking Control.",
+        "es": "Cursos: Coreano básico, Deep Learning, Robot Learning, Space Dynamics, Humanoid Walking Control.",
+        "ja": "履修：初級韓国語／深層学習基礎／Robot Learning／Space Dynamics／Humanoid Walking Control。",
+        "ko": "수강: 기초 한국어, 딥러닝 기초, 로봇러닝, 우주역학, 휴머노이드 보행 제어."
+      }
+    ],
+    "skills": ["Robotics", "AI", "Deep Learning", "Research"],
+    "technologies": ["PyTorch", "Python"],
+    "tags": ["Korea", "Scholarship", "Graduate-level"],
+    "links": [],
+    "media": [],
+    "order": 92
+  },
+  {
+    "id": "snu-robot-learning-poster-fair",
+    "type": "research",
+    "typeLabel": { "en": "Research", "es": "Investigación", "ja": "研究", "ko": "연구" },
+    "organization": "Seoul National University",
+    "organizationWebsite": "https://www.snu.ac.kr",
+    "location": "Seoul, South Korea",
+    "city": "Seoul",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "logo": "/assets/logos/snu.jpeg",
+    "title": {
+      "en": "Presenter — Robot Learning Poster Fair (COMPASS)",
+      "es": "Ponente — Robot Learning Poster Fair (COMPASS)",
+      "ja": "発表者 — Robot Learning Poster Fair（COMPASS）",
+      "ko": "발표자 — Robot Learning Poster Fair(COMPASS)"
+    },
+    "employmentType": "Apprenticeship",
+    "dates": { "start": "2025-06", "end": "2025-06" },
+    "featuredImage": "/assets/images/experiences/snu-poster.jpeg",
+    "summary": {
+      "en": "Presented research on COMPASS: a comparative framework and meta-algorithm for robust imitation learning from imperfect demonstrations.",
+      "es": "Presenté investigación sobre COMPASS: un marco comparativo y meta-algoritmo para aprendizaje por imitación robusto con demostraciones imperfectas.",
+      "ja": "不完全デモからの頑健な模倣学習の比較枠組みCOMPASSを発表。",
+      "ko": "불완전 시연 데이터에서 강건한 모방학습 프레임워크 COMPASS 연구를 발표."
+    },
+    "bullets": [
+      {
+        "en": "Ran 300+ experiments introducing noise, failure attempts, inconsistent strategies, and embodiment mismatch.",
+        "es": "Realicé 300+ experimentos introduciendo ruido, intentos fallidos, estrategias inconsistentes y embodiment mismatch.",
+        "ja": "ノイズ／失敗／不一致戦略／エンボディメント差を導入した300+実験を実施。",
+        "ko": "노이즈·실패·전략 불일치·엔보디먼트 불일치 등을 도입한 300+ 실험 수행."
+      },
+      {
+        "en": "Key insight: behavioral cloning remained resilient under imperfect data, but embodiment mismatch caused major performance drops.",
+        "es": "Hallazgo: Behavioral cloning fue resiliente con datos imperfectos, pero el mismatch de embodiment redujo significativamente el rendimiento.",
+        "ja": "不完全データでもBCは頑健だが、身体差（mismatch）で大幅に性能低下。",
+        "ko": "불완전 데이터에서도 BC는 견고했지만 엔보디먼트 불일치에서 성능이 크게 하락."
+      }
+    ],
+    "skills": ["Imitation Learning", "Robot Learning", "Machine Learning", "Research"],
+    "technologies": ["Python", "PyTorch"],
+    "tags": ["Poster", "Research"],
+    "links": [],
+    "media": [
+      "/assets/images/research/compass-poster.jpg",
+      "/assets/images/research/poster-fair.jpg"
+    ],
+    "order": 90
+  },
+  {
+    "id": "sinfonia-pepper-manipulation-research",
+    "type": "research",
+    "typeLabel": { "en": "Research", "es": "Investigación", "ja": "研究", "ko": "연구" },
+    "organization": "SinfonIA Uniandes",
+    "organizationWebsite": "https://uniandes.edu.co",
+    "location": "Bogotá, Colombia",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "logo": "/assets/logos/sinfonia.jpg",
+    "title": {
+      "en": "Software Developer — Pepper Robot (SoftBank Robotics) & Research",
+      "es": "Desarrollador de software — Robot Pepper (SoftBank Robotics) e investigación",
+      "ja": "開発者 — Pepper（SoftBank Robotics）& 研究",
+      "ko": "소프트웨어 개발 — Pepper 로봇(SoftBank Robotics) 및 연구"
+    },
+    "employmentType": "Research",
+    "dates": { "start": "2024-02", "end": "2024-12" },
+    "featuredImage": "/assets/images/experiences/nova.png",
+    "summary": {
+      "en": "Developed software enabling Pepper to perform household/social tasks and explored AI integrations to increase real-world impact.",
+      "es": "Desarrollé software para que Pepper realice tareas domésticas/sociales y exploré integraciones con IA para aumentar el impacto.",
+      "ja": "Pepperの家事・対話タスクを開発し、AI統合も検討。",
+      "ko": "Pepper의 가사/사회적 태스크 수행을 위한 소프트웨어 개발 및 AI 통합 탐색."
+    },
+    "bullets": [
+      {
+        "en": "Implemented behaviors and task pipelines for human-robot interaction and domestic scenarios.",
+        "es": "Implementé comportamientos y pipelines de tareas para interacción humano-robot y escenarios domésticos.",
+        "ja": "HRIと家庭内シナリオ向けの行動・タスクパイプラインを実装。",
+        "ko": "HRI 및 가정 시나리오를 위한 행동/태스크 파이프라인 구현."
+      },
+      {
+        "en": "Explored AI/ML integrations (e.g., visual computing and model-based decision logic).",
+        "es": "Exploré integraciones de IA/ML (p.ej., visión por computador y lógica de decisión).",
+        "ja": "視覚計算や意思決定ロジック等のAI/ML統合を検討。",
+        "ko": "컴퓨터 비전 및 의사결정 로직 등 AI/ML 통합 탐색."
+      }
+    ],
+    "skills": ["Robotics", "ROS", "Python", "AI"],
+    "technologies": ["ROS", "Python", "C++", "YOLO", "TensorFlow"],
+    "tags": ["Humanoid", "HRI"],
+    "links": [],
+    "media": [],
+    "order": 88
+  },
+  {
+    "id": "robocup-2024-sspl",
+    "type": "competition",
+    "typeLabel": { "en": "Competition", "es": "Competencia", "ja": "大会", "ko": "대회" },
+    "organization": "SinfonIA Uniandes",
+    "organizationWebsite": "https://uniandes.edu.co",
+    "location": "Eindhoven, Netherlands",
+    "city": "Eindhoven",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "logo": "/assets/logos/sinfonia.jpg",
+    "title": {
+      "en": "First Place Winner — RoboCup 2024 SSPL (Pepper Robot)",
+      "es": "1er Lugar — RoboCup 2024 SSPL (Robot Pepper)",
+      "ja": "RoboCup 2024 SSPL 優勝（Pepper）",
+      "ko": "RoboCup 2024 SSPL 1위(페퍼 로봇)"
+    },
+    "employmentType": "Seasonal",
+    "dates": { "start": "2024-07", "end": "2024-07" },
+    "featuredImage": "/assets/images/experiences/robocup.jpeg",
+    "summary": {
+      "en": "Competed in the world’s leading robotics competition and won 1st place in SSPL after programming domestic tasks and presenting research progress.",
+      "es": "Competí en la competencia internacional más importante de robótica y ganamos 1er lugar en SSPL tras programar tareas domésticas y presentar avances.",
+      "ja": "世界最大級のロボ競技会でSSPL優勝。家庭タスク実装と研究進捗の発表を実施。",
+      "ko": "세계적인 로봇 대회에서 SSPL 1위 수상. 가사 태스크 구현 및 연구 성과 발표."
+    },
+    "bullets": [
+      {
+        "en": "Programmed and demonstrated domestic tasks across multiple arenas with Pepper (SoftBank Robotics).",
+        "es": "Programé y demostré tareas domésticas en múltiples arenas con Pepper (SoftBank Robotics).",
+        "ja": "Pepperで複数アリーナ向け家庭タスクを実装・デモ。",
+        "ko": "Pepper로 여러 경기장에서 가사 태스크를 구현·데모."
+      }
+    ],
+    "skills": ["Robotics", "ROS", "Python", "Public Speaking"],
+    "technologies": ["ROS", "Python", "OpenAI API"],
+    "tags": ["Winner", "International"],
+    "links": [],
+    "media": [],
+    "order": 86
+  },
+  {
+    "id": "uniandes-ta-webapps",
+    "type": "teaching",
+    "typeLabel": { "en": "Teaching", "es": "Docencia", "ja": "教育", "ko": "교육" },
+    "organization": "Universidad de los Andes",
+    "organizationWebsite": "https://uniandes.edu.co",
+    "location": "Bogotá, Colombia (On-site)",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "logo": "/assets/logos/uniandes.jpg",
+    "title": {
+      "en": "Teaching Assistant — Web Application Programming",
+      "es": "Monitor — Programación de Aplicaciones Web",
+      "ja": "TA — Webアプリ開発",
+      "ko": "조교 — 웹 애플리케이션 프로그래밍"
+    },
+    "employmentType": "Part-time",
+    "dates": { "start": "2024-08", "end": "2024-12" },
+    "featuredImage": "/assets/images/experiences/uniandes-instructor.jpg",
+    "summary": {
+      "en": "Supported students and strengthened modern web stack skills (React, Node/NestJS, UI/UX, testing) through teaching and mentoring.",
+      "es": "Acompañé estudiantes y reforcé habilidades del stack moderno (React, Node/NestJS, UI/UX, testing) mediante docencia y mentoría.",
+      "ja": "学生支援と指導を通じて、ReactやNestJS、UI/UX、テスト等の最新Web技術を深めた。",
+      "ko": "학생 지원/멘토링을 통해 React·NestJS·UI/UX·테스팅 등 최신 웹 스택 역량을 강화."
+    },
+    "bullets": [
+      { "en": "Student support, Q&A, and practical guidance on best practices.", "es": "Soporte a estudiantes, resolución de dudas y guía de buenas prácticas.", "ja": "Q&Aとベストプラクティスの指導。", "ko": "질의응답 및 베스트 프랙티스 지도." }
+    ],
+    "skills": ["React", "JavaScript", "NestJS", "UI/UX", "Teaching"],
+    "technologies": ["React", "Node.js", "NestJS"],
+    "tags": ["Mentoring"],
+    "links": [],
+    "media": [],
+    "order": 80
+  },
+  {
+    "id": "uniandes-support-instructor-teams",
+    "type": "teaching",
+    "typeLabel": { "en": "Teaching", "es": "Docencia", "ja": "教育", "ko": "교육" },
+    "organization": "Universidad de los Andes",
+    "organizationWebsite": "https://uniandes.edu.co",
+    "location": "Bogotá, Colombia (On-site)",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "logo": "/assets/logos/uniandes.jpg",
+    "title": {
+      "en": "Support Instructor — Software Development in Teams",
+      "es": "Monitor de Apoyo — Desarrollo de Software en Equipos",
+      "ja": "サポート講師 — チーム開発",
+      "ko": "지원 강사 — 팀 소프트웨어 개발"
+    },
+    "employmentType": "Part-time",
+    "dates": { "start": "2023-08", "end": "2024-12" },
+    "featuredImage": "/assets/images/experiences/uniandes-instructor.jpg",
+    "summary": {
+      "en": "Provided weekly support sessions, graded deliverables and assessments, and guided teams on full-stack web development practices.",
+      "es": "Brindé monitorías semanales, evalué entregables y exámenes prácticos, y guié equipos en prácticas de desarrollo full-stack.",
+      "ja": "週次サポート、成果物評価、実技試験の採点、フルスタック開発の指導。",
+      "ko": "주간 지원 세션, 산출물/평가 채점, 풀스택 개발 지도."
+    },
+    "bullets": [
+      { "en": "Answered student inquiries across front-end and back-end topics.", "es": "Respondí dudas de front-end y back-end.", "ja": "フロント/バックの質問対応。", "ko": "프론트/백엔드 문의 대응." },
+      { "en": "Graded team progress submissions and practical programming challenges.", "es": "Califiqué entregas de avance y retos de programación.", "ja": "進捗提出とプログラミング課題の評価。", "ko": "팀 진척 제출물 및 코딩 과제 채점." }
+    ],
+    "skills": ["Spring Boot", "Angular", "Teaching", "Teamwork"],
+    "technologies": ["Spring Boot", "Angular"],
+    "tags": ["University"],
+    "links": [],
+    "media": [],
+    "order": 78
+  },
+  {
+    "id": "uplan-shark-tank-finalist",
+    "type": "entrepreneurship",
+    "typeLabel": { "en": "Entrepreneurship", "es": "Emprendimiento", "ja": "起業", "ko": "창업" },
+    "organization": "UNIANDINOS (Universidad de los Andes)",
+    "organizationWebsite": "https://www.uniandinos.org.co/",
+    "location": "Bogotá, Colombia (On-site)",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "logo": "/assets/logos/uniandes.jpg",
+    "title": {
+      "en": "Finalist — Startup Competition (Shark Tank Pitch) · UPlan",
+      "es": "Finalista — Competencia de emprendimiento (Pitch estilo Shark Tank) · UPlan",
+      "ja": "ファイナリスト — スタートアップ大会（Shark Tank Pitch）· UPlan",
+      "ko": "결승 진출 — 스타트업 대회(Shark Tank 피치) · UPlan"
+    },
+    "employmentType": "Part-time",
+    "dates": { "start": "2023-11", "end": "2023-11" },
+    "featuredImage": "/assets/images/experiences/uplan.png",
+    "summary": {
+      "en": "Led a 5-minute investor pitch covering problem, solution, business model, revenue projections, market size, and profitability.",
+      "es": "Realicé un pitch de 5 minutos ante inversionistas: problema, solución, modelo de negocio, proyecciones, mercado y rentabilidad.",
+      "ja": "投資家向けに課題・解決策・ビジネスモデル・収益予測を5分で発表。",
+      "ko": "투자자 앞에서 문제/해결책/비즈니스 모델/수익 전망 등을 5분 피치로 발표."
+    },
+    "bullets": [
+      { "en": "Reached final stage and presented to investors and entrepreneurship professionals.", "es": "Llegué a la fase final y presenté ante inversionistas y profesionales.", "ja": "最終段階で投資家・専門家にプレゼン。", "ko": "최종 단계에서 투자자 및 전문가에게 발표." }
+    ],
+    "skills": ["Entrepreneurship", "Pitching", "Market Analysis"],
+    "technologies": [],
+    "tags": ["Finalist"],
+    "links": [],
+    "media": [
+      "/assets/images/experience/uplan-pitch-1.jpg",
+      "/assets/images/experience/uplan-team-1.jpg",
+      "/assets/images/experience/uplan-event-1.jpg"
+    ],
+    "order": 74
+  },
+  {
+    "id": "uniandes-webapp-project-leader",
+    "type": "project",
+    "typeLabel": { "en": "Project", "es": "Proyecto", "ja": "プロジェクト", "ko": "프로젝트" },
+    "organization": "Universidad de los Andes",
+    "organizationWebsite": "https://uniandes.edu.co",
+    "location": "Bogotá, Colombia (Hybrid)",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "logo": "/assets/logos/uniandes.jpg",
+    "title": {
+      "en": "Web Application Project Leader — Esports History Platform",
+      "es": "Líder de proyecto web — Plataforma de historia de esports",
+      "ja": "Webプロジェクトリーダー — Esports履歴プラットフォーム",
+      "ko": "웹 프로젝트 리더 — 이스포츠 기록 플랫폼"
+    },
+    "employmentType": "Academic Project",
+    "dates": { "start": "2023-01", "end": "2023-05" },
+    "featuredImage": "/assets/images/experiences/esports.png",
+    "summary": {
+      "en": "Led a 4-person team to build a full-stack web app for historical and current esports tournament data; managed planning with GitHub Projects.",
+      "es": "Lideré un equipo de 4 personas para construir una app full-stack de datos históricos y actuales de esports; planeación con GitHub Projects.",
+      "ja": "4人チームでEsports大会の履歴・最新データ可視化Webを開発。GitHub Projectsで計画管理。",
+      "ko": "4인 팀을 리드하여 이스포츠 대회 기록/현황 데이터 웹앱 개발. GitHub Projects로 계획 관리."
+    },
+    "bullets": [
+      { "en": "Front-end: Angular + Bootstrap templates.", "es": "Front-end: Angular + Bootstrap.", "ja": "フロント：Angular + Bootstrap。", "ko": "프론트: Angular + Bootstrap." },
+      { "en": "Back-end: Spring Framework (Java) + persistence API.", "es": "Back-end: Spring (Java) + API.", "ja": "バック：Spring（Java）+ API。", "ko": "백엔드: Spring(Java) + API." }
+    ],
+    "skills": ["Leadership", "Angular", "Spring Boot", "Planning"],
+    "technologies": ["Angular", "Java", "Spring"],
+    "tags": ["Team Project"],
+    "links": [],
+    "media": [],
+    "order": 70
+  },
+  {
+    "id": "seed-program-2023",
+    "type": "program",
+    "typeLabel": { "en": "Program", "es": "Programa", "ja": "プログラム", "ko": "프로그램" },
+    "organization": "GOROM Association",
+    "organizationWebsite": "https://gorom.org/en/seed/",
+    "location": "Kofu (Yamanashi), Japan (Hybrid)",
+    "city": "Kofu",
+    "country": "Japan",
+    "countryCode": "JP",
+    "logo": "/assets/logos/gorom.png",
+    "title": {
+      "en": "Elected Participant — SEED Program 2023 (Social Entrepreneurship)",
+      "es": "Participante seleccionado — SEED Program 2023 (Emprendimiento Social)",
+      "ja": "選抜参加者 — SEED Program 2023（社会起業）",
+      "ko": "선발 참가자 — SEED Program 2023(사회적 기업가정신)"
+    },
+    "employmentType": "Program",
+    "dates": { "start": "2023-07", "end": "2023-12" },
+    "featuredImage": "/assets/images/experiences/seed-interview.jpeg",
+    "summary": {
+      "en": "Study trip + international teamwork to propose a socially entrepreneurial business idea for HIKARI ORIMONO in Yamanashi.",
+      "es": "Viaje de estudio y trabajo internacional para proponer una idea de emprendimiento social para HIKARI ORIMONO en Yamanashi.",
+      "ja": "山梨のHIKARI ORIMONO向けに社会起業アイデアを提案する国際共同プロジェクト。",
+      "ko": "야마나시의 HIKARI ORIMONO를 위한 사회적 기업가정신 아이디어를 국제 팀으로 제안."
+    },
+    "bullets": [
+      { "en": "Applied design thinking, market analysis, pitching, and cross-cultural collaboration.", "es": "Apliqué design thinking, análisis de mercado, pitching y colaboración intercultural.", "ja": "デザイン思考・市場分析・ピッチ・異文化協働を実践。", "ko": "디자인 씽킹, 시장분석, 피칭, 다문화 협업을 수행." },
+      { "en": "Featured by NHK in a program report; interviewed in Japanese about the experience.", "es": "Fuimos destacados por NHK; me entrevistaron en japonés sobre la experiencia.", "ja": "NHKレポートに掲載され、日本語で取材を受けた。", "ko": "NHK 리포트에 소개되고 일본어 인터뷰를 진행." }
+    ],
+    "skills": ["Social Entrepreneurship", "Market Research", "Pitching"],
+    "technologies": [],
+    "tags": ["Japan", "SDGs"],
+    "links": [{ "label": { "en": "SEED Program", "es": "Programa SEED", "ja": "SEEDプログラム", "ko": "SEED 프로그램" }, "url": "https://gorom.org/en/seed/" }],
+    "media": [],
+    "order": 66
+  },
+  {
+    "id": "tsukuba-latam-online-exchange-2022",
+    "type": "exchange",
+    "typeLabel": { "en": "Exchange", "es": "Intercambio", "ja": "交換", "ko": "교류" },
+    "organization": "University of Tsukuba",
+    "organizationWebsite": "https://www.tsukuba.ac.jp/en/",
+    "location": "Tsukuba, Ibaraki, Japan (Remote)",
+    "city": "Tsukuba",
+    "country": "Japan",
+    "countryCode": "JP",
+    "logo": "/assets/logos/tsukuba.png",
+    "title": {
+      "en": "Participant — Tsukuba × Latin America Online Exchange (SDGs)",
+      "es": "Participante — Intercambio online Tsukuba × Latinoamérica (ODS)",
+      "ja": "参加者 — つくば×中南米オンライン交流（SDGs）",
+      "ko": "참가자 — Tsukuba × 라틴아메리카 온라인 교류(SDGs)"
+    },
+    "employmentType": "Apprenticeship",
+    "dates": { "start": "2022-03", "end": "2022-03" },
+    "featuredImage": "/assets/images/experiences/tsukuba-exchange.png",
+    "summary": {
+      "en": "Represented Colombia and Uniandes in a program centered on UN SDGs, cross-cultural discussion, and solution ideation in work groups.",
+      "es": "Representé a Colombia y a Uniandes en un programa sobre ODS, discusión intercultural e ideación de soluciones en grupos.",
+      "ja": "UNのSDGsをテーマに、異文化議論と解決策提案を実施。",
+      "ko": "UN SDGs를 주제로 다문화 토론 및 해결책 아이디어 도출."
+    },
+    "bullets": [
+      { "en": "Explored SDG progress and challenges across Latin America and Japan.", "es": "Analicé avances y retos de ODS en Latinoamérica y Japón.", "ja": "中南米と日本のSDGs課題を比較検討。", "ko": "라틴아메리카·일본의 SDGs 현황/과제를 비교." }
+    ],
+    "skills": ["SDGs", "Cross-cultural Communication", "Teamwork"],
+    "technologies": [],
+    "tags": ["Remote"],
+    "links": [],
+    "media": [],
+    "order": 58
+  },
+  {
+    "id": "ef-exchange-uk-2018",
+    "type": "exchange",
+    "typeLabel": { "en": "Exchange", "es": "Intercambio", "ja": "留学", "ko": "교환" },
+    "organization": "EF Education First",
+    "organizationWebsite": "https://www.ef.com/",
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "England",
+    "countryCode": "GB",
+    "logo": "/assets/logos/ef.jpeg",
+    "title": {
+      "en": "Academic Exchange — English B2–C1 (University of East London)",
+      "es": "Intercambio académico — Inglés B2–C1 (University of East London)",
+      "ja": "短期交換 — 英語B2–C1（University of East London）",
+      "ko": "학술 교류 — 영어 B2–C1(University of East London)"
+    },
+    "employmentType": "Program",
+    "dates": { "start": "2018-07", "end": "2018-08" },
+    "featuredImage": "/assets/images/experiences/london-exchange.png",
+    "summary": {
+      "en": "First international academic experience; improved English significantly and explored multiple cities across England.",
+      "es": "Primera experiencia académica internacional; mejoré significativamente mi inglés y exploré varias ciudades en Inglaterra.",
+      "ja": "初の国際学習体験。英語力を伸ばし、英国各地を訪問。",
+      "ko": "첫 국제 학습 경험. 영어 실력 향상 및 영국 여러 도시 탐방."
+    },
+    "bullets": [],
+    "skills": ["English", "Intercultural"],
+    "technologies": [],
+    "tags": ["UK"],
+    "links": [],
+    "media": [],
+    "order": 40
+  },
+  {
+    "id": "divino-nino-student",
+    "type": "education",
+    "typeLabel": { "en": "Education", "es": "Educación", "ja": "教育", "ko": "교육" },
+    "organization": "Colegio Bilingüe Divino Niño",
+    "organizationWebsite": "https://cbdn.edu.co/",
+    "location": "Bucaramanga, Santander, Colombia (On-site)",
+    "city": "Bucaramanga",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "logo": "/assets/logos/cbdn.jpeg",
+    "title": {
+      "en": "Student — High School (Graduation with Honors)",
+      "es": "Estudiante — Bachillerato (Graduación con honores)",
+      "ja": "学生 — 高校（優等で卒業）",
+      "ko": "학생 — 고등학교(우등 졸업)"
+    },
+    "employmentType": "Full-time",
+    "dates": { "start": "2013-01", "end": "2019-11" },
+    "featuredImage": "/assets/images/experiences/cbdn.jpg",
+    "summary": {
+      "en": "Graduated with honors: highest GPA of the class; awarded for collaboration; achieved IELTS C1 (2019).",
+      "es": "Gradué con honores: mejor GPA del curso; reconocimiento por colaboración; IELTS C1 (2019).",
+      "ja": "優等卒業（学年最高GPA）、協力賞、IELTS C1（2019）。",
+      "ko": "우등 졸업(학년 최고 GPA), 협업상, IELTS C1(2019)."
+    },
+    "bullets": [],
+    "skills": ["Leadership", "Communication"],
+    "technologies": [],
+    "tags": ["Honors"],
+    "links": [],
+    "media": [],
+    "order": 10
+  }
+]

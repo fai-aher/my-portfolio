@@ -1,0 +1,94 @@
+[
+  {
+    "id": "colombia-bogota",
+    "region": "americas",
+    "country": "Colombia",
+    "city": "Bogotá",
+    "x": 30,
+    "y": 67,
+    "date": "2019–Present",
+    "highlights": ["Home base", "Uniandes + research", "Teaching + projects"],
+    "story": "My home base: where I studied, worked on robotics research, built software projects, and taught/mentored students.",
+    "albumUrl": "#",
+    "photos": [
+      { "id": "co-1", "caption": "Bogotá — placeholder" },
+      { "id": "co-2", "caption": "Uniandes / research moments — placeholder" }
+    ],
+    "experienceIds": [
+      "sinfonia-pepper-manipulation-research",
+      "robocup-2024-sspl",
+      "uniandes-ta-webapps",
+      "uniandes-support-instructor-teams",
+      "uplan-shark-tank-finalist",
+      "uniandes-webapp-project-leader",
+      "divino-nino-student"
+    ]
+  },
+  {
+    "id": "south-korea-seoul",
+    "region": "asia",
+    "country": "South Korea",
+    "city": "Seoul",
+    "x": 78,
+    "y": 51,
+    "date": "2025",
+    "highlights": ["Exchange semester", "Robot learning research", "Culture + travel"],
+    "story": "Academic exchange + research experiences in Seoul. I’ll later expand this with photos, short reflections, and places visited.",
+    "albumUrl": "#",
+    "photos": [
+      { "id": "kr-1", "caption": "SNU campus — placeholder" },
+      { "id": "kr-2", "caption": "City moments — placeholder" }
+    ],
+    "experienceIds": ["snu-exchange-student-cse", "snu-robot-learning-poster-fair"]
+  },
+  {
+    "id": "japan-tokyo-yamanashi",
+    "region": "asia",
+    "country": "Japan",
+    "city": "Tokyo / Yamanashi / Tsukuba",
+    "x": 81,
+    "y": 52,
+    "date": "2022–Present",
+    "highlights": ["GOROM work", "SEED Program", "Cultural exchange"],
+    "story": "Japan is a big inspiration for my design style and robotics mindset. This pin groups my main Japan-related experiences and travels.",
+    "albumUrl": "#",
+    "photos": [
+      { "id": "jp-1", "caption": "Tokyo — placeholder" },
+      { "id": "jp-2", "caption": "Yamanashi — placeholder" }
+    ],
+    "experienceIds": [
+      "gorom-seed-alumni-coordinator",
+      "gorom-it-coordinator",
+      "seed-program-2023",
+      "tsukuba-latam-online-exchange-2022"
+    ]
+  },
+  {
+    "id": "netherlands-eindhoven",
+    "region": "europe",
+    "country": "Netherlands",
+    "city": "Eindhoven",
+    "x": 49,
+    "y": 41,
+    "date": "2024",
+    "highlights": ["RoboCup 2024", "International competition", "Team research demo"],
+    "story": "Competition trip connected to RoboCup. I’ll keep it brief here and focus on the main highlights + a photo album.",
+    "albumUrl": "#",
+    "photos": [{ "id": "nl-1", "caption": "RoboCup moments — placeholder" }],
+    "experienceIds": ["robocup-2024-sspl"]
+  },
+  {
+    "id": "uk-london",
+    "region": "europe",
+    "country": "England",
+    "city": "London",
+    "x": 47,
+    "y": 41,
+    "date": "2018",
+    "highlights": ["First international academic experience", "English immersion", "Travel across England"],
+    "story": "My first international academic experience. I’ll later add photos and a short personal reflection about learning and growth.",
+    "albumUrl": "#",
+    "photos": [{ "id": "uk-1", "caption": "London — placeholder" }],
+    "experienceIds": ["ef-exchange-uk-2018"]
+  }
+]

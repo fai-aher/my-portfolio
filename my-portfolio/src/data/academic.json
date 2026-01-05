@@ -1,0 +1,62 @@
+[
+  {
+    "id": "uniandes-bsc",
+    "institution": "Universidad de los Andes",
+    "location": "Bogotá, Colombia",
+    "logo": "/assets/logos/uniandes.jpeg",
+    "featuredImage": "/assets/images/academic/uniandes-highlight.jpg",
+    "organizationWebsite": "https://uniandes.edu.co",
+    "program": {
+      "en": "Bachelor's Degree — Systems and Computer Engineering (Software Engineering)",
+      "es": "Pregrado — Ingeniería de Sistemas y Computación (Ingeniería de Software)",
+      "ja": "学士 — システム・コンピュータ工学（ソフトウェア工学）",
+      "ko": "학사 — 시스템/컴퓨터공학(소프트웨어 공학)"
+    },
+    "dates": { "start": "2020-01", "end": "2025-10" },
+    "gpa": { "value": 4.52, "scale": 5.0 }
+  },
+  {
+    "id": "snu-exchange",
+    "institution": "Seoul National University",
+    "location": "Seoul, South Korea",
+    "logo": "/assets/logos/snu.jpeg",
+    "featuredImage": "/assets/images/academic/snu-highlight.jpg",
+    "organizationWebsite": "https://www.snu.ac.kr",
+    "program": {
+      "en": "Exchange Semester — AI & Robotics (Graduate-level)",
+      "es": "Semestre de intercambio — IA y Robótica (nivel posgrado)",
+      "ja": "交換留学 — AI/ロボティクス（大学院レベル）",
+      "ko": "교환학기 — AI/로보틱스(대학원 수준)"
+    },
+    "dates": { "start": "2025-03", "end": "2025-08" },
+    "gpa": { "value": 4.28, "scale": 5.0, "raw": "85.60/100" },
+    "courses": [
+      "Elementary Korean",
+      "Basics of Deep Learning",
+      "Robot Learning",
+      "Space Dynamics",
+      "Theory and Practice of Humanoid Walking Control"
+    ]
+  },
+  {
+    "id": "divino-nino",
+    "institution": "Colegio Bilingüe Divino Niño",
+    "location": "Bucaramanga, Santander, Colombia",
+    "logo": "/assets/logos/cbdn.jpeg",
+    "featuredImage": "/assets/images/academic/cbdn-highlight.jpg",
+    "organizationWebsite": "https://cbdn.edu.co/",
+    "program": {
+      "en": "High School Diploma — Graduation with honors",
+      "es": "Bachillerato — Graduación con honores",
+      "ja": "高校卒業 — 優秀成績",
+      "ko": "고등학교 졸업 — 우수 성적"
+    },
+    "dates": { "start": "2013-01", "end": "2019-11" },
+    "gpa": { "value": 4.9, "scale": 5.0 },
+    "recognitions": [
+      "Highest GPA of the Class of 2019",
+      "Most collaborative student award",
+      "IELTS C1 recognition (2019)"
+    ]
+  }
+]
