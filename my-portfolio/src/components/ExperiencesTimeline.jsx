@@ -260,7 +260,7 @@ function ExperienceModal({ item, onClose, lang }) {
             </div>
 
             {/* Body */}
-            <div className="grid gap-4 p-5 md:grid-cols-[1fr_0.9fr]">
+            <div className="grid gap-12 p-10 md:grid-cols-[1fr_0.9fr]">
               {/* Mobile image */}
               <div className="md:hidden overflow-hidden rounded-xl">
                 {item.featuredImage && (
@@ -304,11 +304,11 @@ function ExperienceModal({ item, onClose, lang }) {
 
                 {/* Summary */}
                 {item.summary ? (
-                  <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300/85">
+                  <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300/85 text-justify">
                     {pickLang(item.summary, lang) || item.summary}
                   </p>
                 ) : (
-                  <p className="text-sm text-slate-600 dark:text-slate-300/70">
+                  <p className="text-sm text-slate-600 dark:text-slate-300/70 text-justify">
                     {pickLang(MODAL_I18N.noDescription, lang)}
                   </p>
                 )}
@@ -316,10 +316,10 @@ function ExperienceModal({ item, onClose, lang }) {
                 {/* Bullets */}
                 {item.bullets?.length > 0 && (
                   <div>
-                    <p className="text-sm font-semibold text-slate-900 dark:text-white">
+                    <p className="text-sm font-semibold text-slate-900 dark:text-white text-justify">
                       {pickLang(MODAL_I18N.highlights, lang)}
                     </p>
-                    <ul className="mt-2 space-y-2 text-sm text-slate-700 dark:text-slate-300/85">
+                    <ul className="mt-2 space-y-2 text-sm text-slate-700 dark:text-slate-300/85 text-justify">
                       {item.bullets.slice(0, 10).map((h, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-500" />

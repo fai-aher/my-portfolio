@@ -303,7 +303,7 @@ export default function BioSection() {
             <div className="mt-6 lg:hidden">{RightCard}</div>
 
             {/* Bio summary */}
-            <p className="mt-4 max-w-2xl text-base sm:text-lg text-slate-700 dark:text-slate-300/90 leading-relaxed text-justify">
+            <p className="mt-4 max-w-3xl text-base sm:text-lg text-slate-700 dark:text-slate-300/90 leading-relaxed text-justify">
               {summary}
             </p>
 

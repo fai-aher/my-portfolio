@@ -2,7 +2,16 @@
   {
     "id": "colombia-bogota",
     "region": "americas",
+    "modes": ["professional", "personal"],
     "country": "Colombia",
+    "countryCode": "CO",
+    "flag": "🇨🇴",
+    "countryLabel": {
+      "en": "Colombia",
+      "es": "Colombia",
+      "ja": "コロンビア",
+      "ko": "콜롬비아"
+    },
     "city": "Bogotá",
     "x": 30,
     "y": 67,
@@ -22,12 +31,22 @@
       "uplan-shark-tank-finalist",
       "uniandes-webapp-project-leader",
       "divino-nino-student"
-    ]
+    ],
+    "personalExperienceIds": ["visit-co"]
   },
   {
     "id": "south-korea-seoul",
     "region": "asia",
+    "modes": ["professional", "personal"],
     "country": "South Korea",
+    "countryCode": "KR",
+    "flag": "🇰🇷",
+    "countryLabel": {
+      "en": "South Korea",
+      "es": "Corea del Sur",
+      "ja": "韓国",
+      "ko": "대한민국"
+    },
     "city": "Seoul",
     "x": 78,
     "y": 51,
@@ -39,12 +58,22 @@
       { "id": "kr-1", "caption": "SNU campus — placeholder" },
       { "id": "kr-2", "caption": "City moments — placeholder" }
     ],
-    "experienceIds": ["snu-exchange-student-cse", "snu-robot-learning-poster-fair"]
+    "experienceIds": ["snu-exchange-student-cse", "snu-robot-learning-poster-fair"],
+    "personalExperienceIds": ["visit-kr"]
   },
   {
     "id": "japan-tokyo-yamanashi",
     "region": "asia",
+    "modes": ["professional", "personal"],
     "country": "Japan",
+    "countryCode": "JP",
+    "flag": "🇯🇵",
+    "countryLabel": {
+      "en": "Japan",
+      "es": "Japón",
+      "ja": "日本",
+      "ko": "일본"
+    },
     "city": "Tokyo / Yamanashi / Tsukuba",
     "x": 81,
     "y": 52,
@@ -61,12 +90,22 @@
       "gorom-it-coordinator",
       "seed-program-2023",
       "tsukuba-latam-online-exchange-2022"
-    ]
+    ],
+    "personalExperienceIds": ["visit-jp"]
   },
   {
     "id": "netherlands-eindhoven",
     "region": "europe",
+    "modes": ["professional", "personal"],
     "country": "Netherlands",
+    "countryCode": "NL",
+    "flag": "🇳🇱",
+    "countryLabel": {
+      "en": "Netherlands",
+      "es": "Países Bajos",
+      "ja": "オランダ",
+      "ko": "네덜란드"
+    },
     "city": "Eindhoven",
     "x": 49,
     "y": 41,
@@ -75,20 +114,272 @@
     "story": "Competition trip connected to RoboCup. I’ll keep it brief here and focus on the main highlights + a photo album.",
     "albumUrl": "#",
     "photos": [{ "id": "nl-1", "caption": "RoboCup moments — placeholder" }],
-    "experienceIds": ["robocup-2024-sspl"]
+    "experienceIds": ["robocup-2024-sspl"],
+    "personalExperienceIds": ["visit-nl"]
   },
   {
     "id": "uk-london",
     "region": "europe",
+    "modes": ["professional", "personal"],
     "country": "England",
+    "countryCode": "GB",
+    "flag": "🇬🇧",
+    "countryLabel": {
+      "en": "England",
+      "es": "Inglaterra",
+      "ja": "イングランド",
+      "ko": "잉글랜드"
+    },
     "city": "London",
-    "x": 47,
+    "x": 46,
     "y": 41,
     "date": "2018",
     "highlights": ["First international academic experience", "English immersion", "Travel across England"],
     "story": "My first international academic experience. I’ll later add photos and a short personal reflection about learning and growth.",
     "albumUrl": "#",
     "photos": [{ "id": "uk-1", "caption": "London — placeholder" }],
-    "experienceIds": ["ef-exchange-uk-2018"]
+    "experienceIds": ["ef-exchange-uk-2018"],
+    "personalExperienceIds": ["visit-gb"]
+  },
+
+  {
+    "id": "argentina-visit",
+    "region": "americas",
+    "modes": ["personal"],
+    "country": "Argentina",
+    "countryCode": "AR",
+    "flag": "🇦🇷",
+    "countryLabel": {
+      "en": "Argentina",
+      "es": "Argentina",
+      "ja": "アルゼンチン",
+      "ko": "아르헨티나"
+    },
+    "city": "",
+    "x": 32,
+    "y": 86,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-ar"]
+  },
+  {
+    "id": "brazil-visit",
+    "region": "americas",
+    "modes": ["personal"],
+    "country": "Brazil",
+    "countryCode": "BR",
+    "flag": "🇧🇷",
+    "countryLabel": {
+      "en": "Brazil",
+      "es": "Brasil",
+      "ja": "ブラジル",
+      "ko": "브라질"
+    },
+    "city": "",
+    "x": 35,
+    "y": 79,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-br"]
+  },
+  {
+    "id": "panama-visit",
+    "region": "americas",
+    "modes": ["personal"],
+    "country": "Panama",
+    "countryCode": "PA",
+    "flag": "🇵🇦",
+    "countryLabel": {
+      "en": "Panama",
+      "es": "Panamá",
+      "ja": "パナマ",
+      "ko": "파나마"
+    },
+    "city": "",
+    "x": 28,
+    "y": 64,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-pa"]
+  },
+  {
+    "id": "mexico-visit",
+    "region": "americas",
+    "modes": ["personal"],
+    "country": "Mexico",
+    "countryCode": "MX",
+    "flag": "🇲🇽",
+    "countryLabel": {
+      "en": "Mexico",
+      "es": "México",
+      "ja": "メキシコ",
+      "ko": "멕시코"
+    },
+    "city": "",
+    "x": 23,
+    "y": 59,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-mx"]
+  },
+  {
+    "id": "united-states-visit",
+    "region": "americas",
+    "modes": ["personal"],
+    "country": "United States",
+    "countryCode": "US",
+    "flag": "🇺🇸",
+    "countryLabel": {
+      "en": "United States",
+      "es": "Estados Unidos",
+      "ja": "アメリカ合衆国",
+      "ko": "미국"
+    },
+    "city": "",
+    "x": 23,
+    "y": 52,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-us"]
+  },
+  {
+    "id": "canada-visit",
+    "region": "americas",
+    "modes": ["personal"],
+    "country": "Canada",
+    "countryCode": "CA",
+    "flag": "🇨🇦",
+    "countryLabel": {
+      "en": "Canada",
+      "es": "Canadá",
+      "ja": "カナダ",
+      "ko": "캐나다"
+    },
+    "city": "",
+    "x": 22,
+    "y": 38,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-ca"]
+  },
+  {
+    "id": "france-visit",
+    "region": "europe",
+    "modes": ["personal"],
+    "country": "France",
+    "countryCode": "FR",
+    "flag": "🇫🇷",
+    "countryLabel": {
+      "en": "France",
+      "es": "Francia",
+      "ja": "フランス",
+      "ko": "프랑스"
+    },
+    "city": "",
+    "x": 46.5,
+    "y": 47,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-fr"]
+  },
+  {
+    "id": "spain-visit",
+    "region": "europe",
+    "modes": ["personal"],
+    "country": "Spain",
+    "countryCode": "ES",
+    "flag": "🇪🇸",
+    "countryLabel": {
+      "en": "Spain",
+      "es": "España",
+      "ja": "スペイン",
+      "ko": "스페인"
+    },
+    "city": "",
+    "x": 45,
+    "y": 51,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-es"]
+  },
+  {
+    "id": "belgium-visit",
+    "region": "europe",
+    "modes": ["personal"],
+    "country": "Belgium",
+    "countryCode": "BE",
+    "flag": "🇧🇪",
+    "countryLabel": {
+      "en": "Belgium",
+      "es": "Bélgica",
+      "ja": "ベルギー",
+      "ko": "벨기에"
+    },
+    "city": "",
+    "x": 49,
+    "y": 46,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-be"]
+  },
+  {
+    "id": "hong-kong-visit",
+    "region": "asia",
+    "modes": ["personal"],
+    "country": "Hong Kong",
+    "countryCode": "HK",
+    "flag": "🇭🇰",
+    "countryLabel": {
+      "en": "Hong Kong",
+      "es": "Hong Kong",
+      "ja": "香港",
+      "ko": "홍콩"
+    },
+    "city": "",
+    "x": 75,
+    "y": 60,
+    "date": "Visited",
+    "highlights": ["Travel"],
+    "story": "Personal travel experience — I’ll later add photos and highlights.",
+    "albumUrl": "#",
+    "photos": [],
+    "experienceIds": [],
+    "personalExperienceIds": ["visit-hk"]
   }
 ]

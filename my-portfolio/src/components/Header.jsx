@@ -164,7 +164,7 @@ export default function Header() {
             <a href="#top" className="group flex items-center gap-2 py-1">
               <span className="relative h-9 w-9 overflow-hidden rounded-full ring-1 ring-cyan-400/40">
                 <img
-                  src="/assets/images/profile.jpeg"
+                  src="/assets/images/header-icon.png"
                   alt="Profile avatar"
                   className="h-full w-full object-cover"
                   draggable={false}
