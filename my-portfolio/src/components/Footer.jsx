@@ -1,11 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
-  HiOutlineCpuChip,
   HiOutlineEnvelope,
   HiOutlineArrowUp,
   HiOutlineMapPin,
-  HiOutlineLanguage,
 } from "react-icons/hi2";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import profile from "../data/profile.json";
@@ -32,11 +30,10 @@ function useAppLanguage() {
 
 const UI = {
   en: {
-    title: "Let’s build something remarkable.",
+    title: "I would love to get in touch with you",
     subtitle:
-      "Robotics mindset. Product-grade web. Clean design. If you have a challenge, I’d love to hear it.",
-    contact: "Contact",
-    emailMe: "Email me",
+      "I am open to job offers, international experiences, and participation in social robotics, humanoid robotics, and web development projects. Send me an email or a message through one of my social networks.",
+    contactMe: "Contact me",
     location: "Colombia • Working globally",
     navigation: "Navigation",
     links: [
@@ -46,20 +43,16 @@ const UI = {
       { label: "Academic", href: "#academic" },
       { label: "Awards", href: "#awards" },
       { label: "Travel", href: "#travel" },
-      { label: "Contact", href: "#contact" },
     ],
     social: "Social",
     backToTop: "Back to top",
-    lang: "Language-ready",
-    copyright:
-      "© {year} Fai Hernandez. Built with Vite + React + Tailwind. All rights reserved.",
+    copyright: "© {year} Alonso Hernandez Tavera. All rights reserved.",
   },
   es: {
-    title: "Construyamos algo increíble.",
+    title: "Me encantaría ponerme en contacto contigo",
     subtitle:
-      "Mentalidad robótica. Web a nivel producto. Diseño limpio. Si tienes un reto, me encantaría escucharlo.",
-    contact: "Contacto",
-    emailMe: "Escríbeme",
+      "Estoy abierto a propuestas de trabajo, experiencias internacionales y participación en proyectos de robótica social, robótica humanoide y desarrollo web. Escríbeme un correo o mándame un mensaje a una de mis redes sociales.",
+    contactMe: "Contáctame",
     location: "Colombia • Trabajo global",
     navigation: "Navegación",
     links: [
@@ -69,20 +62,16 @@ const UI = {
       { label: "Académico", href: "#academic" },
       { label: "Premios", href: "#awards" },
       { label: "Viajes", href: "#travel" },
-      { label: "Contacto", href: "#contact" },
     ],
     social: "Redes",
     backToTop: "Volver arriba",
-    lang: "Listo para idiomas",
-    copyright:
-      "© {year} Fai Hernandez. Hecho con Vite + React + Tailwind. Todos los derechos reservados.",
+    copyright: "© {year} Alonso Hernandez Tavera. Todos los derechos reservados.",
   },
   ja: {
-    title: "一緒に、最高のものを作ろう。",
+    title: "ぜひご連絡ください",
     subtitle:
-      "ロボティクスの思考 × プロダクト品質のWeb × クリーンなデザイン。相談してみてください。",
-    contact: "連絡",
-    emailMe: "メール",
+      "求人、海外経験、ソーシャルロボティクス、ヒューマノイドロボティクス、Web開発プロジェクトへの参加を歓迎しています。メールまたはSNSでご連絡ください。",
+    contactMe: "連絡する",
     location: "コロンビア拠点 • グローバル対応",
     navigation: "ナビゲーション",
     links: [
@@ -92,20 +81,16 @@ const UI = {
       { label: "学歴", href: "#academic" },
       { label: "受賞", href: "#awards" },
       { label: "旅", href: "#travel" },
-      { label: "連絡", href: "#contact" },
     ],
     social: "SNS",
     backToTop: "トップへ",
-    lang: "多言語対応",
-    copyright:
-      "© {year} Fai Hernandez. Vite + React + Tailwind で制作。All rights reserved.",
+    copyright: "© {year} アロンソ・エルナンデス・タベラ. All rights reserved.",
   },
   ko: {
-    title: "함께 멋진 걸 만들어봐요.",
+    title: "연락 주시면 감사하겠습니다",
     subtitle:
-      "로보틱스 마인드 × 프로덕트급 웹 × 깔끔한 디자인. 아이디어가 있다면 연락 주세요.",
-    contact: "연락",
-    emailMe: "이메일",
+      "채용 제안, 해외 경험, 소셜 로보틱스, 휴머노이드 로보틱스 및 웹 개발 프로젝트 참여에 열려 있습니다. 이메일이나 SNS로 연락해 주세요.",
+    contactMe: "연락하기",
     location: "콜롬비아 기반 • 글로벌 협업",
     navigation: "메뉴",
     links: [
@@ -115,13 +100,10 @@ const UI = {
       { label: "학력", href: "#academic" },
       { label: "수상", href: "#awards" },
       { label: "여행", href: "#travel" },
-      { label: "연락", href: "#contact" },
     ],
     social: "소셜",
     backToTop: "맨 위로",
-    lang: "다국어 준비",
-    copyright:
-      "© {year} Fai Hernandez. Vite + React + Tailwind로 제작. All rights reserved.",
+    copyright: "© {year} 알론소 에르난데스 타베라. All rights reserved.",
   },
 };
 
@@ -129,19 +111,20 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function openContactModal() {
+  window.dispatchEvent(new CustomEvent("app:openContactModal"));
+}
+
 export default function Footer() {
   const lang = useAppLanguage();
   const t = useMemo(() => UI[lang] || UI.en, [lang]);
   const year = new Date().getFullYear();
 
-  const EMAIL = profile?.contact?.emails?.[0]?.value
-    ? `mailto:${profile.contact.emails[0].value}`
-    : "mailto:hello@example.com";
-  const GITHUB = profile?.contact?.social?.github || "https://github.com/";
-  const LINKEDIN = profile?.contact?.social?.linkedin || "https://www.linkedin.com/";
+  const GITHUB = profile?.contact?.social?.github?.url || "https://github.com/";
+  const LINKEDIN = profile?.contact?.social?.linkedin?.url || "https://www.linkedin.com/";
 
   return (
-    <footer className="relative mt-16 border-t border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5">
+    <footer className="relative mt-16 border-t border-black/10 dark:border-white/10 bg-slate-200 dark:bg-white/5">
       {/* Neon glow */}
       <div
         aria-hidden="true"
@@ -152,38 +135,34 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-12">
           {/* Brand / CTA */}
           <div className="lg:col-span-6">
-            <div className="inline-flex items-center gap-2 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-slate-950/20 px-4 py-3">
-              <span className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400 to-indigo-600 text-white ring-1 ring-white/15">
-                <HiOutlineCpuChip className="h-6 w-6" />
+            <div className="inline-block rounded-full border border-black/10 dark:border-white/10 bg-white/70 dark:bg-slate-950/20 p-1">
+              <span className="relative block h-16 w-16 overflow-hidden rounded-full ring-2 ring-cyan-400/40">
+                <img
+                  src="/assets/images/header-icon.png"
+                  alt="Profile avatar"
+                  className="h-full w-full object-cover"
+                  draggable={false}
+                />
               </span>
-              <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">Fai Hernandez</p>
-                <p className="text-xs text-slate-700 dark:text-slate-300/80">Robotics × Web Engineering</p>
-              </div>
             </div>
 
             <h3 className="mt-6 text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900 dark:text-white">
               {t.title}
             </h3>
-            <p className="mt-3 max-w-xl text-slate-700 dark:text-slate-300/90">{t.subtitle}</p>
+            <p className="mt-3 max-w-xl text-slate-700 dark:text-slate-300/90 text-justify">{t.subtitle}</p>
 
             <div className="mt-5 flex flex-wrap items-center gap-3">
-              <a
-                href={EMAIL}
-                className="inline-flex items-center gap-2 rounded-xl bg-cyan-400/20 px-4 py-2.5 text-sm font-semibold text-cyan-100 ring-1 ring-cyan-300/30 hover:bg-cyan-400/25 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
+              <button
+                onClick={openContactModal}
+                className="inline-flex items-center gap-2 rounded-xl bg-cyan-400/20 px-4 py-2.5 text-sm font-semibold text-cyan-700 dark:text-cyan-100 ring-1 ring-cyan-300/30 hover:bg-cyan-400/25 focus:outline-none focus:ring-2 focus:ring-cyan-400/60 cursor-pointer"
               >
                 <HiOutlineEnvelope className="h-5 w-5" />
-                {t.emailMe}
-              </a>
+                {t.contactMe}
+              </button>
 
               <span className="inline-flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-2.5 text-sm text-slate-800 dark:text-slate-200/85">
                 <HiOutlineMapPin className="h-5 w-5 text-cyan-600 dark:text-cyan-300/90" />
                 {t.location}
-              </span>
-
-              <span className="inline-flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-2.5 text-sm text-slate-800 dark:text-slate-200/85">
-                <HiOutlineLanguage className="h-5 w-5 text-cyan-600 dark:text-cyan-300/90" />
-                {t.lang}
               </span>
             </div>
           </div>
@@ -221,12 +200,9 @@ export default function Footer() {
                 className="inline-flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 text-slate-800 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <span className="grid h-10 w-10 place-items-center rounded-2xl bg-slate-950/10 dark:bg-slate-950/20 ring-1 ring-black/10 dark:ring-white/10">
-                  <SiGithub className="h-5 w-5 text-cyan-300" />
+                  <SiGithub className="h-5 w-5 text-slate-800 dark:text-cyan-300" />
                 </span>
-                <div className="min-w-0">
-                  <p className="text-sm font-semibold text-slate-900 dark:text-white">GitHub</p>
-                  <p className="text-xs text-slate-700 dark:text-slate-300/80">Open-source & code</p>
-                </div>
+                <p className="text-sm font-semibold text-slate-900 dark:text-white">GitHub</p>
               </a>
 
               <a
@@ -236,12 +212,9 @@ export default function Footer() {
                 className="inline-flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 text-slate-800 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <span className="grid h-10 w-10 place-items-center rounded-2xl bg-slate-950/10 dark:bg-slate-950/20 ring-1 ring-black/10 dark:ring-white/10">
-                  <SiLinkedin className="h-5 w-5 text-cyan-300" />
+                  <SiLinkedin className="h-5 w-5 text-blue-600 dark:text-cyan-300" />
                 </span>
-                <div className="min-w-0">
-                  <p className="text-sm font-semibold text-slate-900 dark:text-white">LinkedIn</p>
-                  <p className="text-xs text-slate-700 dark:text-slate-300/80">Networking & career</p>
-                </div>
+                <p className="text-sm font-semibold text-slate-900 dark:text-white">LinkedIn</p>
               </a>
 
               <motion.button

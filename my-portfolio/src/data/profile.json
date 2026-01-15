@@ -27,7 +27,7 @@
   "contact": {
     "emails": [
       { "label": "Personal", "value": "fai@ahernandezt.com" },
-      { "label": "University", "value": "f.hernandezt@uniandes.edu.co" }
+      { "label": "Alternative", "value": "fai.ahertz@gmail.com" }
     ],
     "social": {
       "github": {
@@ -133,54 +133,54 @@
   ,
   "currentFocus": [
     {
-      "id": "robotics",
+      "id": "web-business",
       "text": {
-        "en": "Humanoid robotics and embodied intelligence research",
-        "es": "Investigación en robótica humanoide e inteligencia incorporada",
-        "ja": "ヒューマノイドロボティクスと身体性知能の研究",
-        "ko": "휴머노이드 로보틱스 및 체화 지능 연구"
+        "en": "Web development for small and medium businesses with custom design and functionalities",
+        "es": "Desarrollo de páginas web para pequeñas y medianas empresas con diseño y funcionalidades personalizadas",
+        "ja": "中小企業向けのカスタムデザインと機能を備えたWeb開発",
+        "ko": "맞춤형 디자인과 기능을 갖춘 중소기업을 위한 웹 개발"
       }
     },
     {
-      "id": "web",
+      "id": "social-robotics",
       "text": {
-        "en": "Product-grade full-stack web platforms with cloud deployment",
-        "es": "Plataformas web full-stack a nivel producto con despliegue en la nube",
-        "ja": "クラウド展開を伴うプロダクト品質のフルスタックWebプラットフォーム",
-        "ko": "클라우드 배포를 포함한 프로덕트급 풀스택 웹 플랫폼"
+        "en": "Social robotics for relief of psychological disorders",
+        "es": "Robótica Social para el alivio de trastornos psicológicos",
+        "ja": "心理的障害の軽減のためのソーシャルロボティクス",
+        "ko": "심리적 장애 완화를 위한 소셜 로보틱스"
       }
     }
   ]
   ,
   "currentlyWorkingOn": [
     {
-      "id": "humanoid",
+      "id": "gorom-website",
       "title": {
-        "en": "Humanoid robotics research",
-        "es": "Investigación en robótica humanoide",
-        "ja": "ヒューマノイドロボット研究",
-        "ko": "휴머노이드 로봇 연구"
+        "en": "Visual redesign of WordPress website for a Japanese NGO (GOROM Association)",
+        "es": "Remodelación visual de la página web WordPress de una ONG japonesa (GOROM Association)",
+        "ja": "日本のNGO（GOROM協会）のWordPressウェブサイトのビジュアル再設計",
+        "ko": "일본 NGO(GOROM 협회) WordPress 웹사이트 비주얼 리모델링"
       },
       "description": {
-        "en": "Control, perception, and embodied intelligence systems",
-        "es": "Sistemas de control, percepción e inteligencia incorporada",
-        "ja": "制御・知覚・身体性知能システム",
-        "ko": "제어·인지·체화 지능 시스템"
+        "en": "Improving international visibility and user experience",
+        "es": "Mejorando la visibilidad internacional y experiencia de usuario",
+        "ja": "国際的な可視性とユーザーエクスペリエンスの向上",
+        "ko": "국제적 가시성 및 사용자 경험 개선"
       }
     },
     {
-      "id": "fullstack",
+      "id": "frontend-docs",
       "title": {
-        "en": "Full-stack web platforms",
-        "es": "Plataformas web full-stack",
-        "ja": "フルスタックWebプラットフォーム",
-        "ko": "풀스택 웹 플랫폼"
+        "en": "Staying updated with the latest documentation of frontend development frameworks",
+        "es": "Actualizarme con la documentación más reciente de frameworks de desarrollo frontend",
+        "ja": "フロントエンド開発フレームワークの最新ドキュメントの学習",
+        "ko": "프론트엔드 개발 프레임워크의 최신 문서 업데이트"
       },
       "description": {
-        "en": "React, Django, scalable dashboards and cloud-native systems",
-        "es": "React, Django, paneles escalables y sistemas cloud-native",
-        "ja": "React・Django・スケーラブルなダッシュボードとクラウドネイティブシステム",
-        "ko": "React, Django, 확장 가능한 대시보드 및 클라우드 네이티브 시스템"
+        "en": "React, Tailwind, Next.js, and modern web technologies",
+        "es": "React, Tailwind, Next.js y tecnologías web modernas",
+        "ja": "React、Tailwind、Next.js、および最新のWeb技術",
+        "ko": "React, Tailwind, Next.js 및 최신 웹 기술"
       }
     }
   ]

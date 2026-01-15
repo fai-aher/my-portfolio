@@ -1,31 +1,155 @@
-[
-  {
-    "id": "robocup-2024-sspl-first",
-    "title": {
-      "en": "First Place Winner — RoboCup 2024 SSPL",
-      "es": "1er Lugar — RoboCup 2024 SSPL",
-      "ja": "RoboCup 2024 SSPL 優勝",
-      "ko": "RoboCup 2024 SSPL 1위"
+{
+  "ui": {
+    "sectionTitle": {
+      "en": "Awards & Recognition",
+      "es": "Premios y Reconocimientos",
+      "ja": "受賞・表彰",
+      "ko": "수상 및 인정"
     },
-    "date": "2024-07",
-    "location": "Eindhoven, Netherlands",
-    "organization": "RoboCup / Team SinfonIA",
-    "images": [
-      "/assets/images/awards/robocup-2024-1.jpg",
-      "/assets/images/awards/robocup-2024-2.jpg"
-    ]
+    "sectionDescription": {
+      "en": "In this section, I am pleased to share the recognitions, scholarships, and honors I have received throughout my career.",
+      "es": "En esta sección, me complace compartir los reconocimientos, becas y honores que he recibido a lo largo de mi carrera.",
+      "ja": "このセクションでは、これまでのキャリアで受けた表彰、奨学金、栄誉を喜んで紹介します。",
+      "ko": "이 섹션에서는 제 경력 전반에 걸쳐 받은 인정, 장학금, 영예를 기쁘게 공유합니다."
+    },
+    "filters": {
+      "all": {
+        "en": "All",
+        "es": "Todo",
+        "ja": "すべて",
+        "ko": "전체"
+      },
+      "scholarship": {
+        "en": "Scholarship",
+        "es": "Beca",
+        "ja": "奨学金",
+        "ko": "장학금"
+      },
+      "competition": {
+        "en": "Competition",
+        "es": "Concurso",
+        "ja": "コンテスト",
+        "ko": "대회"
+      },
+      "honor": {
+        "en": "Honors",
+        "es": "Honor",
+        "ja": "表彰",
+        "ko": "표창"
+      }
+    },
+    "itemsLabel": {
+      "en": "items",
+      "es": "elementos",
+      "ja": "件",
+      "ko": "개"
+    },
+    "view": {
+      "en": "View",
+      "es": "Ver",
+      "ja": "見る",
+      "ko": "보기"
+    },
+    "close": {
+      "en": "Close",
+      "es": "Cerrar",
+      "ja": "閉じる",
+      "ko": "닫기"
+    }
   },
-  {
-    "id": "high-school-honors",
-    "title": {
-      "en": "Graduation with honors — Highest GPA (Class of 2019)",
-      "es": "Graduación con honores — Mejor promedio (Promoción 2019)",
-      "ja": "優秀成績で卒業（2019年度 最優秀GPA）",
-      "ko": "우수 졸업(2019년 최고 GPA)"
+  "awards": [
+    {
+      "id": "korean-government-scholarship-2025",
+      "type": "scholarship",
+      "title": {
+        "en": "Korean Government Scholarship — Seoul National University",
+        "es": "Beca del Gobierno de Corea del Sur — Universidad Nacional de Seúl",
+        "ja": "韓国政府奨学金 — ソウル大学校",
+        "ko": "대한민국 정부 장학금 — 서울대학교"
+      },
+      "description": {
+        "en": "Awarded a scholarship by the South Korean government through NIIED (National Institute for International Education) to complete an exchange semester at Seoul National University. The scholarship covered travel expenses and provided monthly financial support. Selected based on academic excellence and career achievements. Completed my final undergraduate semester attending graduate-level robotics and AI courses.",
+        "es": "Recibí una beca del gobierno de Corea del Sur a través del NIIED (Instituto Nacional para la Educación Internacional) para realizar un semestre de intercambio en la Universidad Nacional de Seúl. La beca cubrió los gastos de viaje y proporcionó apoyo financiero mensual. Fui seleccionado por excelencia académica y logros en mi carrera. Completé mi último semestre de pregrado cursando materias de posgrado en robótica e inteligencia artificial.",
+        "ja": "NIIED（国立国際教育院）を通じて韓国政府から奨学金を授与され、ソウル大学校で交換留学を行いました。奨学金は渡航費と月々の生活支援金を含みます。学業成績とキャリア実績に基づいて選抜されました。学部最終学期として大学院レベルのロボティクスとAIの授業を履修しました。",
+        "ko": "NIIED(국립국제교육원)를 통해 대한민국 정부 장학금을 받아 서울대학교에서 교환학기를 수행했습니다. 장학금은 여행 경비와 월별 생활비를 지원했습니다. 학업 성적과 경력을 바탕으로 선발되었습니다. 학부 마지막 학기로 대학원 수준의 로보틱스 및 AI 수업을 수강했습니다."
+      },
+      "date": "2025-02",
+      "location": {
+        "en": "Seoul, South Korea",
+        "es": "Seúl, Corea del Sur",
+        "ja": "韓国・ソウル",
+        "ko": "대한민국 서울"
+      },
+      "organization": {
+        "en": "NIIED / Korean Government",
+        "es": "NIIED / Gobierno de Corea del Sur",
+        "ja": "NIIED / 韓国政府",
+        "ko": "NIIED / 대한민국 정부"
+      },
+      "featuredImage": "/assets/images/awards/snu.png",
+      "link": null
     },
-    "date": "2019-11",
-    "location": "Bucaramanga, Colombia",
-    "organization": "Colegio Bilingüe Divino Niño",
-    "images": ["/assets/images/awards/divino-nino-2019.jpg"]
-  }
-]
+    {
+      "id": "robocup-2024-sspl-first",
+      "type": "competition",
+      "title": {
+        "en": "First Place Winner — RoboCup 2024 SSPL",
+        "es": "1er Lugar — RoboCup 2024 SSPL",
+        "ja": "RoboCup 2024 SSPL 優勝",
+        "ko": "RoboCup 2024 SSPL 1위"
+      },
+      "description": {
+        "en": "Won first place in the Social Standard Platform League at RoboCup 2024, the world's largest robotics competition, representing Universidad de los Andes with Team SinfonIA.",
+        "es": "Obtuve el primer lugar en la Social Standard Platform League en RoboCup 2024, la competencia de robótica más grande del mundo, representando a la Universidad de los Andes con el equipo SinfonIA.",
+        "ja": "世界最大のロボット競技大会RoboCup 2024のSocial Standard Platform Leagueで、Universidad de los AndesのTeam SinfonIAとして優勝しました。",
+        "ko": "세계 최대 로봇 대회인 RoboCup 2024의 Social Standard Platform League에서 Universidad de los Andes의 Team SinfonIA로 1위를 차지했습니다."
+      },
+      "date": "2024-07",
+      "location": {
+        "en": "Eindhoven, Netherlands",
+        "es": "Eindhoven, Países Bajos",
+        "ja": "オランダ・アイントホーフェン",
+        "ko": "네덜란드 에인트호번"
+      },
+      "organization": {
+        "en": "RoboCup / Team SinfonIA",
+        "es": "RoboCup / Equipo SinfonIA",
+        "ja": "RoboCup / Team SinfonIA",
+        "ko": "RoboCup / Team SinfonIA"
+      },
+      "featuredImage": "/assets/images/awards/robocup.png",
+      "link": null
+    },
+    {
+      "id": "high-school-honors",
+      "type": "honor",
+      "title": {
+        "en": "Graduation with Honors — Highest GPA",
+        "es": "Graduación con Honores — Mejor Promedio",
+        "ja": "優秀成績卒業 — 最優秀GPA",
+        "ko": "우수 졸업 — 최고 GPA"
+      },
+      "description": {
+        "en": "Graduated with the highest GPA in the Class of 2019, recognized for academic excellence throughout high school.",
+        "es": "Me gradué con el mejor promedio de la promoción 2019, reconocido por excelencia académica durante toda la secundaria.",
+        "ja": "2019年度卒業生の中で最高のGPAで卒業し、高校全体を通じて学業優秀として認められました。",
+        "ko": "2019년 졸업생 중 최고 GPA로 졸업하여 고등학교 전체에서 학업 우수성을 인정받았습니다."
+      },
+      "date": "2019-11",
+      "location": {
+        "en": "Bucaramanga, Colombia",
+        "es": "Bucaramanga, Colombia",
+        "ja": "コロンビア・ブカラマンガ",
+        "ko": "콜롬비아 부카라망가"
+      },
+      "organization": {
+        "en": "Colegio Bilingue Divino Nino",
+        "es": "Colegio Bilingue Divino Nino",
+        "ja": "Colegio Bilingue Divino Nino",
+        "ko": "Colegio Bilingue Divino Nino"
+      },
+      "featuredImage": "/assets/images/awards/high-school-graduation.png",
+      "link": null
+    }
+  ]
+}

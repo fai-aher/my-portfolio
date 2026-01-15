@@ -18,6 +18,12 @@ const MODAL_I18N = {
     ja: "まだ説明がありません。",
     ko: "아직 설명이 없습니다.",
   },
+  timelineIntro: {
+    en: "The timeline starts from the present year. To view past years, please scroll the timeline to the left.",
+    es: "La línea de tiempo inicia desde el año presente. Para ver años pasados, por favor mueve la línea de tiempo hacia la izquierda.",
+    ja: "タイムラインは現在の年から始まります。過去の年を表示するには、タイムラインを左にスクロールしてください。",
+    ko: "타임라인은 현재 연도에서 시작됩니다. 과거 연도를 보려면 타임라인을 왼쪽으로 스크롤하세요.",
+  },
 };
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -381,7 +387,7 @@ function ExpandableMarker({ item, hovered, onOpen, lang }) {
         "relative",
         "rounded-2xl border",
         "border-black/10 dark:border-white/10",
-        hovered ? "bg-slate-950 text-white" : "bg-white dark:bg-slate-950",
+        hovered ? "bg-white dark:bg-slate-950" : "bg-white dark:bg-slate-950",
         "shadow-xl",
       ].join(" ")}
       style={{
@@ -434,18 +440,18 @@ function ExpandableMarker({ item, hovered, onOpen, lang }) {
             className="min-w-0 flex-1 flex flex-col gap-3"
           >
             <div>
-              <p className="text-base font-semibold leading-snug text-white break-words">
+              <p className="text-base font-semibold leading-snug text-slate-900 dark:text-white break-words">
                 {pickLang(item.title, lang) || item.title}
               </p>
-              <p className="text-sm text-white/70">
+              <p className="text-sm text-slate-600 dark:text-white/70">
                 {pickLang(item.organization, lang) || item.organization || "—"}
               </p>
             </div>
 
-            <div className="h-px w-full bg-white/10" />
+            <div className="h-px w-full bg-black/10 dark:bg-white/10" />
             <button
               onClick={onOpen}
-              className="mt-1 w-full rounded-2xl bg-cyan-500/15 px-4 py-3 text-sm font-semibold text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+              className="mt-1 w-full rounded-2xl bg-cyan-500/15 px-4 py-3 text-sm font-semibold text-cyan-700 dark:text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
             >
               {pickLang(item.ui?.showMore, lang) || "Show more details"}
             </button>
@@ -648,6 +654,11 @@ export default function ExperiencesTimeline() {
           Hover an item to highlight its full duration
         </p>
       </div>
+
+      {/* Introductory text */}
+      <p className="mt-3 text-sm text-slate-700 dark:text-slate-300/85">
+        {pickLang(MODAL_I18N.timelineIntro, lang)}
+      </p>
 
       {/* Wrapper */}
       <div
@@ -892,7 +903,7 @@ export default function ExperiencesTimeline() {
                   {/* Show month name for start date above the start, if hovered */}
                   {hovered && (
                     <div
-                      className="absolute -translate-x-1/2 rounded-full border border-black/10 dark:border-white/10 bg-slate-950 px-2 py-1 text-[11px] font-semibold text-white"
+                      className="absolute -translate-x-1/2 rounded-full border border-black/10 dark:border-white/10 bg-white dark:bg-slate-950 px-2 py-1 text-[11px] font-semibold text-slate-900 dark:text-white shadow"
                       style={{ left: it._simplifyToEnd ? timelineStartX : barLeft, top: barTop - 30 }}
                     >
                       {it._simplifyToEnd ? formatMonthName("2018-01", lang) : formatMonthName(it.dates?.start, lang)}
@@ -901,7 +912,7 @@ export default function ExperiencesTimeline() {
                   {/* Show month name for end date above the end, if hovered */}
                   {hovered && (
                     <div
-                      className="absolute -translate-x-1/2 rounded-full border border-black/10 dark:border-white/10 bg-slate-950 px-2 py-1 text-[11px] font-semibold text-white"
+                      className="absolute -translate-x-1/2 rounded-full border border-black/10 dark:border-white/10 bg-white dark:bg-slate-950 px-2 py-1 text-[11px] font-semibold text-slate-900 dark:text-white shadow"
                       style={{ left: clampedBarRight, top: barTop - 30 }}
                     >
                       {formatMonthName(it.dates?.end || it.dates?.start, lang)}

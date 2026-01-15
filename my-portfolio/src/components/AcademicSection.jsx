@@ -69,9 +69,22 @@ export default function AcademicSection() {
             <HiOutlineAcademicCap className="h-6 w-6 text-cyan-600 dark:text-cyan-300" />
           </span>
           <h2 className="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-white">
-            {pickLang({ en: "Academic Background" }, lang)}
+            {pickLang({
+              en: "Academic Background",
+              es: "Formación Académica",
+              ja: "学歴",
+              ko: "학력"
+            }, lang)}
           </h2>
         </div>
+        <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300/85">
+          {pickLang({
+            en: "My formal education has been the foundation of everything I build. Here you can explore the institutions and programs that have shaped my perspective in robotics and engineering.",
+            es: "Mi formación académica ha sido la base de todo lo que construyo. Aquí puedes explorar las instituciones y programas que han moldeado mi perspectiva en robótica e ingeniería.",
+            ja: "私の正規教育は、私が作るすべての基盤です。ロボティクスと工学における私の視点を形成した機関とプログラムをご覧いただけます。",
+            ko: "저의 정규 교육은 제가 만드는 모든 것의 기반입니다. 로보틱스와 공학에 대한 저의 관점을 형성한 기관과 프로그램을 살펴보실 수 있습니다."
+          }, lang)}
+        </p>
 
         {/* Academic timeline */}
         <div className="mt-8 space-y-6">

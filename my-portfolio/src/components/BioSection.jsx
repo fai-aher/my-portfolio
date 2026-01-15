@@ -1,17 +1,20 @@
 import { useEffect, useMemo, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   HiOutlineCpuChip,
   HiOutlineMapPin,
   HiOutlineArrowTopRightOnSquare,
   HiOutlineEnvelope,
   HiOutlineDocumentArrowDown,
+  HiOutlineXMark,
+  HiOutlineClipboardDocument,
+  HiOutlineCheck,
 } from "react-icons/hi2";
-import { SiReact, SiDjango, SiTailwindcss, SiPython } from "react-icons/si";
-import { HiOutlineGlobeAsiaAustralia } from "react-icons/hi2";
 
 import profile from "../data/profile.json";
 import about from "../data/about.json";
+import skillsData from "../data/skills.json";
+import TechIcon from "./TechIcon.jsx";
 
 /**
  * BioSection (JSON-driven)
@@ -47,10 +50,69 @@ const fadeUp = {
 };
 
 const CTA_LABELS = {
-  email: { en: "Email me", es: "Envíame un correo", ja: "メールする", ko: "이메일 보내기" },
+  contact: { en: "Contact me", es: "Contáctame", ja: "連絡する", ko: "연락하기" },
   cv: { en: "Download CV", es: "Descargar CV", ja: "履歴書をダウンロード", ko: "이력서 다운로드" },
   projects: { en: "Explore projects", es: "Explorar proyectos", ja: "プロジェクトを見る", ko: "프로젝트 보기" }
 };
+
+const CONTACT_MODAL_LABELS = {
+  title: { en: "Let's work together!", es: "Trabajemos juntos!", ja: "一緒に働きましょう！", ko: "함께 일해요!" },
+  description: {
+    en: {
+      before: "Contact me if you are interested in my profile and have a ",
+      jobOffer: "job offer",
+      middle: " or if you have a ",
+      project: "project",
+      after: " you would like us to work on together."
+    },
+    es: {
+      before: "Contáctame si estás interesado en mi perfil y tienes una ",
+      jobOffer: "oferta de trabajo",
+      middle: " o si tienes un ",
+      project: "proyecto",
+      after: " en el que te gustaría que trabajáramos juntos."
+    },
+    ja: {
+      before: "私のプロフィールに興味があり、",
+      jobOffer: "求人",
+      middle: "がある場合、または一緒に取り組みたい",
+      project: "プロジェクト",
+      after: "がある場合は、ぜひご連絡ください。"
+    },
+    ko: {
+      before: "제 프로필에 관심이 있고 ",
+      jobOffer: "채용 제안",
+      middle: "이 있거나, 함께 작업하고 싶은 ",
+      project: "프로젝트",
+      after: "가 있다면 연락해 주세요."
+    }
+  },
+  primaryEmail: { en: "Primary email", es: "Correo principal", ja: "メインメール", ko: "기본 이메일" },
+  alternativeEmail: { en: "Alternative email", es: "Correo alternativo", ja: "サブメール", ko: "대체 이메일" },
+  linkedinButton: { en: "Send me a message through LinkedIn", es: "Envíame un mensaje por LinkedIn", ja: "LinkedInでメッセージを送る", ko: "LinkedIn으로 메시지 보내기" },
+  close: { en: "Close", es: "Cerrar", ja: "閉じる", ko: "닫기" },
+  copied: { en: "Copied!", es: "¡Copiado!", ja: "コピーしました！", ko: "복사됨!" }
+};
+
+// Priority skills that must be included in the top 6
+const PRIORITY_SKILLS = ["python", "ros", "scikitlearn"];
+
+// Get top 6 skills by years of experience, ensuring priority skills are included
+function getTopSkills(technologies, currentYear = new Date().getFullYear()) {
+  const sortedByYears = [...technologies]
+    .map(t => ({ ...t, years: currentYear - t.sinceYear }))
+    .sort((a, b) => b.years - a.years);
+
+  const prioritySkills = sortedByYears.filter(t => PRIORITY_SKILLS.includes(t.key));
+  const otherSkills = sortedByYears.filter(t => !PRIORITY_SKILLS.includes(t.key));
+
+  // Fill remaining slots with top non-priority skills
+  const remainingSlots = 6 - prioritySkills.length;
+  const topOthers = otherSkills.slice(0, remainingSlots);
+
+  // Combine and sort by years again
+  return [...prioritySkills, ...topOthers].sort((a, b) => b.years - a.years);
+}
 
 const SOCIAL_ORDER = ["linkedin", "github", "instagram", "pexels", "platzi"];
 
@@ -81,21 +143,176 @@ function Pill({ children }) {
   );
 }
 
+function ContactModal({ isOpen, onClose, lang, emails, linkedinUrl }) {
+  const [copiedIndex, setCopiedIndex] = useState(null);
+
+  const handleCopy = async (email, index) => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          className="fixed inset-0 z-[100]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            onClick={onClose}
+          />
+
+          {/* Modal */}
+          <motion.div
+            initial={{ scale: 0.96, y: 20 }}
+            animate={{ scale: 1, y: 0 }}
+            exit={{ scale: 0.96, y: 20 }}
+            className="absolute left-1/2 top-1/2 w-[95vw] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-white/95 dark:bg-slate-950/95 shadow-2xl"
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between gap-4 border-b border-black/10 dark:border-white/10 px-5 py-4">
+              <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
+                {pickLang(CONTACT_MODAL_LABELS.title, lang)}
+              </h2>
+              <button
+                onClick={onClose}
+                className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/15 px-3 py-2 text-sm font-semibold text-cyan-800 dark:text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+              >
+                <HiOutlineXMark className="h-5 w-5" />
+                <span className="hidden sm:inline">{pickLang(CONTACT_MODAL_LABELS.close, lang)}</span>
+              </button>
+            </div>
+
+            {/* Body */}
+            <div className="p-5 space-y-4">
+              {/* Description */}
+              <p className="text-sm text-slate-700 dark:text-slate-300/90 text-justify leading-relaxed">
+                {CONTACT_MODAL_LABELS.description[lang]?.before || CONTACT_MODAL_LABELS.description.en.before}
+                <span className="font-semibold text-cyan-600 dark:text-cyan-300">
+                  {CONTACT_MODAL_LABELS.description[lang]?.jobOffer || CONTACT_MODAL_LABELS.description.en.jobOffer}
+                </span>
+                {CONTACT_MODAL_LABELS.description[lang]?.middle || CONTACT_MODAL_LABELS.description.en.middle}
+                <span className="font-semibold text-cyan-600 dark:text-cyan-300">
+                  {CONTACT_MODAL_LABELS.description[lang]?.project || CONTACT_MODAL_LABELS.description.en.project}
+                </span>
+                {CONTACT_MODAL_LABELS.description[lang]?.after || CONTACT_MODAL_LABELS.description.en.after}
+              </p>
+
+              {/* Primary Email */}
+              <div>
+                <p className="text-xs uppercase tracking-widest text-cyan-700 dark:text-cyan-200/70 mb-2">
+                  {pickLang(CONTACT_MODAL_LABELS.primaryEmail, lang)}
+                </p>
+                <div className="flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
+                  <HiOutlineEnvelope className="h-5 w-5 text-cyan-600 dark:text-cyan-300 shrink-0" />
+                  <span className="flex-1 text-sm text-slate-900 dark:text-slate-100 truncate">
+                    {emails[0]?.value}
+                  </span>
+                  <button
+                    onClick={() => handleCopy(emails[0]?.value, 0)}
+                    className="shrink-0 p-2 rounded-lg hover:bg-cyan-500/10 transition-colors"
+                    aria-label="Copy email"
+                  >
+                    {copiedIndex === 0 ? (
+                      <HiOutlineCheck className="h-5 w-5 text-emerald-500" />
+                    ) : (
+                      <HiOutlineClipboardDocument className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
+                    )}
+                  </button>
+                </div>
+                {copiedIndex === 0 && (
+                  <p className="text-xs text-emerald-500 mt-1">{pickLang(CONTACT_MODAL_LABELS.copied, lang)}</p>
+                )}
+              </div>
+
+              {/* Alternative Email */}
+              {emails[1] && (
+                <div>
+                  <p className="text-xs uppercase tracking-widest text-cyan-700 dark:text-cyan-200/70 mb-2">
+                    {pickLang(CONTACT_MODAL_LABELS.alternativeEmail, lang)}
+                  </p>
+                  <div className="flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
+                    <HiOutlineEnvelope className="h-5 w-5 text-cyan-600 dark:text-cyan-300 shrink-0" />
+                    <span className="flex-1 text-sm text-slate-900 dark:text-slate-100 truncate">
+                      {emails[1]?.value}
+                    </span>
+                    <button
+                      onClick={() => handleCopy(emails[1]?.value, 1)}
+                      className="shrink-0 p-2 rounded-lg hover:bg-cyan-500/10 transition-colors"
+                      aria-label="Copy email"
+                    >
+                      {copiedIndex === 1 ? (
+                        <HiOutlineCheck className="h-5 w-5 text-emerald-500" />
+                      ) : (
+                        <HiOutlineClipboardDocument className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
+                      )}
+                    </button>
+                  </div>
+                  {copiedIndex === 1 && (
+                    <p className="text-xs text-emerald-500 mt-1">{pickLang(CONTACT_MODAL_LABELS.copied, lang)}</p>
+                  )}
+                </div>
+              )}
+
+              {/* LinkedIn Button */}
+              <div className="pt-2">
+                <a
+                  href={linkedinUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center gap-3 w-full rounded-xl bg-cyan-500/20 px-4 py-3 text-sm font-semibold text-cyan-700 dark:text-cyan-100 ring-1 ring-cyan-300/30 hover:bg-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-cyan-400/60 transition-colors"
+                >
+                  <img
+                    src="/assets/icons/linkedin.png"
+                    alt="LinkedIn"
+                    className="h-5 w-5 object-contain"
+                  />
+                  {pickLang(CONTACT_MODAL_LABELS.linkedinButton, lang)}
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
 export default function BioSection() {
   const lang = useAppLanguage();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  // Listen for global event to open contact modal (from Header or Footer)
+  useEffect(() => {
+    const handleOpenContact = () => setIsContactModalOpen(true);
+    window.addEventListener("app:openContactModal", handleOpenContact);
+    return () => window.removeEventListener("app:openContactModal", handleOpenContact);
+  }, []);
 
   const tProfile = useMemo(() => profile, []);
   const tAbout = useMemo(() => about, []);
 
-  // “headline” stays as a role line (smaller)
+  // Compute top 6 skills
+  const topSkills = useMemo(() => getTopSkills(skillsData.technologies), []);
+
+  // "headline" stays as a role line (smaller)
   const headline = pickLang(tProfile.headline, lang);
   const summary = pickLang(tAbout.summary, lang);
 
-  const emailValue =
-    tProfile?.contact?.emails?.[0]?.value || "fai@ahernandezt.com";
+  const emails = tProfile?.contact?.emails || [];
+  const linkedinUrl = tProfile?.contact?.social?.linkedin?.url || "https://www.linkedin.com/in/a-hernandezt/";
 
   const RightCard = (
-    <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-5">
+    <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-slate-200 dark:bg-white/5 p-5">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -inset-24 bg-gradient-to-r from-cyan-400/0 via-cyan-400/14 to-indigo-400/0 blur-2xl"
@@ -161,24 +378,6 @@ export default function BioSection() {
           </div>
         </div>
 
-        {/* Visited countries */}
-        <div className="mt-5">
-          <div className="flex items-center justify-between gap-3">
-            <p className="text-xs uppercase tracking-widest text-cyan-700 dark:text-cyan-200/70">
-              {pickLang(tProfile.ui?.visitedCountriesTitle, lang)}
-            </p>
-            <div className="h-px flex-1 bg-gradient-to-r from-black/10 via-black/5 to-transparent dark:from-white/10 dark:via-white/5" />
-          </div>
-
-          <div className="mt-3 flex flex-wrap gap-2 text-xl">
-            {(tProfile.visitedCountries || []).map((c) => (
-              <span key={c.code} title={pickLang(c.name, lang)}>
-                {c.emoji}
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Stack */}
         <div className="mt-5">
           <div className="flex items-center justify-between gap-3">
@@ -195,34 +394,29 @@ export default function BioSection() {
           </div>
 
           <div className="mt-3 grid grid-cols-2 gap-3">
-            <div className="flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-              <SiReact className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
-              <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">React</p>
-                <p className="text-xs text-slate-700 dark:text-slate-300/80">UI engineering</p>
+            {topSkills.map((skill) => (
+              <div
+                key={skill.key}
+                className="flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3"
+              >
+                <div className="shrink-0">
+                  <TechIcon
+                    iconSlug={skill.iconSlug}
+                    logo={skill.logo}
+                    alt={skill.label}
+                    size="sm"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-slate-900 dark:text-white truncate">
+                    {skill.label}
+                  </p>
+                  <p className="text-xs text-slate-700 dark:text-slate-300/80 truncate">
+                    {pickLang(skill.shortDesc, lang) || pickLang(skill.details, lang)}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-              <SiTailwindcss className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
-              <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">Tailwind</p>
-                <p className="text-xs text-slate-700 dark:text-slate-300/80">Design systems</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-              <SiDjango className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
-              <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">Django</p>
-                <p className="text-xs text-slate-700 dark:text-slate-300/80">APIs & auth</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-              <SiPython className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
-              <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">Python</p>
-                <p className="text-xs text-slate-700 dark:text-slate-300/80">Robotics</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -317,29 +511,30 @@ export default function BioSection() {
 
             {/* CTA */}
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href={`mailto:${emailValue}`}
+              <button
+                onClick={() => setIsContactModalOpen(true)}
                 className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/20 px-4 py-2.5 text-sm font-semibold text-cyan-700 dark:text-cyan-100 ring-1 ring-cyan-300/30 hover:bg-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
               >
                 <HiOutlineEnvelope className="h-5 w-5" />
-                {pickLang(CTA_LABELS.email, lang)}
-              </a>
+                {pickLang(CTA_LABELS.contact, lang)}
+              </button>
 
               <a
-                href="/cv.pdf"
+                href="/assets/cv/cv.pdf"
+                download
                 className="inline-flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-white/80 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <HiOutlineDocumentArrowDown className="h-5 w-5" />
                 {pickLang(CTA_LABELS.cv, lang)}
               </a>
 
-              <a
-                href="#projects"
+              <button
+                onClick={() => scrollToSection("projects")}
                 className="inline-flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-white/80 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <HiOutlineArrowTopRightOnSquare className="h-5 w-5" />
                 {pickLang(CTA_LABELS.projects, lang)}
-              </a>
+              </button>
             </div>
 
 
@@ -420,6 +615,15 @@ export default function BioSection() {
           </div>
         </div>
       </motion.div>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+        lang={lang}
+        emails={emails}
+        linkedinUrl={linkedinUrl}
+      />
     </div>
   );
 }

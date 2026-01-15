@@ -1,10 +1,182 @@
 {
+  "ui": {
+    "sectionBadge": {
+      "en": "Skills",
+      "es": "Habilidades",
+      "ja": "スキル",
+      "ko": "기술"
+    },
+    "title": {
+      "en": "Technologies & Tools",
+      "es": "Tecnologías y Herramientas",
+      "ja": "技術とツール",
+      "ko": "기술 및 도구"
+    },
+    "description": {
+      "en": "Here are the technologies and tools I use daily in my projects. Each card shows how long I've been working with each one — hover to see more details.",
+      "es": "Aquí están las tecnologías y herramientas que uso a diario en mis proyectos. Cada tarjeta muestra cuánto tiempo llevo trabajando con cada una — pasa el cursor para ver más detalles.",
+      "ja": "私が日々のプロジェクトで使用している技術とツールです。各カードにはそれぞれの使用期間が表示されます — ホバーすると詳細が見られます。",
+      "ko": "제가 프로젝트에서 매일 사용하는 기술과 도구입니다. 각 카드에는 사용 기간이 표시되어 있습니다 — 마우스를 올려 자세한 내용을 확인하세요."
+    },
+    "filterLabel": {
+      "en": "Filter:",
+      "es": "Filtrar:",
+      "ja": "フィルター：",
+      "ko": "필터:"
+    },
+    "filters": {
+      "all": {
+        "en": "All",
+        "es": "Todo",
+        "ja": "すべて",
+        "ko": "전체"
+      },
+      "frontend": {
+        "en": "Frontend",
+        "es": "Frontend",
+        "ja": "フロントエンド",
+        "ko": "프론트엔드"
+      },
+      "backend": {
+        "en": "Backend",
+        "es": "Backend",
+        "ja": "バックエンド",
+        "ko": "백엔드"
+      },
+      "robotics": {
+        "en": "Robotics",
+        "es": "Robótica",
+        "ja": "ロボティクス",
+        "ko": "로보틱스"
+      },
+      "language": {
+        "en": "Programming language",
+        "es": "Lenguaje de programación",
+        "ja": "プログラミング言語",
+        "ko": "프로그래밍 언어"
+      },
+      "framework": {
+        "en": "Frameworks",
+        "es": "Frameworks",
+        "ja": "フレームワーク",
+        "ko": "프레임워크"
+      },
+      "tool": {
+        "en": "Tools",
+        "es": "Herramientas",
+        "ja": "ツール",
+        "ko": "도구"
+      },
+      "cloud": {
+        "en": "Cloud/DevOps",
+        "es": "Cloud/DevOps",
+        "ja": "クラウド/DevOps",
+        "ko": "클라우드/DevOps"
+      },
+      "database": {
+        "en": "Databases",
+        "es": "Bases de datos",
+        "ja": "データベース",
+        "ko": "데이터베이스"
+      },
+      "design": {
+        "en": "Design",
+        "es": "Diseño",
+        "ja": "デザイン",
+        "ko": "디자인"
+      }
+    },
+    "shown": {
+      "en": "shown",
+      "es": "mostrados",
+      "ja": "表示中",
+      "ko": "표시됨"
+    },
+    "pagination": {
+      "prev": {
+        "en": "Prev",
+        "es": "Anterior",
+        "ja": "前へ",
+        "ko": "이전"
+      },
+      "next": {
+        "en": "Next",
+        "es": "Siguiente",
+        "ja": "次へ",
+        "ko": "다음"
+      },
+      "page": {
+        "en": "Page",
+        "es": "Página",
+        "ja": "ページ",
+        "ko": "페이지"
+      }
+    },
+    "since": {
+      "en": "Since",
+      "es": "Desde",
+      "ja": "開始",
+      "ko": "시작"
+    },
+    "yearsUsed": {
+      "lessThanOne": {
+        "en": "< 1 year",
+        "es": "< 1 año",
+        "ja": "1年未満",
+        "ko": "1년 미만"
+      },
+      "oneYear": {
+        "en": "1+ year",
+        "es": "1+ año",
+        "ja": "1年以上",
+        "ko": "1년 이상"
+      },
+      "years": {
+        "en": "years",
+        "es": "años",
+        "ja": "年",
+        "ko": "년"
+      }
+    },
+    "emptyState": {
+      "en": "No technologies match this filter yet.",
+      "es": "Aún no hay tecnologías que coincidan con este filtro.",
+      "ja": "このフィルターに一致する技術はまだありません。",
+      "ko": "이 필터와 일치하는 기술이 아직 없습니다."
+    },
+    "hardSkillsTitle": {
+      "en": "Hard Skills",
+      "es": "Habilidades Técnicas",
+      "ja": "ハードスキル",
+      "ko": "하드 스킬"
+    },
+    "softSkillsTitle": {
+      "en": "Soft Skills",
+      "es": "Habilidades Blandas",
+      "ja": "ソフトスキル",
+      "ko": "소프트 스킬"
+    },
+    "languageSkillsTitle": {
+      "en": "Language Skills",
+      "es": "Habilidades de Idiomas",
+      "ja": "言語スキル",
+      "ko": "언어 능력"
+    },
+    "started": {
+      "en": "Started",
+      "es": "Inicio",
+      "ja": "開始",
+      "ko": "시작"
+    }
+  },
+
   "technologies": [
     {
       "key": "linux",
       "label": "Linux / Ubuntu",
       "sinceYear": 2021,
       "logo": "/assets/logos/skills/linux.svg",
+      "iconSlug": "linux",
       "accent": "cyan",
       "categories": ["tool","cloud","robotics"],
       "details": {
@@ -12,6 +184,12 @@
         "es": "Programación en robótica, construcción de servidores y despliegue.",
         "ja": "ロボティクス開発、サーバー構築、デプロイで使用。",
         "ko": "로보틱스 개발, 서버 구축 및 배포에 사용."
+      },
+      "shortDesc": {
+        "en": "Servers & DevOps",
+        "es": "Servidores y DevOps",
+        "ja": "サーバー・DevOps",
+        "ko": "서버 & DevOps"
       }
     },
 
@@ -20,6 +198,7 @@
       "label": "React",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/react.svg",
+      "iconSlug": "react",
       "accent": "cyan",
       "categories": ["frontend","framework"],
       "details": {
@@ -34,6 +213,7 @@
       "label": "Angular",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/angular.svg",
+      "iconSlug": "angular",
       "accent": "red",
       "categories": ["frontend","framework"],
       "details": {
@@ -48,6 +228,7 @@
       "label": "Tailwind CSS",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/tailwind.svg",
+      "iconSlug": "tailwindcss",
       "accent": "sky",
       "categories": ["frontend","tool"],
       "details": {
@@ -62,6 +243,7 @@
       "label": "Django",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/django.svg",
+      "iconSlug": "django",
       "accent": "emerald",
       "categories": ["backend","framework"],
       "details": {
@@ -76,6 +258,7 @@
       "label": "Python",
       "sinceYear": 2020,
       "logo": "/assets/logos/skills/python.svg",
+      "iconSlug": "python",
       "accent": "amber",
       "categories": ["language"],
       "details": {
@@ -83,6 +266,12 @@
         "es": "Robótica, desarrollo backend/APIs y Deep Learning.",
         "ja": "ロボティクス、バックエンド/API、深層学習で使用。",
         "ko": "로보틱스, 백엔드/API, 딥러닝에 사용."
+      },
+      "shortDesc": {
+        "en": "Robotics & ML",
+        "es": "Robótica y ML",
+        "ja": "ロボティクス・ML",
+        "ko": "로보틱스 & ML"
       }
     },
     {
@@ -90,6 +279,7 @@
       "label": "ROS (Robot Operating System)",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/ros.svg",
+      "iconSlug": "ros",
       "accent": "indigo",
       "categories": ["robotics","tool"],
       "details": {
@@ -97,6 +287,12 @@
         "es": "Lo he usado como investigador en el grupo SinfonIA (Universidad de los Andes) y en la investigación de mi tesis de pregrado.",
         "ja": "Universidad de los AndesのSinfonIA研究グループおよび学部卒論研究で使用。",
         "ko": "Uniandes SinfonIA 연구그룹 및 학부 논문 연구에서 사용."
+      },
+      "shortDesc": {
+        "en": "Robotics framework",
+        "es": "Framework robótica",
+        "ja": "ロボット開発基盤",
+        "ko": "로보틱스 프레임워크"
       }
     },
 
@@ -105,6 +301,7 @@
       "label": "JavaScript",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/javascript.svg",
+      "iconSlug": "javascript",
       "accent": "yellow",
       "categories": ["language"],
       "details": {
@@ -119,6 +316,7 @@
       "label": "HTML",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/html.svg",
+      "iconSlug": "html5",
       "accent": "orange",
       "categories": ["language","frontend"],
       "details": {
@@ -133,6 +331,7 @@
       "label": "CSS",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/css.svg",
+      "iconSlug": "css3",
       "accent": "blue",
       "categories": ["language","frontend"],
       "details": {
@@ -148,6 +347,7 @@
       "label": "Vite",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/vite.svg",
+      "iconSlug": "vite",
       "accent": "violet",
       "categories": ["frontend","tool"],
       "details": {
@@ -163,6 +363,7 @@
       "label": "Spring Boot",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/springboot.svg",
+      "iconSlug": "springboot",
       "accent": "green",
       "categories": ["backend","framework"],
       "details": {
@@ -177,6 +378,7 @@
       "label": "NestJS",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/nestjs.svg",
+      "iconSlug": "nestjs",
       "accent": "rose",
       "categories": ["backend","framework"],
       "details": {
@@ -191,6 +393,7 @@
       "label": "FastAPI",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/fastapi.svg",
+      "iconSlug": "fastapi",
       "accent": "teal",
       "categories": ["backend","framework"],
       "details": {
@@ -206,6 +409,7 @@
       "label": "Postman",
       "sinceYear": 2022,
       "logo": "/assets/logos/skills/postman.svg",
+      "iconSlug": "postman",
       "accent": "orange",
       "categories": ["tool","backend"],
       "details": {
@@ -213,6 +417,12 @@
         "es": "Testing de APIs y construcción de colecciones.",
         "ja": "APIテストとコレクション作成。",
         "ko": "API 테스트 및 컬렉션 구성."
+      },
+      "shortDesc": {
+        "en": "API testing",
+        "es": "Testing de APIs",
+        "ja": "APIテスト",
+        "ko": "API 테스트"
       }
     },
 
@@ -220,7 +430,8 @@
       "key": "sql",
       "label": "SQL",
       "sinceYear": 2022,
-      "logo": "/assets/logos/skills/sql.svg",
+      "logo": "/assets/icons/sql.svg",
+      "iconSlug": "",
       "accent": "cyan",
       "categories": ["language","database"],
       "details": {
@@ -228,6 +439,12 @@
         "es": "Bases de datos relacionales para aplicaciones profesionales de negocio.",
         "ja": "業務アプリ向けのリレーショナルDB。",
         "ko": "비즈니스 앱을 위한 관계형 DB."
+      },
+      "shortDesc": {
+        "en": "Databases",
+        "es": "Bases de datos",
+        "ja": "データベース",
+        "ko": "데이터베이스"
       }
     },
     {
@@ -235,6 +452,7 @@
       "label": "PostgreSQL",
       "sinceYear": 2022,
       "logo": "/assets/logos/skills/postgresql.svg",
+      "iconSlug": "postgresql",
       "accent": "sky",
       "categories": ["database"],
       "details": {
@@ -249,6 +467,7 @@
       "label": "MySQL",
       "sinceYear": 2022,
       "logo": "/assets/logos/skills/mysql.svg",
+      "iconSlug": "mysql",
       "accent": "amber",
       "categories": ["database"],
       "details": {
@@ -262,7 +481,8 @@
       "key": "oracle",
       "label": "Oracle DB",
       "sinceYear": 2022,
-      "logo": "/assets/logos/skills/oracle.svg",
+      "logo": "/assets/icons/oracle.svg",
+      "iconSlug": "oracle",
       "accent": "red",
       "categories": ["database"],
       "details": {
@@ -278,6 +498,7 @@
       "label": "Auth0",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/auth0.svg",
+      "iconSlug": "auth0",
       "accent": "orange",
       "categories": ["backend","tool"],
       "details": {
@@ -292,6 +513,7 @@
       "label": "JWT",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/jwt.svg",
+      "iconSlug": "jsonwebtokens",
       "accent": "indigo",
       "categories": ["backend","tool"],
       "details": {
@@ -306,7 +528,8 @@
       "key": "aws",
       "label": "AWS",
       "sinceYear": 2023,
-      "logo": "/assets/logos/skills/aws.svg",
+      "logo": "/assets/icons/aws.svg",
+      "iconSlug": "amazonaws",
       "accent": "amber",
       "categories": ["cloud","tool"],
       "details": {
@@ -321,6 +544,7 @@
       "label": "DigitalOcean",
       "sinceYear": 2023,
       "logo": "/assets/logos/skills/digitalocean.svg",
+      "iconSlug": "digitalocean",
       "accent": "sky",
       "categories": ["cloud","tool"],
       "details": {
@@ -334,7 +558,8 @@
       "key": "heroku",
       "label": "Heroku",
       "sinceYear": 2023,
-      "logo": "/assets/logos/skills/heroku.svg",
+      "logo": "/assets/icons/heroku.svg",
+      "iconSlug": "heroku",
       "accent": "violet",
       "categories": ["cloud","tool"],
       "details": {
@@ -350,6 +575,7 @@
       "label": "WordPress",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/wordpress.svg",
+      "iconSlug": "wordpress",
       "accent": "sky",
       "categories": ["frontend","tool"],
       "details": {
@@ -365,6 +591,7 @@
       "label": "scikit-learn",
       "sinceYear": 2024,
       "logo": "/assets/logos/skills/scikitlearn.svg",
+      "iconSlug": "scikitlearn",
       "accent": "amber",
       "categories": ["backend","tool"],
       "details": {
@@ -372,6 +599,12 @@
         "es": "Aplicaciones de machine learning.",
         "ja": "機械学習の応用。",
         "ko": "머신러닝 적용."
+      },
+      "shortDesc": {
+        "en": "Machine learning",
+        "es": "Machine learning",
+        "ja": "機械学習",
+        "ko": "머신러닝"
       }
     },
     {
@@ -379,6 +612,7 @@
       "label": "Figma",
       "sinceYear": 2022,
       "logo": "/assets/logos/skills/figma.svg",
+      "iconSlug": "figma",
       "accent": "pink",
       "categories": ["design","tool"],
       "details": {
@@ -391,36 +625,117 @@
   ],
 
   "hardSkills": [
-    "Training Machine Learning and AI models",
-    "Robot Operating System (ROS)",
-    "Software development for Pepper robots",
-    "Web development (frontend + backend)",
-    "Databases (SQL, etc.)",
-    "Linux/Ubuntu usage",
-    "Team software development practices"
+    {
+      "en": "Training Machine Learning and AI models",
+      "es": "Entrenamiento de modelos de Machine Learning e IA",
+      "ja": "機械学習・AIモデルの訓練",
+      "ko": "머신러닝 및 AI 모델 훈련"
+    },
+    {
+      "en": "Robot Operating System (ROS)",
+      "es": "Robot Operating System (ROS)",
+      "ja": "Robot Operating System (ROS)",
+      "ko": "Robot Operating System (ROS)"
+    },
+    {
+      "en": "Software development for Pepper robots",
+      "es": "Desarrollo de software para robots Pepper",
+      "ja": "Pepperロボット向けソフトウェア開発",
+      "ko": "Pepper 로봇 소프트웨어 개발"
+    },
+    {
+      "en": "Web development (frontend + backend)",
+      "es": "Desarrollo web (frontend + backend)",
+      "ja": "Web開発（フロントエンド + バックエンド）",
+      "ko": "웹 개발 (프론트엔드 + 백엔드)"
+    },
+    {
+      "en": "Databases (SQL, Google Firebase)",
+      "es": "Bases de datos (SQL, etc.)",
+      "ja": "データベース (SQL等)",
+      "ko": "데이터베이스 (SQL 등)"
+    },
+    {
+      "en": "Linux/Ubuntu usage",
+      "es": "Uso de Linux/Ubuntu",
+      "ja": "Linux/Ubuntuの使用",
+      "ko": "Linux/Ubuntu 사용"
+    },
+    {
+      "en": "Team software development practices",
+      "es": "Prácticas de desarrollo de software en equipo",
+      "ja": "チーム開発手法",
+      "ko": "팀 소프트웨어 개발 실무"
+    }
   ],
+
   "softSkills": [
-    "Assertive communication",
-    "Teamwork",
-    "Discipline",
-    "Fast learning / autonomy",
-    "Leadership and collaboration"
+    {
+      "en": "Assertive communication",
+      "es": "Comunicación asertiva",
+      "ja": "アサーティブコミュニケーション",
+      "ko": "자기 주장 소통"
+    },
+    {
+      "en": "Teamwork",
+      "es": "Trabajo en equipo",
+      "ja": "チームワーク",
+      "ko": "팀워크"
+    },
+    {
+      "en": "Discipline",
+      "es": "Disciplina",
+      "ja": "規律",
+      "ko": "자기 규율"
+    },
+    {
+      "en": "Fast learning / autonomy",
+      "es": "Aprendizaje rápido / autonomía",
+      "ja": "迅速な学習 / 自律性",
+      "ko": "빠른 학습 / 자율성"
+    },
+    {
+      "en": "Leadership inside international teams",
+      "es": "Liderazgo y colaboración",
+      "ja": "リーダーシップと協働",
+      "ko": "리더십 및 협업"
+    }
   ],
 
   "languageSkills": [
     {
       "key": "spanish",
-      "name": "Spanish",
+      "name": {
+        "en": "Spanish",
+        "es": "Español",
+        "ja": "スペイン語",
+        "ko": "스페인어"
+      },
       "flagEmoji": "🇨🇴",
-      "level": "Native",
+      "level": {
+        "en": "Native",
+        "es": "Nativo",
+        "ja": "ネイティブ",
+        "ko": "모국어"
+      },
       "startedYear": "2003",
       "tests": []
     },
     {
       "key": "english",
-      "name": "English",
+      "name": {
+        "en": "English",
+        "es": "Inglés",
+        "ja": "英語",
+        "ko": "영어"
+      },
       "flagEmoji": "🇺🇸",
-      "level": "Bilingual",
+      "level": {
+        "en": "Bilingual",
+        "es": "Bilingüe",
+        "ja": "バイリンガル",
+        "ko": "이중언어"
+      },
       "startedYear": "2013",
       "tests": [
         { "name": "IELTS", "result": "C1 (7.5/9), 2019" },
@@ -429,17 +744,37 @@
     },
     {
       "key": "japanese",
-      "name": "Japanese",
+      "name": {
+        "en": "Japanese",
+        "es": "Japonés",
+        "ja": "日本語",
+        "ko": "일본어"
+      },
       "flagEmoji": "🇯🇵",
-      "level": "Intermediate",
+      "level": {
+        "en": "Intermediate",
+        "es": "Intermedio",
+        "ja": "中級",
+        "ko": "중급"
+      },
       "startedYear": "2020",
       "tests": [{ "name": "JLPT", "result": "N4" }]
     },
     {
       "key": "korean",
-      "name": "Korean",
+      "name": {
+        "en": "Korean",
+        "es": "Coreano",
+        "ja": "韓国語",
+        "ko": "한국어"
+      },
       "flagEmoji": "🇰🇷",
-      "level": "Elementary",
+      "level": {
+        "en": "Elementary",
+        "es": "Elemental",
+        "ja": "初級",
+        "ko": "초급"
+      },
       "startedYear": "2025",
       "tests": []
     }

@@ -273,23 +273,26 @@ function Modal({ open, onClose, title, children }) {
 function MapBackground() {
   return (
     <div className="absolute inset-0">
+      {/* Map image - dark blue tint in light mode, original in dark mode */}
       <img
         src="/assets/worldmap/world.svg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-contain opacity-[0.35] dark:opacity-[0.4] invert dark:invert-0 pointer-events-none transition-opacity"
+        className="absolute inset-0 h-full w-full object-contain opacity-[0.25] dark:opacity-[0.4] pointer-events-none [filter:brightness(0)_sepia(1)_hue-rotate(180deg)_saturate(3)] dark:[filter:none]"
         onError={(e) => {
           e.currentTarget.style.display = "none";
         }}
       />
-      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-black/5 via-black/3 to-black/5 dark:hidden" />
-      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 via-white/3 to-white/5 hidden dark:block" />
 
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-black/5 via-transparent to-black/5 dark:from-white/5 dark:via-white/3 dark:to-white/5" />
+
+      {/* Grid pattern */}
       <div
-        className="absolute inset-0 rounded-3xl opacity-60 dark:hidden"
+        className="absolute inset-0 rounded-3xl opacity-40 dark:opacity-60"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)",
+            "linear-gradient(to right, rgba(0,0,0,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.08) 1px, transparent 1px)",
           backgroundSize: "36px 36px",
         }}
       />
@@ -302,9 +305,10 @@ function MapBackground() {
         }}
       />
 
+      {/* Glow effects */}
       <div className="absolute left-[10%] top-[30%] h-[45%] w-[35%] rounded-[40%] bg-cyan-500/10 dark:bg-cyan-400/8 blur-xl" />
       <div className="absolute left-[42%] top-[25%] h-[35%] w-[22%] rounded-[45%] bg-indigo-500/10 dark:bg-indigo-400/8 blur-xl" />
-      <div className="absolute left-[62%] top-[35%] h-[40%] w-[30%] rounded-[42%] bg-cyan-500/9 dark:bg-cyan-400/7 blur-xl" />
+      <div className="absolute left-[62%] top-[35%] h-[40%] w-[30%] rounded-[42%] bg-cyan-500/8 dark:bg-cyan-400/7 blur-xl" />
 
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/35 to-indigo-400/0" />
     </div>
@@ -501,7 +505,7 @@ function WorldMapSectionImpl() {
           <FilterPill label={t.filters.other} active={filter === "other"} onClick={() => setFilter("other")} />
         </div>
 
-        <div className="mt-6 relative rounded-3xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5">
+        <div className="mt-6 relative rounded-3xl border border-black/10 dark:border-white/10 bg-slate-100 dark:bg-slate-900">
           <div className="relative h-[70vh] overflow-auto overscroll-contain sm:aspect-[16/9] sm:h-auto sm:overflow-hidden sm:overscroll-auto">
             <div className="relative min-w-[900px] sm:min-w-0 h-full">
               <MapBackground />
@@ -808,33 +812,38 @@ function WorldMapSectionImpl() {
                 </div>
               )}
 
-              <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-4">
-                <div className="flex items-center gap-2">
-                  <HiOutlineGlobeAlt className="h-5 w-5 text-cyan-600 dark:text-cyan-300/90" />
-                  <p className="text-sm font-semibold text-slate-900 dark:text-white">{t.story}</p>
-                </div>
-                <p className="mt-3 text-sm text-slate-700 dark:text-slate-300/85 leading-relaxed">
-                  {pickTravelText(active.story, lang)}
-                </p>
-              </div>
+              {/* Story and Highlights - Only show in Professional mode */}
+              {mode === "professional" && (
+                <>
+                  <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-4">
+                    <div className="flex items-center gap-2">
+                      <HiOutlineGlobeAlt className="h-5 w-5 text-cyan-600 dark:text-cyan-300/90" />
+                      <p className="text-sm font-semibold text-slate-900 dark:text-white">{t.story}</p>
+                    </div>
+                    <p className="mt-3 text-sm text-slate-700 dark:text-slate-300/85 leading-relaxed">
+                      {pickTravelText(active.story, lang)}
+                    </p>
+                  </div>
 
-              <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-4">
-                <div className="flex items-center gap-2">
-                  <HiOutlineMapPin className="h-5 w-5 text-cyan-600 dark:text-cyan-300/90" />
-                  <p className="text-sm font-semibold text-slate-900 dark:text-white">{t.highlights}</p>
-                </div>
-                <ul className="mt-3 grid gap-2 sm:grid-cols-3">
-                  {(active.highlights || []).map((h, idx) => (
-                    <li
-                      key={`${active.id}-h-${idx}`}
-                      className="rounded-xl border border-black/10 dark:border-white/10 bg-white/60 dark:bg-slate-950/10 px-3 py-2 text-sm text-slate-900 dark:text-slate-200/90"
-                    >
-                      <span className="inline-block mr-2 h-1.5 w-1.5 rounded-full bg-cyan-500/70 dark:bg-cyan-300/70 align-middle" />
-                      {pickTravelText(h, lang)}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                  <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-4">
+                    <div className="flex items-center gap-2">
+                      <HiOutlineMapPin className="h-5 w-5 text-cyan-600 dark:text-cyan-300/90" />
+                      <p className="text-sm font-semibold text-slate-900 dark:text-white">{t.highlights}</p>
+                    </div>
+                    <ul className="mt-3 grid gap-2 sm:grid-cols-3">
+                      {(active.highlights || []).map((h, idx) => (
+                        <li
+                          key={`${active.id}-h-${idx}`}
+                          className="rounded-xl border border-black/10 dark:border-white/10 bg-white/60 dark:bg-slate-950/10 px-3 py-2 text-sm text-slate-900 dark:text-slate-200/90"
+                        >
+                          <span className="inline-block mr-2 h-1.5 w-1.5 rounded-full bg-cyan-500/70 dark:bg-cyan-300/70 align-middle" />
+                          {pickTravelText(h, lang)}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              )}
 
               <div className="flex justify-end">
                 <button

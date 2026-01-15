@@ -30,6 +30,7 @@ const STRINGS = {
     },
     theme: "Theme",
     language: "Language",
+    interests: "Web • Robotics • Travel",
   },
   es: {
     sections: {
@@ -43,6 +44,7 @@ const STRINGS = {
     },
     theme: "Tema",
     language: "Idioma",
+    interests: "Web • Robótica • Viajes",
   },
   ja: {
     sections: {
@@ -56,6 +58,7 @@ const STRINGS = {
     },
     theme: "テーマ",
     language: "言語",
+    interests: "Web • ロボティクス • 旅行",
   },
   ko: {
     sections: {
@@ -69,6 +72,7 @@ const STRINGS = {
     },
     theme: "테마",
     language: "언어",
+    interests: "웹 • 로보틱스 • 여행",
   },
 };
 
@@ -132,13 +136,18 @@ export default function Header() {
 
   const switchTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
-  const SectionLink = ({ id, label, Icon }) => (
+  const openContactModal = () => {
+    window.dispatchEvent(new CustomEvent("app:openContactModal"));
+  };
+
+  const SectionLink = ({ id, label, Icon, onClick }) => (
     <motion.a
       key={id}
-      href={`#${id}`}
+      href={onClick ? undefined : `#${id}`}
+      onClick={onClick ? (e) => { e.preventDefault(); onClick(); } : undefined}
       whileHover={{ y: -1 }}
       whileTap={{ scale: 0.98 }}
-      className="group relative px-3 py-2 rounded-md text-sm font-medium text-slate-800 dark:text-slate-100/90 transition"
+      className="group relative px-3 py-2 rounded-md text-sm font-medium text-slate-800 dark:text-slate-100/90 transition cursor-pointer"
     >
       <span className="relative z-10 flex items-center gap-1.5">
         <Icon className="h-4 w-4 opacity-70 transition-colors group-hover:text-cyan-400 group-hover:opacity-100" />
@@ -158,7 +167,7 @@ export default function Header() {
         animate="enter"
         className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8"
       >
-        <div className="mt-3 sm:mt-4 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-slate-950/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 shadow-lg">
+        <div className="mt-3 sm:mt-4 rounded-2xl border border-black/10 dark:border-white/10 bg-slate-200/90 dark:bg-slate-950/70 backdrop-blur supports-[backdrop-filter]:bg-slate-200/80 dark:supports-[backdrop-filter]:bg-slate-900/60 shadow-lg">
           <nav className="flex items-center justify-between px-3 sm:px-5 py-2">
             {/* Left: Logo / Signature */}
             <a href="#top" className="group flex items-center gap-2 py-1">
@@ -175,7 +184,7 @@ export default function Header() {
                 <span className="text-base font-semibold tracking-wide text-slate-900 dark:text-white font-['Orbitron']">
                   @a.hernandezt
                 </span>
-                <span className="text-[11px] text-cyan-700 dark:text-cyan-300/80">Robotics • Web • Travel</span>
+                <span className="text-[11px] text-cyan-700 dark:text-cyan-300/80">{t.interests}</span>
               </div>
             </a>
 
@@ -188,13 +197,14 @@ export default function Header() {
                 { key: "academic", icon: HiOutlineAcademicCap },
                 { key: "awards", icon: HiOutlineTrophy },
                 { key: "travel", icon: HiOutlineMap },
-                { key: "contact", icon: HiOutlineEnvelope },
-              ].map(({ key, icon }) => (
+                { key: "contact", icon: HiOutlineEnvelope, onClick: openContactModal },
+              ].map(({ key, icon, onClick }) => (
                 <SectionLink
                   key={key}
                   id={key}
                   label={t.sections[key]}
                   Icon={icon}
+                  onClick={onClick}
                 />
               ))}
             </div>
@@ -311,9 +321,12 @@ export default function Header() {
                   {NAV_KEYS.map((key) => (
                     <a
                       key={key}
-                      href={`#${key}`}
-                      onClick={() => setOpen(false)}
-                      className="flex items-center justify-between rounded-lg px-3 py-2 text-slate-900 dark:text-slate-100 hover:bg-white/80 dark:hover:bg-white/10"
+                      href={key === "contact" ? undefined : `#${key}`}
+                      onClick={() => {
+                        setOpen(false);
+                        if (key === "contact") openContactModal();
+                      }}
+                      className="flex items-center justify-between rounded-lg px-3 py-2 text-slate-900 dark:text-slate-100 hover:bg-white/80 dark:hover:bg-white/10 cursor-pointer"
                     >
                       <span className="flex items-center gap-2">
                         <HiOutlineGlobeAlt className="h-5 w-5 opacity-70" />

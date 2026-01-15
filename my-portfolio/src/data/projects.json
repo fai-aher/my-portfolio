@@ -1,60 +1,401 @@
 [
   {
-    "id": "seed-alumni-platform",
-    "category": "web",
-    "featured": true,
-    "title": {
-      "en": "SEED Alumni Platform (GOROM)",
-      "es": "Plataforma SEED Alumni (GOROM)",
-      "ja": "SEED Alumni プラットフォーム（GOROM）",
-      "ko": "SEED Alumni 플랫폼(GOROM)"
+    "id": "nao-robot-thesis",
+    "typeTag": {
+      "en": "Undergraduate Thesis",
+      "es": "Tesis de Pregrado",
+      "ja": "学部論文",
+      "ko": "학부 논문"
     },
-    "subtitle": {
-      "en": "Community • Collaboration • Content",
-      "es": "Comunidad • Colaboración • Contenido",
-      "ja": "コミュニティ • 協働 • コンテンツ",
-      "ko": "커뮤니티 • 협업 • 콘텐츠"
+    "title": {
+      "en": "Modular Architecture for NAO V6 Robot Control with ROS 2",
+      "es": "Arquitectura Modular para el Control de Robot NAO V6 con ROS 2",
+      "ja": "ROS 2を用いたNAO V6ロボット制御のためのモジュラーアーキテクチャ",
+      "ko": "ROS 2를 활용한 NAO V6 로봇 제어를 위한 모듈식 아키텍처"
     },
     "description": {
-      "en": "A community platform for SEED participants/alumni, designed for coordination, content sharing, and collaboration workflows.",
-      "es": "Plataforma comunitaria para participantes/alumni SEED, enfocada en coordinación, contenido y flujos de colaboración.",
-      "ja": "SEED参加者/卒業生向けコミュニティ基盤（調整・共有・協働）。",
-      "ko": "SEED 참가자/알럼나이를 위한 커뮤니티 플랫폼(운영/공유/협업)."
+      "en": "The use of humanoid robots such as Softbank Robotics' NAO V6 has been promoted in countries like Colombia due to their effectiveness in social activities, such as therapies in hospitals. However, programming tasks that require the coordination of their various physical and logical capabilities involves high complexity, which can be a limitation without an appropriate system for preparation and execution.\n\nFor this reason, this work proposes the design and implementation of a modular software architecture based on the Service-Oriented Architecture (SOA) style, which proves to be easily scalable and maintainable in the long term, to develop complex tasks in an orderly and efficient manner.\n\nThe system was developed using cutting-edge technologies such as Python 3, Ubuntu 24.04, ROS 2, React, Vite, Flask, and the libqi middleware. To demonstrate its correct functionality, a web-based remote control was integrated into the system through a backend capable of executing its services and high-complexity tasks, such as one that utilizes two OpenAI APIs within the architecture's nodes to engage in real-time conversations with people using natural language.\n\nThe results obtained demonstrate the effectiveness of the proposed architecture, evidenced by the successful communication between the robot and the computer, the integration of the various nodes into a central module, and the success of unit, integration, and system tests. This implementation serves as a foundation to build upon for complex tasks that support social contexts, such as healthcare centers or educational institutions.",
+      "es": "El uso de robots humanoides como el NAO V6 de Softbank Robotics se ha promovido en países como Colombia debido a su efectividad en actividades sociales, como terapias en hospitales. Sin embargo, las tareas de programación que requieren la coordinación de sus diversas capacidades físicas y lógicas implican alta complejidad, lo que puede ser una limitación sin un sistema apropiado para la preparación y ejecución.\n\nPor esta razón, este trabajo propone el diseño e implementación de una arquitectura de software modular basada en el estilo de Arquitectura Orientada a Servicios (SOA), que demuestra ser fácilmente escalable y mantenible a largo plazo, para desarrollar tareas complejas de manera ordenada y eficiente.\n\nEl sistema fue desarrollado utilizando tecnologías de vanguardia como Python 3, Ubuntu 24.04, ROS 2, React, Vite, Flask y el middleware libqi. Para demostrar su correcta funcionalidad, se integró un control remoto basado en web al sistema a través de un backend capaz de ejecutar sus servicios y tareas de alta complejidad, como una que utiliza dos APIs de OpenAI dentro de los nodos de la arquitectura para entablar conversaciones en tiempo real con personas usando lenguaje natural.\n\nLos resultados obtenidos demuestran la efectividad de la arquitectura propuesta, evidenciada por la comunicación exitosa entre el robot y la computadora, la integración de los diversos nodos en un módulo central, y el éxito de las pruebas unitarias, de integración y del sistema. Esta implementación sirve como base para construir tareas complejas que apoyen contextos sociales, como centros de salud o instituciones educativas.",
+      "ja": "Softbank RoboticsのNAO V6のようなヒューマノイドロボットの使用は、病院での治療などの社会活動における有効性から、コロンビアのような国で促進されています。しかし、さまざまな物理的および論理的能力の調整を必要とするプログラミングタスクは高い複雑性を伴い、適切な準備と実行のためのシステムがなければ制限となる可能性があります。\n\nこのため、この研究では、複雑なタスクを秩序正しく効率的に開発するために、長期的に容易にスケーラブルで保守可能なサービス指向アーキテクチャ(SOA)スタイルに基づくモジュラーソフトウェアアーキテクチャの設計と実装を提案します。\n\nシステムは、Python 3、Ubuntu 24.04、ROS 2、React、Vite、Flask、libqiミドルウェアなどの最先端技術を使用して開発されました。その正しい機能を実証するために、アーキテクチャのノード内で2つのOpenAI APIを利用して自然言語を使用して人々とリアルタイムで会話するなど、サービスや高度に複雑なタスクを実行できるバックエンドを通じて、Webベースのリモートコントロールがシステムに統合されました。\n\n得られた結果は、ロボットとコンピューター間の通信の成功、さまざまなノードの中央モジュールへの統合、およびユニット、統合、システムテストの成功によって証明される、提案されたアーキテクチャの有効性を実証しています。この実装は、医療センターや教育機関などの社会的文脈をサポートする複雑なタスクを構築するための基盤として機能します。",
+      "ko": "Softbank Robotics의 NAO V6와 같은 휴머노이드 로봇의 사용은 병원에서의 치료와 같은 사회 활동에서의 효과로 인해 콜롬비아와 같은 국가에서 촉진되었습니다. 그러나 다양한 물리적 및 논리적 능력의 조정을 필요로 하는 프로그래밍 작업은 높은 복잡성을 수반하며, 적절한 준비 및 실행 시스템이 없으면 제한이 될 수 있습니다.\n\n이러한 이유로 본 연구는 복잡한 작업을 체계적이고 효율적으로 개발하기 위해 장기적으로 쉽게 확장 가능하고 유지 관리가 가능한 서비스 지향 아키텍처(SOA) 스타일에 기반한 모듈식 소프트웨어 아키텍처의 설계 및 구현을 제안합니다.\n\n시스템은 Python 3, Ubuntu 24.04, ROS 2, React, Vite, Flask, libqi 미들웨어와 같은 최첨단 기술을 사용하여 개발되었습니다. 올바른 기능을 입증하기 위해 아키텍처의 노드 내에서 두 개의 OpenAI API를 활용하여 자연어를 사용하여 사람들과 실시간으로 대화하는 것과 같은 서비스 및 고도로 복잡한 작업을 실행할 수 있는 백엔드를 통해 웹 기반 원격 제어가 시스템에 통합되었습니다.\n\n얻어진 결과는 로봇과 컴퓨터 간의 성공적인 통신, 다양한 노드의 중앙 모듈로의 통합, 단위, 통합 및 시스템 테스트의 성공으로 입증되는 제안된 아키텍처의 효과를 입증합니다. 이 구현은 의료 센터 또는 교육 기관과 같은 사회적 맥락을 지원하는 복잡한 작업을 구축하기 위한 기반 역할을 합니다."
     },
-    "tags": ["Web", "Community", "UI/UX", "Collaboration"],
-    "stack": ["react", "tailwind"],
-    "links": { "liveUrl": "https://gorom.org/", "repoUrl": null },
-    "images": [
-      { "id": "seed-1", "caption": "Dashboard placeholder", "src": "assets/images/projects/seed/1.jpg" }
-    ]
+    "featureTags": [
+      "ROS 2",
+      "SOA",
+      "Social Robotics",
+      "NLP",
+      "Web Control"
+    ],
+    "technologies": [
+      "python",
+      "react",
+      "ros2",
+      "flask",
+      "openai"
+    ],
+    "previewImage": "/assets/images/projects/project1/thumbnail.png",
+    "gallery": [
+      "/assets/images/projects/project1/image1.JPEG",
+      "/assets/images/projects/project1/image2.JPEG",
+      "/assets/images/projects/project1/image3.JPEG",
+      "/assets/images/projects/project1/image4.JPEG",
+      "/assets/images/projects/project1/image5.JPEG"
+    ],
+    "liveUrl": "https://hdl.handle.net/1992/76517",
+    "showCode": false,
+    "repoUrl": null
   },
   {
-    "id": "compass-robot-learning",
-    "category": "research",
-    "featured": false,
-    "title": {
-      "en": "COMPASS — Robust Imitation Learning (Poster Fair)",
-      "es": "COMPASS — Imitación Robusta (Poster Fair)",
-      "ja": "COMPASS — 頑健な模倣学習（ポスター）",
-      "ko": "COMPASS — 강건한 모방학습(포스터)"
+    "id": "compass-research",
+    "typeTag": {
+      "en": "Research Poster",
+      "es": "Poster de Investigación",
+      "ja": "研究ポスター",
+      "ko": "연구 포스터"
     },
-    "subtitle": {
-      "en": "Robot Learning • Research • Evaluation",
-      "es": "Robot Learning • Investigación • Evaluación",
-      "ja": "Robot Learning • 研究 • 評価",
-      "ko": "로봇 러닝 • 연구 • 평가"
+    "title": {
+      "en": "COMPASS — Robust Imitation Learning from Imperfect Demonstrations",
+      "es": "COMPASS — Aprendizaje por Imitación Robusto con Demostraciones Imperfectas",
+      "ja": "COMPASS — 不完全なデモンストレーションからの頑健な模倣学習",
+      "ko": "COMPASS — 불완전한 시연으로부터의 강건한 모방 학습"
     },
     "description": {
-      "en": "Comparative framework/meta-algorithm for robust imitation learning from imperfect demonstrations.",
-      "es": "Framework/meta-algoritmo comparativo para imitación robusta con demostraciones imperfectas.",
-      "ja": "不完全デモからの頑健な模倣学習を比較する枠組み。",
-      "ko": "불완전 시연 데이터에서 강건한 모방학습 비교 프레임워크."
+      "en": "A comparative framework and meta-algorithm for robot learning that systematically evaluates how different learning algorithms handle imperfections in demonstrations. Tested three major approaches across over 300 experiments with deliberately introduced imperfections including sensor noise, failed attempts, and embodiment mismatch.\n\nKey findings: Behavioral Cloning showed 81.8% success rates with imperfect data, but performance drops 52.6% with significant embodiment mismatch. Presented at Robot Learning 2025 Poster Fair at Seoul National University.",
+      "es": "Un framework comparativo y meta-algoritmo para aprendizaje robótico que evalúa sistemáticamente cómo diferentes algoritmos de aprendizaje manejan imperfecciones en las demostraciones. Se probaron tres enfoques principales en más de 300 experimentos con imperfecciones introducidas deliberadamente, incluyendo ruido de sensores, intentos fallidos y desajuste de embodiment.\n\nResultados clave: Behavioral Cloning mostró tasas de éxito del 81.8% con datos imperfectos, pero el rendimiento cae 52.6% con desajuste significativo de embodiment. Presentado en Robot Learning 2025 Poster Fair en Seoul National University.",
+      "ja": "ロボット学習のための比較フレームワークおよびメタアルゴリズム。異なる学習アルゴリズムがデモンストレーションの不完全性をどのように処理するかを体系的に評価。センサーノイズ、失敗した試行、エンボディメントミスマッチなど、意図的に導入された不完全性を含む300以上の実験で3つの主要なアプローチをテスト。\n\n主な知見：行動クローニングは不完全なデータで81.8%の成功率を示したが、エンボディメントの大きなミスマッチではパフォーマンスが52.6%低下。ソウル大学のRobot Learning 2025 Poster Fairで発表。",
+      "ko": "로봇 학습을 위한 비교 프레임워크 및 메타 알고리즘으로, 다양한 학습 알고리즘이 시연의 불완전성을 어떻게 처리하는지 체계적으로 평가. 센서 노이즈, 실패한 시도, 구현 불일치 등 의도적으로 도입된 불완전성을 포함한 300개 이상의 실험에서 세 가지 주요 접근 방식을 테스트.\n\n주요 발견: Behavioral Cloning은 불완전한 데이터에서 81.8%의 성공률을 보였지만, 상당한 구현 불일치가 있을 경우 성능이 52.6% 감소. 서울대학교 Robot Learning 2025 Poster Fair에서 발표."
     },
-    "tags": ["Imitation Learning", "Experiments", "Robot Learning"],
-    "stack": ["python"],
-    "links": { "liveUrl": null, "repoUrl": null },
-    "images": [
-      { "id": "compass-1", "caption": "Poster placeholder", "src": "assets/images/research/compass-poster.jpg" }
-    ]
+    "featureTags": [
+      "Imitation Learning",
+      "Robot Learning",
+      "Machine Learning",
+      "Research"
+    ],
+    "technologies": [
+      "python",
+      "pytorch",
+      "numpy"
+    ],
+    "previewImage": "/assets/images/projects/project2/image1.png",
+    "gallery": [
+      "/assets/images/projects/project2/image1.png",
+      "/assets/images/projects/project2/image2.png",
+      "/assets/images/projects/project2/image3.png",
+      "/assets/images/projects/project2/image4.png",
+      "/assets/images/projects/project2/image5.png"
+    ],
+    "liveUrl": "https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_FILE_ID/view",
+    "showCode": false,
+    "repoUrl": null
+  },
+  {
+    "id": "seed-platform",
+    "typeTag": {
+      "en": "Full-stack Platform",
+      "es": "Plataforma Full-stack",
+      "ja": "フルスタック基盤",
+      "ko": "풀스택 플랫폼"
+    },
+    "title": {
+      "en": "SEED Intranet — Collaboration Platform for GOROM Association",
+      "es": "SEED Intranet — Plataforma de Colaboración para GOROM Association",
+      "ja": "SEED Intranet — GOROM協会のコラボレーションプラットフォーム",
+      "ko": "SEED Intranet — GOROM 협회 협업 플랫폼"
+    },
+    "description": {
+      "en": "Full-stack web intranet designed for international participants of the SEED Program at GOROM Association, Japan. Features include discussion forums with comments, activity calendar, document repository, report writing space, personal profile editing, and community member directory.\n\nDeployed on DigitalOcean with AWS MySQL database and Auth0 authentication. Used by over 100 people worldwide.",
+      "es": "Intranet web full-stack diseñada para participantes internacionales del Programa SEED en GOROM Association, Japón. Incluye foros de discusión con comentarios, calendario de actividades, repositorio de documentos, espacio para redacción de reportes, edición de perfil personal y directorio de miembros de la comunidad.\n\nDesplegada en DigitalOcean con base de datos MySQL en AWS y autenticación Auth0. Usada por más de 100 personas en todo el mundo.",
+      "ja": "日本のGOROM協会のSEEDプログラムの国際参加者向けに設計されたフルスタックウェブイントラネット。コメント付きディスカッションフォーラム、活動カレンダー、ドキュメントリポジトリ、レポート作成スペース、個人プロフィール編集、コミュニティメンバーディレクトリなどの機能を搭載。\n\nAWS MySQLデータベースとAuth0認証を使用してDigitalOceanにデプロイ。世界中の100人以上が使用。",
+      "ko": "일본 GOROM 협회의 SEED 프로그램 국제 참가자를 위해 설계된 풀스택 웹 인트라넷. 댓글이 있는 토론 포럼, 활동 캘린더, 문서 저장소, 보고서 작성 공간, 개인 프로필 편집, 커뮤니티 회원 디렉토리 등의 기능 포함.\n\nAWS MySQL 데이터베이스와 Auth0 인증을 사용하여 DigitalOcean에 배포. 전 세계 100명 이상이 사용."
+    },
+    "featureTags": [
+      "Forums",
+      "Calendar",
+      "Auth",
+      "Document Management",
+      "Responsive"
+    ],
+    "technologies": [
+      "react",
+      "nestjs",
+      "mysql",
+      "auth0",
+      "digitalocean",
+      "aws"
+    ],
+    "previewImage": "/assets/images/projects/project3/image1.png",
+    "gallery": [
+      "/assets/images/projects/project3/image1.png",
+      "/assets/images/projects/project3/image2.png",
+      "/assets/images/projects/project3/image3.png",
+      "/assets/images/projects/project3/image4.png",
+      "/assets/images/projects/project3/image5.png"
+    ],
+    "liveUrl": "https://seed-alumni.org",
+    "showCode": false,
+    "repoUrl": null
+  },
+  {
+    "id": "platinum-crm",
+    "typeTag": {
+      "en": "CRM & Accounting",
+      "es": "CRM y Contabilidad",
+      "ja": "CRMと会計",
+      "ko": "CRM 및 회계"
+    },
+    "title": {
+      "en": "Platinum Clientes — CRM for Beauty Salon",
+      "es": "Platinum Clientes — CRM para Salón de Belleza",
+      "ja": "Platinum Clientes — 美容サロン向けCRM",
+      "ko": "Platinum Clientes — 미용실 CRM"
+    },
+    "description": {
+      "en": "Custom web-based CRM and basic accounting system developed for a local Colombian beauty salon innovating in customer service. Manages customer loyalty, collects sales data for different services, tracks customer visit frequency, identifies high/low demand products and services for informed business decisions.\n\nIncludes separate accountant profile with metrics and statistics for streamlined payroll processing.",
+      "es": "Sistema CRM y de contabilidad básica basado en web desarrollado para un salón de belleza local colombiano que innova en atención al cliente. Administra la fidelización de clientes, recopila datos de ventas de diferentes servicios, rastrea la frecuencia de visitas de clientes, identifica productos y servicios de alta/baja demanda para decisiones de negocio informadas.\n\nIncluye perfil separado de contador con métricas y estadísticas para procesamiento simplificado de nómina.",
+      "ja": "顧客サービスの革新を目指すコロンビアの地元美容サロン向けに開発されたカスタムWebベースCRMおよび基本会計システム。顧客ロイヤルティの管理、さまざまなサービスの販売データ収集、顧客訪問頻度の追跡、需要の高い/低い製品とサービスの特定により、情報に基づいたビジネス上の意思決定を支援。\n\n給与処理を合理化するための指標と統計を備えた個別の会計担当者プロファイルを含む。",
+      "ko": "고객 서비스 혁신을 추구하는 콜롬비아 현지 미용실을 위해 개발된 맞춤형 웹 기반 CRM 및 기본 회계 시스템. 고객 충성도 관리, 다양한 서비스의 판매 데이터 수집, 고객 방문 빈도 추적, 높은/낮은 수요 제품 및 서비스 식별을 통해 정보에 기반한 비즈니스 의사 결정 지원.\n\n급여 처리를 간소화하기 위한 지표 및 통계가 포함된 별도의 회계사 프로필 포함."
+    },
+    "featureTags": [
+      "CRM",
+      "Analytics",
+      "Customer Loyalty",
+      "Accounting",
+      "Business Intelligence"
+    ],
+    "technologies": [
+      "react",
+      "django",
+      "postgresql",
+      "vite"
+    ],
+    "previewImage": "/assets/images/projects/project4/image1.png",
+    "gallery": [
+      "/assets/images/projects/project4/image1.png",
+      "/assets/images/projects/project4/image2.png",
+      "/assets/images/projects/project4/image3.png",
+      "/assets/images/projects/project4/image4.png",
+      "/assets/images/projects/project4/image5.png"
+    ],
+    "liveUrl": null,
+    "showCode": false,
+    "repoUrl": null
+  },
+  {
+    "id": "admin-girones",
+    "typeTag": {
+      "en": "Business Management",
+      "es": "Gestión Empresarial",
+      "ja": "ビジネス管理",
+      "ko": "비즈니스 관리"
+    },
+    "title": {
+      "en": "Admin Gironés — Mobile-First Management Platform",
+      "es": "Admin Gironés — Plataforma de Gestión Mobile-First",
+      "ja": "Admin Gironés — モバイルファースト管理プラットフォーム",
+      "ko": "Admin Gironés — 모바일 우선 관리 플랫폼"
+    },
+    "description": {
+      "en": "Mobile-first web application for a local Colombian clothing business manager, custom-designed to match the business's colors, logo, and typography. Manages sales, supplier invoices, expenses, staff, and payroll processing.\n\nFeatures an insightful dashboard with daily, weekly, monthly, or custom date range summaries of sales and expenses. Fully deployed on Heroku with PostgreSQL database.",
+      "es": "Aplicación web mobile-first para la gerente de una empresa de venta de ropa local en Colombia, diseñada a la medida siguiendo los colores, logo y tipografía propios del negocio. Administra ventas, facturas de proveedores, gastos, personal y procesamiento de nómina.\n\nIncluye un dashboard con insights de ventas y gastos diarios, semanales, mensuales o en rangos personalizados. Completamente desplegada en Heroku con base de datos PostgreSQL.",
+      "ja": "コロンビアの地元衣料品ビジネスマネージャー向けのモバイルファーストWebアプリケーション。ビジネスのカラー、ロゴ、タイポグラフィーに合わせてカスタムデザイン。売上、サプライヤー請求書、経費、スタッフ、給与処理を管理。\n\n日次、週次、月次、またはカスタム日付範囲の売上と経費の概要を表示する洞察に富んだダッシュボードを搭載。PostgreSQLデータベースを使用してHerokuに完全にデプロイ。",
+      "ko": "콜롬비아 현지 의류 사업 관리자를 위한 모바일 우선 웹 애플리케이션. 비즈니스의 색상, 로고, 타이포그래피에 맞춰 맞춤 설계. 판매, 공급업체 청구서, 비용, 직원 및 급여 처리 관리.\n\n일일, 주간, 월간 또는 맞춤 날짜 범위의 판매 및 비용 요약을 표시하는 통찰력 있는 대시보드 기능. PostgreSQL 데이터베이스를 사용하여 Heroku에 완전 배포."
+    },
+    "featureTags": [
+      "Mobile-First",
+      "Inventory",
+      "Payroll",
+      "Dashboard",
+      "Custom Design"
+    ],
+    "technologies": [
+      "react",
+      "django",
+      "postgresql",
+      "heroku",
+      "vite"
+    ],
+    "previewImage": "/assets/images/projects/project5/image1.png",
+    "gallery": [
+      "/assets/images/projects/project5/image1.png",
+      "/assets/images/projects/project5/image2.png",
+      "/assets/images/projects/project5/image3.png",
+      "/assets/images/projects/project5/image4.png",
+      "/assets/images/projects/project5/image5.png"
+    ],
+    "liveUrl": null,
+    "showCode": false,
+    "repoUrl": null
+  },
+  {
+    "id": "admin-surtidora-miami",
+    "typeTag": {
+      "en": "CRM & Accounting",
+      "es": "CRM y Contabilidad",
+      "ja": "CRMと会計",
+      "ko": "CRM 및 회계"
+    },
+    "title": {
+      "en": "Admin Surtidora Miami — Advanced CRM Platform",
+      "es": "Admin Surtidora Miami — Plataforma CRM Avanzada",
+      "ja": "Admin Surtidora Miami — 高度なCRMプラットフォーム",
+      "ko": "Admin Surtidora Miami — 고급 CRM 플랫폼"
+    },
+    "description": {
+      "en": "Comprehensive CRM and accounting web application for a Colombian clothing and accessories store. Features daily payment summary, advanced sales filters (by employee, payment method, product, time), employee performance ranking, low inventory alerts, historical sales tracking, employee loan management, supplier invoice tracking, and payroll processing.\n\nComplete employee and supplier administration with add/edit/delete capabilities. Deployed on Heroku with PostgreSQL database.",
+      "es": "Aplicación web integral de CRM y contabilidad para una tienda de ropa y accesorios colombiana. Incluye resumen de pagos diarios, filtros avanzados de ventas (por empleado, medio de pago, producto, hora), ranking de rendimiento de empleados, alertas de inventario bajo, seguimiento de ventas históricas, gestión de préstamos a empleados, seguimiento de facturas de proveedores y procesamiento de nómina.\n\nAdministración completa de empleados y proveedores con capacidades de agregar/editar/eliminar. Desplegada en Heroku con base de datos PostgreSQL.",
+      "ja": "コロンビアの衣料品およびアクセサリーストア向けの包括的なCRMおよび会計Webアプリケーション。日次支払い概要、高度な売上フィルター（従業員、支払い方法、製品、時間別）、従業員パフォーマンスランキング、在庫不足アラート、過去の売上追跡、従業員ローン管理、サプライヤー請求書追跡、給与処理などの機能を搭載。\n\n追加/編集/削除機能を備えた従業員およびサプライヤーの完全な管理。PostgreSQLデータベースを使用してHerokuにデプロイ。",
+      "ko": "콜롬비아 의류 및 액세서리 매장을 위한 포괄적인 CRM 및 회계 웹 애플리케이션. 일일 지불 요약, 고급 판매 필터(직원, 결제 방법, 제품, 시간별), 직원 성과 순위, 낮은 재고 알림, 과거 판매 추적, 직원 대출 관리, 공급업체 청구서 추적, 급여 처리 등의 기능 포함.\n\n추가/편집/삭제 기능이 있는 완전한 직원 및 공급업체 관리. PostgreSQL 데이터베이스를 사용하여 Heroku에 배포."
+    },
+    "featureTags": [
+      "CRM",
+      "Analytics",
+      "Inventory Management",
+      "Employee Ranking",
+      "Payroll"
+    ],
+    "technologies": [
+      "react",
+      "django",
+      "postgresql",
+      "heroku",
+      "vite"
+    ],
+    "previewImage": "/assets/images/projects/project6/image1.png",
+    "gallery": [
+      "/assets/images/projects/project6/image1.png",
+      "/assets/images/projects/project6/image2.png",
+      "/assets/images/projects/project6/image3.png",
+      "/assets/images/projects/project6/image4.png",
+      "/assets/images/projects/project6/image5.png"
+    ],
+    "liveUrl": null,
+    "showCode": false,
+    "repoUrl": null
+  },
+  {
+    "id": "gorom-website",
+    "typeTag": {
+      "en": "WordPress Development",
+      "es": "Desarrollo WordPress",
+      "ja": "WordPress開発",
+      "ko": "WordPress 개발"
+    },
+    "title": {
+      "en": "GOROM Association Website — International Remodeling",
+      "es": "Sitio Web GOROM Association — Remodelación Internacional",
+      "ja": "GOROM協会ウェブサイト — 国際的リモデリング",
+      "ko": "GOROM 협회 웹사이트 — 국제적 리모델링"
+    },
+    "description": {
+      "en": "Ongoing remodeling project of the GOROM Association's main website to improve international visibility, inspired by high-impact NGO websites. As IT Coordinator and web developer, I manage content updates including the latest SEED program experiences and alumni stories from different countries.\n\nImplemented using WordPress with Elementor plugin and multilingual support for English, Japanese, Spanish, and Portuguese.",
+      "es": "Proyecto de remodelación continua del sitio web principal de GOROM Association para mejorar la visibilidad internacional, inspirado en sitios web de ONG de alto impacto. Como Coordinador de TI y desarrollador web, gestiono actualizaciones de contenido incluyendo las experiencias más recientes del programa SEED e historias de alumni de diferentes países.\n\nImplementado usando WordPress con el plugin Elementor y soporte multilingüe para inglés, japonés, español y portugués.",
+      "ja": "高影響力NGOウェブサイトにインスパイアされた、GOROM協会のメインウェブサイトの国際的な可視性を向上させるための継続的なリモデリングプロジェクト。ITコーディネーターおよびWeb開発者として、さまざまな国からの最新のSEEDプログラムの経験や卒業生のストーリーを含むコンテンツ更新を管理。\n\nWordPressをElementorプラグインおよび英語、日本語、スペイン語、ポルトガル語の多言語サポートを使用して実装。",
+      "ko": "높은 영향력의 NGO 웹사이트에서 영감을 받아 국제적 가시성을 향상시키기 위한 GOROM 협회 메인 웹사이트의 지속적인 리모델링 프로젝트. IT 코디네이터 및 웹 개발자로서 다양한 국가의 최신 SEED 프로그램 경험과 동문 이야기를 포함한 콘텐츠 업데이트 관리.\n\nElementor 플러그인과 영어, 일본어, 스페인어, 포르투갈어 다국어 지원을 사용하여 WordPress로 구현."
+    },
+    "featureTags": [
+      "WordPress",
+      "Elementor",
+      "Multilingual",
+      "NGO",
+      "Content Management"
+    ],
+    "technologies": [
+      "wordpress",
+      "php"
+    ],
+    "previewImage": "/assets/images/projects/project7/image1.png",
+    "gallery": [
+      "/assets/images/projects/project7/image1.png",
+      "/assets/images/projects/project7/image2.png",
+      "/assets/images/projects/project7/image3.png",
+      "/assets/images/projects/project7/image4.png",
+      "/assets/images/projects/project7/image5.png"
+    ],
+    "liveUrl": "https://gorom.org",
+    "showCode": false,
+    "repoUrl": null
+  },
+  {
+    "id": "robot-portfolio",
+    "typeTag": {
+      "en": "Portfolio Website",
+      "es": "Sitio Web Portfolio",
+      "ja": "ポートフォリオサイト",
+      "ko": "포트폴리오 웹사이트"
+    },
+    "title": {
+      "en": "Neon Robotics Portfolio",
+      "es": "Portfolio Neon Robotics",
+      "ja": "ネオンロボティクスポートフォリオ",
+      "ko": "네온 로보틱스 포트폴리오"
+    },
+    "description": {
+      "en": "A futuristic, responsive portfolio with i18n, dark/light mode, micro-interactions, and an interactive travel map.",
+      "es": "Un portfolio futurista y responsive con i18n, modo oscuro/claro, micro-interacciones y mapa de viajes interactivo.",
+      "ja": "i18n、ダーク/ライトモード、マイクロインタラクション、旅行マップを備えた未来的なポートフォリオ。",
+      "ko": "i18n, 다크/라이트 모드, 마이크로 인터랙션, 인터랙티브 여행 지도가 있는 미래적인 포트폴리오."
+    },
+    "featureTags": [
+      "i18n",
+      "Animations",
+      "Responsive",
+      "Dark Mode"
+    ],
+    "technologies": [
+      "react",
+      "tailwindcss",
+      "framer"
+    ],
+    "previewImage": "/assets/images/projects/portfolio-preview.jpg",
+    "gallery": [
+      "/assets/images/projects/portfolio-1.jpg",
+      "/assets/images/projects/image2.png",
+      "/assets/images/projects/image3.png",
+      "/assets/images/projects/image4.png",
+      "/assets/images/projects/image5.png"
+    ],
+    "liveUrl": "https://ahernandezt.com",
+    "showCode": true,
+    "repoUrl": "https://github.com/a-hernandezt/portfolio"
+  },
+  {
+    "id": "pixelquest",
+    "typeTag": {
+      "en": "Educational Game",
+      "es": "Juego Educativo",
+      "ja": "教育ゲーム",
+      "ko": "교육 게임"
+    },
+    "title": {
+      "en": "PixelQuest — Learn Python with Games",
+      "es": "PixelQuest — Aprende Python con Juegos",
+      "ja": "PixelQuest — ゲームでPythonを学ぶ",
+      "ko": "PixelQuest — 게임으로 Python 배우기"
+    },
+    "description": {
+      "en": "A mini game framework to teach Python fundamentals through game mechanics, sprites, and interactive challenges.",
+      "es": "Un framework de mini juegos para enseñar fundamentos de Python a través de mecánicas de juego y desafíos interactivos.",
+      "ja": "ゲームメカニクス、スプライト、インタラクティブな課題を通じてPythonの基礎を教えるミニゲームフレームワーク。",
+      "ko": "게임 메카닉, 스프라이트, 인터랙티브 챌린지를 통해 Python 기초를 가르치는 미니 게임 프레임워크."
+    },
+    "featureTags": [
+      "Python",
+      "Education",
+      "Game Dev"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "previewImage": "/assets/images/projects/pixelquest-preview.jpg",
+    "gallery": [
+      "/assets/images/projects/pixelquest-1.jpg",
+      "/assets/images/projects/image2.png",
+      "/assets/images/projects/image3.png",
+      "/assets/images/projects/image4.png",
+      "/assets/images/projects/image5.png"
+    ],
+    "liveUrl": null,
+    "showCode": true,
+    "repoUrl": "https://github.com/a-hernandezt/pixelquest"
   }
 ]

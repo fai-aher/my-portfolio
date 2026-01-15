@@ -19,6 +19,14 @@ import Experience from "./components/Experience.jsx";
 import Footer from "./components/Footer.jsx";
 import ExperiencesTimeline from "./components/ExperiencesTimeline.jsx";
 
+// i18n titles for the browser tab
+const PAGE_TITLES = {
+  en: "Alonso's Portfolio",
+  es: "Portafolio de Alonso",
+  ja: "アロンソのポートフォリオ",
+  ko: "알론소의 포트폴리오",
+};
+
 // Utility: smooth-scroll to an element id (if present)
 function scrollToId(id) {
   const el = document.getElementById(id);
@@ -38,6 +46,23 @@ function useInitTheme() {
   }, []);
 }
 
+// Hook to update document title based on language
+function useDynamicTitle() {
+  useEffect(() => {
+    const updateTitle = () => {
+      const lang = localStorage.getItem("lang") || "en";
+      document.title = PAGE_TITLES[lang] || PAGE_TITLES.en;
+    };
+
+    // Set initial title
+    updateTitle();
+
+    // Listen for language changes
+    window.addEventListener("app:languageChanged", updateTitle);
+    return () => window.removeEventListener("app:languageChanged", updateTitle);
+  }, []);
+}
+
 function HomePage() {
   // Ensure page starts at top on first mount
   useEffect(() => {
@@ -45,7 +70,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0b1220] text-slate-100 selection:bg-cyan-400/20">
+    <div className="min-h-screen bg-[#f0f4f8] dark:bg-[#0b1220] text-slate-800 dark:text-slate-100 selection:bg-cyan-400/20 transition-colors duration-300">
       <Header />
       {/* spacer for fixed header */}
       <div className="h-20 sm:h-24" />
@@ -84,14 +109,6 @@ function HomePage() {
         <section id="travel" className="scroll-mt-28">
           <WorldMapSection />
         </section>
-
-        <section id="contact" className="scroll-mt-28">
-          {/* You can replace with a dedicated Contact component later */}
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
-            <p className="mt-2 text-slate-300/90">Reach out for collaborations, freelance work, or robotics research ideas.</p>
-          </div>
-        </section>
       </main>
 
       <Footer />
@@ -115,6 +132,7 @@ function SectionRoute() {
 
 function AppRouter() {
   useInitTheme();
+  useDynamicTitle();
 
   return (
     <BrowserRouter>
