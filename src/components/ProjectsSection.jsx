@@ -214,15 +214,15 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
             className="absolute left-1/2 top-1/2 w-[95vw] max-w-5xl max-h-[90vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden"
           >
             {/* Scrollable container */}
-            <div className="relative overflow-y-auto max-h-[90vh] rounded-2xl border border-white/10 bg-slate-900">
+            <div className="relative overflow-y-auto max-h-[90vh] rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-slate-900">
               {/* Header with project title and close button */}
-              <div className="sticky top-0 z-20 flex items-start justify-between gap-4 px-6 pt-6 pb-4 bg-slate-900/95 backdrop-blur-sm border-b border-white/10">
-                <h2 className="text-lg sm:text-2xl font-bold text-white leading-tight">
+              <div className="sticky top-0 z-20 flex items-start justify-between gap-4 px-6 pt-6 pb-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-black/10 dark:border-white/10">
+                <h2 className="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white leading-tight">
                   {pickLang(project.title, lang)}
                 </h2>
                 <button
                   onClick={onClose}
-                  className="flex-shrink-0 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/10 text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition"
+                  className="flex-shrink-0 inline-flex items-center justify-center h-10 w-10 rounded-full bg-black/10 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-black/20 dark:hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition"
                 >
                   <HiOutlineXMark className="h-5 w-5" />
                 </button>
@@ -230,7 +230,7 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
               {/* Image carousel - only show if images exist */}
               {hasImages && (
                 <div className="relative">
-                  <div className="aspect-video relative bg-slate-800">
+                  <div className="aspect-video relative bg-slate-200 dark:bg-slate-800">
                     <AnimatePresence mode="wait">
                       <motion.img
                         key={currentIndex}
@@ -268,7 +268,7 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
 
                   {/* Counter and Thumbnails */}
                   {images.length > 1 && (
-                    <div className="flex items-center justify-center gap-4 border-b border-white/10 px-4 py-2 bg-slate-800/50">
+                    <div className="flex items-center justify-center gap-4 border-b border-black/10 dark:border-white/10 px-4 py-2 bg-slate-200/50 dark:bg-slate-800/50">
                       {/* Thumbnails */}
                       <div className="flex justify-center gap-2">
                         {images.map((img, idx) => (
@@ -278,13 +278,13 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
                             className={`h-2 w-2 rounded-full transition ${
                               idx === currentIndex
                                 ? "bg-cyan-400"
-                                : "bg-white/30 hover:bg-white/50"
+                                : "bg-black/30 dark:bg-white/30 hover:bg-black/50 dark:hover:bg-white/50"
                             }`}
                           />
                         ))}
                       </div>
                       {/* Counter */}
-                      <p className="text-sm text-white/60">
+                      <p className="text-sm text-slate-600 dark:text-white/60">
                         {currentIndex + 1} {t.of} {images.length}
                       </p>
                     </div>
@@ -296,7 +296,7 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
               <div className="px-6 pt-4 pb-6 space-y-6">
                 {/* Type Tag */}
                 <div>
-                  <span className="inline-block rounded-full bg-cyan-500/20 border border-cyan-400/30 px-3 py-1 text-xs font-semibold text-cyan-200">
+                  <span className="inline-block rounded-full bg-cyan-500/20 border border-cyan-400/30 px-3 py-1 text-xs font-semibold text-cyan-700 dark:text-cyan-200">
                     {pickLang(project.typeTag, lang)}
                   </span>
                 </div>
@@ -307,7 +307,7 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
                     {project.featureTags.map((tag) => (
                       <span
                         key={tag}
-                        className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-white/90"
+                        className="inline-flex items-center rounded-full border border-black/20 dark:border-white/20 bg-black/10 dark:bg-white/10 px-3 py-1 text-xs text-slate-900 dark:text-white/90"
                       >
                         {tag}
                       </span>
@@ -318,14 +318,14 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
                 {/* Technologies */}
                 {project.technologies && project.technologies.length > 0 && (
                   <div>
-                    <h4 className="text-sm font-semibold text-white/90 mb-3">
+                    <h4 className="text-sm font-semibold text-slate-900 dark:text-white/90 mb-3">
                       {t.technologies}
                     </h4>
                     <div className="flex flex-wrap gap-3">
                       {project.technologies.map((tech) => (
                         <div key={tech} className="flex items-center gap-2">
                           <TechIcon iconSlug={tech} alt={TECH_NAMES[tech] || tech} size="md" />
-                          <span className="text-sm text-white/80">{TECH_NAMES[tech] || tech}</span>
+                          <span className="text-sm text-slate-800 dark:text-white/80">{TECH_NAMES[tech] || tech}</span>
                         </div>
                       ))}
                     </div>
@@ -334,10 +334,10 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
 
                 {/* Description */}
                 <div>
-                  <h4 className="text-sm font-semibold text-white/90 mb-3">
+                  <h4 className="text-sm font-semibold text-slate-900 dark:text-white/90 mb-3">
                     {t.description}
                   </h4>
-                  <div className="space-y-4 text-sm sm:text-base text-white/85 leading-relaxed text-justify">
+                  <div className="space-y-4 text-sm sm:text-base text-slate-700 dark:text-white/85 leading-relaxed text-justify">
                     {pickLang(project.description, lang).split('\n\n').map((paragraph, idx) => (
                       <p key={idx}>{paragraph}</p>
                     ))}
@@ -345,14 +345,14 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
                 </div>
 
                 {/* Action Buttons in Modal */}
-                <div className="flex flex-wrap gap-3 pt-4 border-t border-white/10">
+                <div className="flex flex-wrap gap-3 pt-4 border-t border-black/10 dark:border-white/10">
                   {/* See the Result Button */}
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/15 px-4 py-2.5 text-sm font-semibold text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition"
+                      className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/15 px-4 py-2.5 text-sm font-semibold text-cyan-700 dark:text-cyan-200 ring-1 ring-cyan-300/30 hover:bg-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition"
                     >
                       <HiOutlineArrowTopRightOnSquare className="h-4 w-4" />
                       {t.seeResult}
@@ -365,7 +365,7 @@ function DetailsModal({ isOpen, onClose, project, lang, t }) {
                       href={project.repoUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-medium text-white hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition"
+                      className="inline-flex items-center gap-2 rounded-xl border border-black/20 dark:border-white/20 bg-black/10 dark:bg-white/10 px-4 py-2.5 text-sm font-medium text-slate-900 dark:text-white hover:bg-black/15 dark:hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition"
                     >
                       <HiOutlineCodeBracket className="h-4 w-4" />
                       {t.code}

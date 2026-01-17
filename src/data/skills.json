@@ -632,56 +632,32 @@
       "ko": "머신러닝 및 AI 모델 훈련"
     },
     {
-      "en": "Robot Operating System (ROS)",
-      "es": "Robot Operating System (ROS)",
-      "ja": "Robot Operating System (ROS)",
-      "ko": "Robot Operating System (ROS)"
+      "en": "Software development for humanoid robots",
+      "es": "Desarrollo de software para robots humanoides",
+      "ja": "人型ロボット向けソフトウェア開発",
+      "ko": "휴머노이드 로봇 소프트웨어 개발"
     },
     {
-      "en": "Software development for Pepper robots",
-      "es": "Desarrollo de software para robots Pepper",
-      "ja": "Pepperロボット向けソフトウェア開発",
-      "ko": "Pepper 로봇 소프트웨어 개발"
-    },
-    {
-      "en": "Web development (frontend + backend)",
-      "es": "Desarrollo web (frontend + backend)",
-      "ja": "Web開発（フロントエンド + バックエンド）",
-      "ko": "웹 개발 (프론트엔드 + 백엔드)"
+      "en": "Web development (frontend + backend + deployment)",
+      "es": "Desarrollo web (frontend + backend + despliegue)",
+      "ja": "Web開発（フロントエンド + バックエンド + デプロイ）",
+      "ko": "웹 개발 (프론트엔드 + 백엔드 + 배포)"
     },
     {
       "en": "Databases (SQL, Google Firebase)",
-      "es": "Bases de datos (SQL, etc.)",
-      "ja": "データベース (SQL等)",
-      "ko": "데이터베이스 (SQL 등)"
+      "es": "Bases de datos (SQL, Google Firebase)",
+      "ja": "データベース (SQL, Google Firebase)",
+      "ko": "데이터베이스 (SQL, Google Firebase)"
     },
     {
-      "en": "Linux/Ubuntu usage",
-      "es": "Uso de Linux/Ubuntu",
-      "ja": "Linux/Ubuntuの使用",
-      "ko": "Linux/Ubuntu 사용"
-    },
-    {
-      "en": "Team software development practices",
-      "es": "Prácticas de desarrollo de software en equipo",
-      "ja": "チーム開発手法",
-      "ko": "팀 소프트웨어 개발 실무"
+      "en": "Servers (Linux)",
+      "es": "Servidores (Linux)",
+      "ja": "サーバー (Linux)",
+      "ko": "서버 (Linux)"
     }
   ],
 
   "softSkills": [
-    {
-      "en": "Assertive communication",
-      "es": "Comunicación asertiva",
-      "ja": "アサーティブコミュニケーション",
-      "ko": "자기 주장 소통"
-    },
-    {
-      "en": "Teamwork",
-      "es": "Trabajo en equipo",
-      "ja": "チームワーク",
-      "ko": "팀워크"
-    },
     {
       "en": "Discipline",
       "es": "Disciplina",
@@ -689,16 +665,22 @@
       "ko": "자기 규율"
     },
     {
-      "en": "Fast learning / autonomy",
-      "es": "Aprendizaje rápido / autonomía",
-      "ja": "迅速な学習 / 自律性",
-      "ko": "빠른 학습 / 자율성"
+      "en": "Leadership inside international teams",
+      "es": "Liderazgo en equipos internacionales",
+      "ja": "国際チーム内でのリーダーシップ",
+      "ko": "국제 팀 내 리더십"
     },
     {
-      "en": "Leadership inside international teams",
-      "es": "Liderazgo y colaboración",
-      "ja": "リーダーシップと協働",
-      "ko": "리더십 및 협업"
+      "en": "Fast learning",
+      "es": "Aprendizaje rápido",
+      "ja": "迅速な学習",
+      "ko": "빠른 학습"
+    },
+    {
+      "en": "Autonomy",
+      "es": "Autonomía",
+      "ja": "自律性",
+      "ko": "자율성"
     }
   ],
 

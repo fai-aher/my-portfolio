@@ -143,6 +143,37 @@ function Pill({ children }) {
   );
 }
 
+function HighlightCardWithTooltip({ title, subtitle, imageSrc, imageAlt, children }) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {children}
+      <AnimatePresence>
+        {hovered && (
+          <motion.div
+            initial={{ opacity: 0, y: 4, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 4, scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 z-10"
+          >
+            <div className="whitespace-nowrap rounded-lg border border-black/10 dark:border-white/10 bg-white dark:bg-slate-900 px-2.5 py-1.5 text-xs font-medium text-slate-900 dark:text-white shadow-lg">
+              {title}
+              {subtitle && <div className="text-[10px] text-slate-600 dark:text-slate-400 mt-0.5">{subtitle}</div>}
+              <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white dark:border-t-slate-900" />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 function ContactModal({ isOpen, onClose, lang, emails, linkedinUrl }) {
   const [copiedIndex, setCopiedIndex] = useState(null);
 
@@ -439,7 +470,7 @@ export default function BioSection() {
       <motion.div
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.35 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={fadeUp}
       >
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
@@ -454,43 +485,58 @@ export default function BioSection() {
             <div className="hidden lg:grid mt-4 grid-cols-1 sm:grid-cols-3 gap-3 max-w-4xl">
 
               {/* Systems & Computer Engineer */}
-              <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-                <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">
-                  Systems & Computer Engineer
-                </span>
-                <img
-                  src="/assets/images/highlight1.jpeg"
-                  alt="Systems & Computer Engineering"
-                  className="h-8 w-8 object-contain rounded-md"
-                  draggable={false}
-                />
-              </div>
+              <HighlightCardWithTooltip
+                title={lang === "en" ? "Los Andes University" : lang === "es" ? "Universidad de los Andes" : lang === "ja" ? "ロス・アンデス大学" : "로스 안데스 대학교"}
+                subtitle={lang === "en" ? "Bogotá, Colombia" : lang === "es" ? "Bogotá, Colombia" : lang === "ja" ? "コロンビア・ボゴタ" : "콜롬비아 보고타"}
+              >
+                <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 cursor-pointer hover:bg-white/90 dark:hover:bg-white/10 transition">
+                  <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                    Systems & Computer Engineer
+                  </span>
+                  <img
+                    src="/assets/images/highlight1.jpeg"
+                    alt="Systems & Computer Engineering"
+                    className="h-8 w-8 object-contain rounded-md"
+                    draggable={false}
+                  />
+                </div>
+              </HighlightCardWithTooltip>
 
               {/* IT Coordinator */}
-              <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-                <span className="text-sm text-slate-800 dark:text-slate-200">
-                  Full-stack Engineer (Part Time, Remote)
-                </span>
-                <img
-                  src="/assets/images/highlight2.png"
-                  alt="IT Coordinator"
-                  className="h-8 w-8 object-contain rounded-md"
-                  draggable={false}
-                />
-              </div>
+              <HighlightCardWithTooltip
+                title={lang === "en" ? "GOROM Association" : lang === "es" ? "Asociación GOROM" : lang === "ja" ? "一般社団法人ごろ夢" : "GOROM 협회"}
+                subtitle={lang === "en" ? "Tokyo, Japan" : lang === "es" ? "Tokio, Japón" : lang === "ja" ? "日本・東京" : "일본 도쿄"}
+              >
+                <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 cursor-pointer hover:bg-white/90 dark:hover:bg-white/10 transition">
+                  <span className="text-sm text-slate-800 dark:text-slate-200">
+                    Full-stack Engineer (Part Time, Remote)
+                  </span>
+                  <img
+                    src="/assets/images/highlight2.png"
+                    alt="IT Coordinator"
+                    className="h-8 w-8 object-contain rounded-md"
+                    draggable={false}
+                  />
+                </div>
+              </HighlightCardWithTooltip>
 
               {/* Seoul National University Alumni */}
-              <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3">
-                <span className="text-sm text-slate-800 dark:text-slate-200">
-                  Seoul National University Alumni
-                </span>
-                <img
-                  src="/assets/images/highlight3.jpeg"
-                  alt="Seoul National University Alumni"
-                  className="h-8 w-8 object-contain rounded-md"
-                  draggable={false}
-                />
-              </div>
+              <HighlightCardWithTooltip
+                title={lang === "en" ? "Seoul National University" : lang === "es" ? "Universidad Nacional de Seúl" : lang === "ja" ? "ソウル大学校" : "서울대학교"}
+                subtitle={lang === "en" ? "Seoul, South Korea" : lang === "es" ? "Seúl, Corea del Sur" : lang === "ja" ? "韓国・ソウル" : "대한민국 서울"}
+              >
+                <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 cursor-pointer hover:bg-white/90 dark:hover:bg-white/10 transition">
+                  <span className="text-sm text-slate-800 dark:text-slate-200">
+                    Seoul National University Alumni
+                  </span>
+                  <img
+                    src="/assets/images/highlight3.jpeg"
+                    alt="Seoul National University Alumni"
+                    className="h-8 w-8 object-contain rounded-md"
+                    draggable={false}
+                  />
+                </div>
+              </HighlightCardWithTooltip>
             </div>
 
             {/* Right card (mobile) */}

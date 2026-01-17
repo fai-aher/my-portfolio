@@ -24,6 +24,12 @@ const MODAL_I18N = {
     ja: "タイムラインは現在の年から始まります。過去の年を表示するには、タイムラインを左にスクロールしてください。",
     ko: "타임라인은 현재 연도에서 시작됩니다. 과거 연도를 보려면 타임라인을 왼쪽으로 스크롤하세요.",
   },
+  present: {
+    en: "Present",
+    es: "Presente",
+    ja: "現在",
+    ko: "현재",
+  },
 };
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -860,7 +866,7 @@ export default function ExperiencesTimeline() {
                           : "bg-slate-900/30 dark:bg-white/25",
                       ].join(" ")}
                       style={{ left: clampedBarRight, top: barTop - 4 }}
-                      title={`${it.dates?.end || "Present"}`}
+                      title={it.dates?.end || pickLang(MODAL_I18N.present, lang)}
                     />
                   )}
 
@@ -915,7 +921,7 @@ export default function ExperiencesTimeline() {
                       className="absolute -translate-x-1/2 rounded-full border border-black/10 dark:border-white/10 bg-white dark:bg-slate-950 px-2 py-1 text-[11px] font-semibold text-slate-900 dark:text-white shadow"
                       style={{ left: clampedBarRight, top: barTop - 30 }}
                     >
-                      {formatMonthName(it.dates?.end || it.dates?.start, lang)}
+                      {it.dates?.end ? formatMonthName(it.dates.end, lang) : pickLang(MODAL_I18N.present, lang)}
                     </div>
                   )}
                 </motion.div>

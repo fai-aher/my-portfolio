@@ -76,7 +76,7 @@
       "pytorch",
       "numpy"
     ],
-    "previewImage": "/assets/images/projects/project2/image1.png",
+    "previewImage": "/assets/images/projects/project2/thumbnail.png",
     "gallery": [
       "/assets/images/projects/project2/image1.png",
       "/assets/images/projects/project2/image2.png",
@@ -84,7 +84,7 @@
       "/assets/images/projects/project2/image4.png",
       "/assets/images/projects/project2/image5.png"
     ],
-    "liveUrl": "https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_FILE_ID/view",
+    "liveUrl": "https://drive.google.com/file/d/1nSUDQHANGrCOJ-DZjqb2v2_U3-gQj1rs/view?usp=sharing",
     "showCode": false,
     "repoUrl": null
   },
@@ -123,13 +123,19 @@
       "digitalocean",
       "aws"
     ],
-    "previewImage": "/assets/images/projects/project3/image1.png",
+    "previewImage": "/assets/images/projects/project3/thumbnail.png",
     "gallery": [
       "/assets/images/projects/project3/image1.png",
       "/assets/images/projects/project3/image2.png",
       "/assets/images/projects/project3/image3.png",
       "/assets/images/projects/project3/image4.png",
-      "/assets/images/projects/project3/image5.png"
+      "/assets/images/projects/project3/image5.png",
+      "/assets/images/projects/project3/image6.png",
+      "/assets/images/projects/project3/image7.png",
+      "/assets/images/projects/project3/image8.png",
+      "/assets/images/projects/project3/image9.png",
+      "/assets/images/projects/project3/image10.png",
+      "/assets/images/projects/project3/image11.png"
     ],
     "liveUrl": "https://seed-alumni.org",
     "showCode": false,
@@ -168,7 +174,7 @@
       "postgresql",
       "vite"
     ],
-    "previewImage": "/assets/images/projects/project4/image1.png",
+    "previewImage": "/assets/images/projects/project4/thumbnail.png",
     "gallery": [
       "/assets/images/projects/project4/image1.png",
       "/assets/images/projects/project4/image2.png",
