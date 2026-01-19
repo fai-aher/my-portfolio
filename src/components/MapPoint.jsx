@@ -237,7 +237,7 @@ export default function MapPoint({
                       <span
                         className={`fi fi-${flagCode} fis`}
                         style={{
-                          fontSize: '2.8rem',
+                          fontSize: '2.9rem',
                           transform: 'scale(1.15)',
                           display: 'block',
                           lineHeight: 1
