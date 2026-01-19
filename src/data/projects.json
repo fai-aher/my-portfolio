@@ -176,6 +176,7 @@
     ],
     "previewImage": "/assets/images/projects/project4/thumbnail.png",
     "gallery": [
+      "/assets/images/projects/project4/image.png",
       "/assets/images/projects/project4/image1.png",
       "/assets/images/projects/project4/image2.png",
       "/assets/images/projects/project4/image3.png",
@@ -220,13 +221,12 @@
       "heroku",
       "vite"
     ],
-    "previewImage": "/assets/images/projects/project5/image1.png",
+    "previewImage": "/assets/images/projects/project5/thumbnail.png",
     "gallery": [
       "/assets/images/projects/project5/image1.png",
       "/assets/images/projects/project5/image2.png",
       "/assets/images/projects/project5/image3.png",
-      "/assets/images/projects/project5/image4.png",
-      "/assets/images/projects/project5/image5.png"
+      "/assets/images/projects/project5/image4.png"
     ],
     "liveUrl": null,
     "showCode": false,
@@ -266,13 +266,15 @@
       "heroku",
       "vite"
     ],
-    "previewImage": "/assets/images/projects/project6/image1.png",
+    "previewImage": "/assets/images/projects/project6/thumbnail.png",
     "gallery": [
       "/assets/images/projects/project6/image1.png",
       "/assets/images/projects/project6/image2.png",
       "/assets/images/projects/project6/image3.png",
       "/assets/images/projects/project6/image4.png",
-      "/assets/images/projects/project6/image5.png"
+      "/assets/images/projects/project6/image5.png",
+      "/assets/images/projects/project6/image6.png",
+      "/assets/images/projects/project6/image7.png"
     ],
     "liveUrl": null,
     "showCode": false,
@@ -309,7 +311,7 @@
       "wordpress",
       "php"
     ],
-    "previewImage": "/assets/images/projects/project7/image1.png",
+    "previewImage": "/assets/images/projects/project7/thumbnail.png",
     "gallery": [
       "/assets/images/projects/project7/image1.png",
       "/assets/images/projects/project7/image2.png",
@@ -330,16 +332,16 @@
       "ko": "포트폴리오 웹사이트"
     },
     "title": {
-      "en": "Neon Robotics Portfolio",
-      "es": "Portfolio Neon Robotics",
-      "ja": "ネオンロボティクスポートフォリオ",
-      "ko": "네온 로보틱스 포트폴리오"
+      "en": "My Professional Portfolio",
+      "es": "Mi Portafolio Profesional",
+      "ja": "私のプロフェッショナルポートフォリオ",
+      "ko": "나의 프로페셔널 포트폴리오"
     },
     "description": {
-      "en": "A futuristic, responsive portfolio with i18n, dark/light mode, micro-interactions, and an interactive travel map.",
-      "es": "Un portfolio futurista y responsive con i18n, modo oscuro/claro, micro-interacciones y mapa de viajes interactivo.",
-      "ja": "i18n、ダーク/ライトモード、マイクロインタラクション、旅行マップを備えた未来的なポートフォリオ。",
-      "ko": "i18n, 다크/라이트 모드, 마이크로 인터랙션, 인터랙티브 여행 지도가 있는 미래적인 포트폴리오."
+      "en": "A responsive portfolio to showcase my career experiences and CV, built with i18n, dark/light mode, micro-interactions, and features like an interactive travel map.",
+      "es": "Un portafolio responsive para mostrar mis experiencias profesionales y CV, construido con i18n, modo oscuro/claro, micro-interacciones y funcionalidades como un mapa de viajes interactivo.",
+      "ja": "私のキャリア経験や履歴書を紹介するためのレスポンシブなポートフォリオ。i18n、ダーク／ライトモード、マイクロインタラクション、インタラクティブな旅行マップなどの機能を備えています。",
+      "ko": "나의 경력 경험과 이력서를 소개하기 위한 반응형 포트폴리오로, i18n, 다크/라이트 모드, 마이크로 인터랙션, 인터랙티브 여행 지도와 같은 기능을 포함합니다."
     },
     "featureTags": [
       "i18n",
@@ -352,17 +354,17 @@
       "tailwindcss",
       "framer"
     ],
-    "previewImage": "/assets/images/projects/portfolio-preview.jpg",
+    "previewImage": "/assets/images/projects/project8/thumbnail.png",
     "gallery": [
-      "/assets/images/projects/portfolio-1.jpg",
-      "/assets/images/projects/image2.png",
-      "/assets/images/projects/image3.png",
-      "/assets/images/projects/image4.png",
-      "/assets/images/projects/image5.png"
+      "/assets/images/projects/project8/image1.png",
+      "/assets/images/projects/project8/image2.png",
+      "/assets/images/projects/project8/image3.png",
+      "/assets/images/projects/project8/image4.png",
+      "/assets/images/projects/project8/image5.png",
+      "/assets/images/projects/project8/image6.png"
     ],
     "liveUrl": "https://ahernandezt.com",
-    "showCode": true,
-    "repoUrl": "https://github.com/a-hernandezt/portfolio"
+    "showCode": true
   },
   {
     "id": "pixelquest",
@@ -392,16 +394,11 @@
     "technologies": [
       "python"
     ],
-    "previewImage": "/assets/images/projects/pixelquest-preview.jpg",
+    "previewImage": "/assets/images/projects/project9/thumbnail.png",
     "gallery": [
-      "/assets/images/projects/pixelquest-1.jpg",
-      "/assets/images/projects/image2.png",
-      "/assets/images/projects/image3.png",
-      "/assets/images/projects/image4.png",
-      "/assets/images/projects/image5.png"
+      "/assets/images/projects/project9/image1.png"
     ],
     "liveUrl": null,
-    "showCode": true,
-    "repoUrl": "https://github.com/a-hernandezt/pixelquest"
+    "showCode": true
   }
 ]

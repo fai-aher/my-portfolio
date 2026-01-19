@@ -9,6 +9,7 @@ import {
   HiOutlineXMark,
   HiOutlineClipboardDocument,
   HiOutlineCheck,
+  HiOutlineDocumentText,
 } from "react-icons/hi2";
 
 import profile from "../data/profile.json";
@@ -51,7 +52,7 @@ const fadeUp = {
 
 const CTA_LABELS = {
   contact: { en: "Contact me", es: "Contáctame", ja: "連絡する", ko: "연락하기" },
-  cv: { en: "Download CV", es: "Descargar CV", ja: "履歴書をダウンロード", ko: "이력서 다운로드" },
+  cv: { en: "View CV in PDF", es: "Ver CV en PDF", ja: "PDFで履歴書を見る", ko: "PDF로 이력서 보기" },
   projects: { en: "Explore projects", es: "Explorar proyectos", ja: "プロジェクトを見る", ko: "프로젝트 보기" }
 };
 
@@ -566,11 +567,16 @@ export default function BioSection() {
               </button>
 
               <a
-                href="/assets/cv/cv.pdf"
-                download
+                href={
+                  lang === "es"
+                    ? "https://drive.google.com/file/d/1MdpObV_RHl4TDxRibpJiqpwpayci3fOJ/view?usp=sharing"
+                    : "https://drive.google.com/file/d/1sQBnbAxm2T7gjuZLOH4VBdGKd7MQpr0I/view?usp=sharing"
+                }
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-900 dark:text-slate-100 hover:bg-white/80 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
-                <HiOutlineDocumentArrowDown className="h-5 w-5" />
+                <HiOutlineDocumentText className="h-5 w-5" />
                 {pickLang(CTA_LABELS.cv, lang)}
               </a>
 

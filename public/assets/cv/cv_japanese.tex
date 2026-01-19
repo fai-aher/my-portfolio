@@ -1,0 +1,262 @@
+% Professional CV - Alonso Hernandez Tavera
+% Compile with pdfLaTeX or XeLaTeX
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Modern CV theme
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Latin Modern Sans}
+\setsansfont{Latin Modern Sans}
+\setCJKmainfont{IPAexGothic}
+
+% Adjust page margins
+\usepackage[scale=0.85]{geometry}
+
+\setlength{\hintscolumnwidth}{3.2cm}
+
+\name{アロンソ}{エルナンデス}
+\renewcommand*{\namefont}{\fontsize{34}{36}\mdseries\upshape}
+\title{システム・コンピュータ工学エンジニア}
+\address{ボゴタ（コロンビア）}
+\email{fai@ahernandezt.com}
+\social[linkedin]{linkedin.com/in/a-hernandezt}
+\social[github]{github.com/fai-aher}
+\homepage{ahernandezt.com}
+
+\photo[64pt][0pt]{./fai.png}
+
+%----------------------------------------------------------------------------------
+%            Content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------
+%            Profile / Summary
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{プロフィール}
+\cvitem{}{%
+  コロンビアのUniversidad de los Andesにてシステム・コンピュータ工学を専攻し、ロボティクス、人工知能、フルスタックWeb開発を専門とする。国際的なロボティクス競技会および研究活動において実績を持ち、ヒューマノイドロボット制御、機械学習、ソフトウェアアーキテクチャに関する実践的経験を有する。学業成績優秀者として韓国政府奨学金（NIIED）を受給し、ソウル大学校における大学院レベルのAI・ロボティクス研究において、コロンビア代表として唯一選抜された。ロボティクスと人間の幸福の交差点における革新的な技術開発に強い関心を持つ。
+}
+
+%----------------------------------------------------------------------------------
+%            Education
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{学歴}
+
+\cventry{2020--2025}{システム・コンピュータ工学 学士}{Universidad de los Andes}{Bogotá, Colombia}{GPA: 4.52/5.0}{%
+  ソフトウェア工学専攻\\
+  重点分野: ロボティクス、AI、フルスタックWeb開発\\
+  学士論文: \textit{Modular Architecture for NAO V6 Robot Control with ROS 2}
+}
+
+\cventry{Feb 2025--Jun 2025}{交換留学 -- AI \& Robotics (大学院レベル)}{Seoul National University}{Seoul, South Korea}{GPA: 4.28/5.0 (85.60/100)}{%
+  \textbf{奨学金:} Korean Government Scholarship (NIIED)\\
+  \textbf{履修科目:} Elementary Korean, Basics of Deep Learning, Robot Learning, Space Dynamics, Theory and Practice of Humanoid Walking Control\\
+  \textbf{実績:} コロンビアから唯一選抜された学生
+}
+
+\cventry{2013--2019}{高等学校卒業}{Colegio Bilingüe Divino Niño}{Bucaramanga, Colombia}{GPA: 4.9/5.0}{%
+  \textbf{優秀な成績で卒業:} Class of 2019で最高GPA\\
+  \textbf{表彰:} 最も協力的な学生賞\\
+  \textbf{語学資格:} IELTS C1 (7.5/9, 2019)
+}
+
+%----------------------------------------------------------------------------------
+%            Work Experience
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{職務経歴}
+
+\cventry{Mar 2024--Present}{コーディネーター -- SEED Alumni Project}{GOROM Association}{Tokyo, Japan (Remote)}{}{%
+  \begin{itemize}
+    \item SEEDプログラムの元参加者と現参加者をコミュニティ活動およびデジタルプラットフォームで繋ぐSEED Alumniイニシアチブの共同設立およびコーディネート
+    \item 2024年にGOROM創設者のGoro Mutsuuraと共にプロジェクトを企画・設立
+    \item SEEDコミュニティ全体のために文化系クラブ（地理、職場文化、食、映画、言語）を立ち上げ
+    \item 使用技術: React, Django, TailwindCSS, Auth0
+  \end{itemize}
+}
+
+\cventry{Apr 2024--Present}{ITコーディネーター}{GOROM Association}{Tokyo, Japan (Hybrid)}{}{%
+  \begin{itemize}
+    \item GOROMのITコーディネーションおよびデジタルプラットフォーム管理：イントラネット開発、ウェブサイト運営、戦略的コンテンツ企画
+    \item SEED参加者と卒業生向けイントラネットWebアプリケーションの構築と保守
+    \item gorom.orgウェブサイトの管理と年間プログラムの運営支援および参加者の成功支援
+    \item 使用技術: React, Django, REST APIs
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Research Experience
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{研究経験}
+
+\cventry{Jun 2025}{発表者 -- Robot Learning ポスター発表会 (COMPASS)}{Seoul National University}{Seoul, South Korea}{}{%
+  \begin{itemize}
+    \item COMPASSに関する研究発表：不完全なデモンストレーションからの堅牢な模倣学習のための比較フレームワークとメタアルゴリズム
+    \item ノイズ、失敗試行、不整合な戦略、体現の不一致を導入した300以上の実験を実施
+    \item 重要な知見：行動クローニングは不完全なデータ下でも耐性を示したが、体現の不一致は大幅な性能低下を引き起こした
+    \item 使用技術: Python, PyTorch
+  \end{itemize}
+}
+
+\cventry{Feb 2024--Dec 2024}{ソフトウェア開発者 -- Pepper Robot \& 研究}{SinfonIA Uniandes}{Bogotá, Colombia}{}{%
+  \begin{itemize}
+    \item Pepper（SoftBank Robotics）が家庭内・社交的タスクを実行できるソフトウェアを開発し、実世界での影響を高めるためのAI統合を探索
+    \item 人間とロボットのインタラクションおよび家庭内シナリオのための行動およびタスクパイプラインを実装
+    \item AI/ML統合（例：視覚コンピューティングおよびモデルベースの意思決定ロジック）を探求
+    \item 使用技術: ROS, Python, C++, YOLO, TensorFlow
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Competitions & Achievements
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{コンペティション・リーダーシップ}
+
+\cventry{Jul 2024}{優勝 -- RoboCup 2024 SSPL}{SinfonIA Uniandes}{Eindhoven, Netherlands}{}{%
+  \begin{itemize}
+    \item 世界最大規模のロボティクス競技会に出場し、Pepperロボット（SoftBank Robotics）で家庭内タスクをプログラミングし、研究成果を発表してSSPLで1位を獲得
+    \item 複数の競技アリーナで家庭内タスクをプログラムおよびデモンストレーション
+    \item 使用技術: ROS, Python, OpenAI API
+  \end{itemize}
+}
+
+\cventry{Aug 2024--Dec 2024}{ティーチングアシスタント -- Webアプリケーションプログラミング}{Universidad de los Andes}{Bogotá, Colombia}{}{%
+  \begin{itemize}
+    \item 学生支援および指導を通じて、現代的なWebスタック技術（React, Node/NestJS, UI/UX, テスト）のスキル強化を支援
+    \item 学生の質問対応と実践的な指導を提供
+  \end{itemize}
+}
+
+\cventry{Nov 2023}{ファイナリスト -- スタートアップコンペティション（Shark Tankピッチ）}{UNIANDINOS -- UPlan}{Bogotá, Colombia}{}{%
+  \begin{itemize}
+    \item 問題、解決策、ビジネスモデル、収益予測、市場規模、収益性を5分間の投資家向けピッチで説明
+    \item 最終選考に進出し、投資家および起業家専門家にプレゼンテーション
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Selected Projects
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{主なプロジェクト}
+
+\cventry{2024--2025}{Modular Architecture for NAO V6 Robot Control with ROS 2}{Undergraduate Thesis}{}{}{%
+  \begin{itemize}
+    \item NAO V6ヒューマノイドロボットのためのサービス指向アーキテクチャ（SOA）に基づくモジュラーソフトウェアアーキテクチャを設計・実装
+    \item Python 3、Ubuntu 24.04、ROS 2、React、Vite、Flask、およびlibqiミドルウェアを用いて開発
+    \item Webベースの遠隔操作を統合し、OpenAI APIを利用してリアルタイム自然言語対話による高度なタスクを実装
+    \item 使用技術: Python, React, ROS 2, Flask, OpenAI
+  \end{itemize}
+}
+
+\cventry{2024}{SEED Intranet -- Collaboration Platform}{GOROM Association}{}{}{%
+  \begin{itemize}
+    \item 日本のGOROM AssociationのSEEDプログラム国際参加者向けに設計されたフルスタックWebイントラネット
+    \item 機能：コメント付きディスカッションフォーラム、活動カレンダー、文書リポジトリ、レポート作成スペース、プロフィール編集、コミュニティメンバー名簿
+    \item DigitalOcean上にデプロイし、AWS MySQLデータベースとAuth0認証を使用
+    \item 世界中で100人以上が利用
+    \item 使用技術: React, NestJS, MySQL, Auth0, DigitalOcean, AWS
+  \end{itemize}
+}
+
+\cventry{2024}{Platinum Clientes -- CRM for Beauty Salon}{Independent Project}{}{}{%
+  \begin{itemize}
+    \item コロンビアの地元美容サロン向けに開発したカスタムWebベースのCRMおよび基本会計システム
+    \item 顧客ロイヤリティ管理、販売データ収集、顧客来店頻度追跡、需要の高低分析を実施
+    \item 給与計算処理を効率化する会計士用プロフィールと統計機能を含む
+    \item 使用技術: React, Django, PostgreSQL, Vite
+  \end{itemize}
+}
+
+\cventry{2024--Present}{GOROM Association Website -- International Remodeling}{GOROM Association}{}{}{%
+  \begin{itemize}
+    \item GOROM Associationの公式ウェブサイトの国際的な認知度向上を目的としたリモデリングプロジェクトを継続中
+    \item ITコーディネーター兼ウェブ開発者として、最新のSEEDプログラム体験や卒業生のストーリーを含むコンテンツ更新を担当
+    \item WordPressとElementorプラグイン、多言語対応（英語、日本語、スペイン語、ポルトガル語）を実装
+    \item 使用技術: WordPress, PHP
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Technical Skills
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{技術スキル}
+
+\cvitem{プログラミング言語}{Python, JavaScript, TypeScript, Java, C++, SQL, HTML, CSS}
+\cvitem{フレームワーク・ライブラリ}{React, Angular, Django, FastAPI, Flask, Spring Boot, NestJS, ROS 2, PyTorch, scikit-learn, TailwindCSS, Framer Motion}
+\cvitem{データベース}{PostgreSQL, MySQL, Oracle DB, Firebase}
+\cvitem{クラウド・DevOps}{AWS, DigitalOcean, Heroku, Linux/Ubuntu, Docker}
+\cvitem{ツール}{Git, Postman, Figma, Vite, Auth0, JWT, WordPress}
+\cvitem{ロボティクス}{ROS/ROS 2, Humanoid Robot Programming (NAO V6, Pepper), Computer Vision, Machine Learning for Robotics}
+\cvitem{ソフトスキル}{国際チームでのリーダーシップ、迅速な学習、規律、自律、異文化コミュニケーション}
+
+%----------------------------------------------------------------------------------
+%            Awards & Honors
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{受賞・表彰}
+
+\cventry{Feb 2025}{韓国政府奨学金}{NIIED / Korean Government}{Seoul, South Korea}{}{%
+  韓国政府のNIIEDを通じてソウル大学校での交換留学を支援する奨学金を授与。渡航費と月額の生活費を支給。学業成績とキャリア実績に基づき選出。
+}
+
+\cventry{Jul 2024}{優勝 -- RoboCup 2024 SSPL}{RoboCup / Team SinfonIA}{Eindhoven, Netherlands}{}{%
+  世界最大のロボティクス競技会RoboCup 2024のSocial Standard Platform Leagueで1位を獲得。Universidad de los Andes代表として出場。
+}
+
+\cventry{Nov 2019}{優秀な成績で卒業 -- 最高GPA}{Colegio Bilingue Divino Nino}{Bucaramanga, Colombia}{}{%
+  2019年の卒業生の中で最高GPAを取得し、高校在学中の学業優秀を表彰。
+}
+
+%----------------------------------------------------------------------------------
+%            Languages
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{言語}
+
+\cvitemwithcomment{Spanish}{母語}{}
+\cvitemwithcomment{English}{バイリンガル}{IELTS C1 (7.5/9, 2019), TOEFL iBT C1 (95/120, 2025)}
+\cvitemwithcomment{Japanese}{中級}{JLPT N4}
+\cvitemwithcomment{Korean}{初級}{Seoul National Universityで学習}
+
+%----------------------------------------------------------------------------------
+%            International Experience
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{国際経験}
+
+\cventry{Jul--Dec 2023}{選出参加者 -- SEED Program 2023}{GOROM Association}{Kofu (Yamanashi), Japan}{}{%
+  HIKARI ORIMONOの社会的起業アイデア提案に向けたスタディツアーおよび国際チームワーク。デザイン思考、市場分析、ピッチ、異文化協力を実践。NHKの番組で特集され、日本語での体験インタビューも実施。
+}
+
+\cventry{Mar 2022}{参加者 -- Tsukuba × Latin America オンライン交流}{University of Tsukuba}{Tsukuba, Japan (Remote)}{}{%
+  コロンビアとUniandesを代表し、国連SDGsを中心としたプログラムで異文化討議とワークグループでの解決策立案に参加。
+}
+
+\cventry{Jul--Aug 2018}{学術交流 -- 英語 B2-C1}{EF Education First / University of East London}{London, United Kingdom}{}{%
+  初めての国際学術経験。英語力を大幅に向上させ、イングランド各地の複数都市を訪問。
+}
+
+%----------------------------------------------------------------------------------
+%            Additional Information
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{その他}
+
+\cvitem{ウェブサイト}{\href{https://ahernandezt.com}{ahernandezt.com} -- プロジェクトや経験を紹介するプロフェッショナルポートフォリオ}
+\cvitem{関心分野}{ロボティクス、人工知能、ソフトウェアアーキテクチャ、異文化協力、語学学習}
+
+\end{document}

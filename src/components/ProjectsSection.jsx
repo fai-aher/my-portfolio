@@ -59,6 +59,10 @@ const UI = {
     description: "Description",
     technologies: "Technologies",
     modalIntro: "Project Details: You can read a description below the images",
+    filterAll: "All Projects",
+    filterRobotics: "Robotics & AI",
+    filterWeb: "Web Development",
+    filterOther: "Other Projects",
   },
   es: {
     title: "Proyectos",
@@ -73,6 +77,10 @@ const UI = {
     description: "Descripción",
     technologies: "Tecnologías",
     modalIntro: "Detalles del Proyecto: Puedes leer una descripción debajo de las imágenes",
+    filterAll: "Todos los Proyectos",
+    filterRobotics: "Robótica e IA",
+    filterWeb: "Desarrollo Web",
+    filterOther: "Otros Proyectos",
   },
   ja: {
     title: "プロジェクト",
@@ -87,6 +95,10 @@ const UI = {
     description: "説明",
     technologies: "技術",
     modalIntro: "プロジェクト詳細：画像の下に説明があります",
+    filterAll: "すべてのプロジェクト",
+    filterRobotics: "ロボティクス・AI",
+    filterWeb: "Web開発",
+    filterOther: "その他",
   },
   ko: {
     title: "프로젝트",
@@ -101,6 +113,10 @@ const UI = {
     description: "설명",
     technologies: "기술",
     modalIntro: "프로젝트 세부정보: 이미지 아래에서 설명을 읽을 수 있습니다",
+    filterAll: "모든 프로젝트",
+    filterRobotics: "로보틱스 & AI",
+    filterWeb: "웹 개발",
+    filterOther: "기타 프로젝트",
   },
 };
 
@@ -510,6 +526,41 @@ function ProjectCard({ project, lang, t, onOpenGallery }) {
   );
 }
 
+// Helper function to categorize projects
+function categorizeProject(project) {
+  const id = project.id;
+  const technologies = project.technologies || [];
+
+  // Robotics & AI Projects
+  if (
+    id === "nao-robot-thesis" ||
+    id === "compass-research" ||
+    technologies.includes("ros2") ||
+    technologies.includes("pytorch")
+  ) {
+    return "robotics";
+  }
+
+  // Web Development Projects
+  if (
+    id === "seed-platform" ||
+    id === "platinum-crm" ||
+    id === "admin-girones" ||
+    id === "admin-surtidora-miami" ||
+    id === "gorom-website" ||
+    id === "robot-portfolio" ||
+    technologies.includes("react") ||
+    technologies.includes("django") ||
+    technologies.includes("nestjs") ||
+    technologies.includes("wordpress")
+  ) {
+    return "web";
+  }
+
+  // Other Projects
+  return "other";
+}
+
 export default function ProjectsSection() {
   const lang = useAppLanguage();
   const t = useMemo(() => UI[lang] || UI.en, [lang]);
@@ -518,10 +569,17 @@ export default function ProjectsSection() {
   const [isPaused, setIsPaused] = useState(false);
   const [galleryProject, setGalleryProject] = useState(null);
   const [isInViewport, setIsInViewport] = useState(false);
+  const [activeFilter, setActiveFilter] = useState("all");
   const intervalRef = useRef(null);
   const sectionRef = useRef(null);
 
-  const projects = projectsData;
+  // Filter projects based on active category
+  const projects = useMemo(() => {
+    if (activeFilter === "all") {
+      return projectsData;
+    }
+    return projectsData.filter(project => categorizeProject(project) === activeFilter);
+  }, [activeFilter]);
 
   // Auto-scroll - changed to 10 seconds
   const startAutoScroll = useCallback(() => {
@@ -592,22 +650,79 @@ export default function ProjectsSection() {
       />
 
       {/* Header */}
-      <div className="flex items-start justify-between gap-4 mb-8">
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/70 dark:bg-white/5 ring-1 ring-black/10 dark:ring-white/10">
-              <HiOutlineRocketLaunch className="h-6 w-6 text-cyan-600 dark:text-cyan-300" />
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-white">
-              {t.title}
-            </h2>
+      <div className="mb-8">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/70 dark:bg-white/5 ring-1 ring-black/10 dark:ring-white/10">
+                <HiOutlineRocketLaunch className="h-6 w-6 text-cyan-600 dark:text-cyan-300" />
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 dark:text-white">
+                {t.title}
+              </h2>
+            </div>
+            <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300/85">
+              {t.subtitle}
+            </p>
           </div>
-          <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300/85">
-            {t.subtitle}
-          </p>
         </div>
 
+        {/* Filter Buttons */}
+        <div className="mt-6 flex flex-wrap gap-2">
+          <button
+            onClick={() => {
+              setActiveFilter("all");
+              setCurrentIndex(0);
+            }}
+            className={`inline-flex items-center rounded-xl px-4 py-2.5 text-sm font-medium transition-all ${
+              activeFilter === "all"
+                ? "bg-cyan-500 text-white shadow-lg shadow-cyan-500/30"
+                : "border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-white/10"
+            }`}
+          >
+            {t.filterAll}
+          </button>
+          <button
+            onClick={() => {
+              setActiveFilter("robotics");
+              setCurrentIndex(0);
+            }}
+            className={`inline-flex items-center rounded-xl px-4 py-2.5 text-sm font-medium transition-all ${
+              activeFilter === "robotics"
+                ? "bg-cyan-500 text-white shadow-lg shadow-cyan-500/30"
+                : "border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-white/10"
+            }`}
+          >
+            {t.filterRobotics}
+          </button>
+          <button
+            onClick={() => {
+              setActiveFilter("web");
+              setCurrentIndex(0);
+            }}
+            className={`inline-flex items-center rounded-xl px-4 py-2.5 text-sm font-medium transition-all ${
+              activeFilter === "web"
+                ? "bg-cyan-500 text-white shadow-lg shadow-cyan-500/30"
+                : "border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-white/10"
+            }`}
+          >
+            {t.filterWeb}
+          </button>
+          <button
+            onClick={() => {
+              setActiveFilter("other");
+              setCurrentIndex(0);
+            }}
+            className={`inline-flex items-center rounded-xl px-4 py-2.5 text-sm font-medium transition-all ${
+              activeFilter === "other"
+                ? "bg-cyan-500 text-white shadow-lg shadow-cyan-500/30"
+                : "border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-white/10"
+            }`}
+          >
+            {t.filterOther}
+          </button>
         </div>
+      </div>
 
       {/* Carousel Container */}
       <div className="relative">

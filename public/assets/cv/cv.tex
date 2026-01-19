@@ -1,0 +1,258 @@
+% Professional CV - Fai Hernández Tamayo
+% Compile with pdfLaTeX or XeLaTeX
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Modern CV theme
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Adjust page margins
+\usepackage[scale=0.85]{geometry}
+
+\setlength{\hintscolumnwidth}{3.2cm}
+
+\name{Alonso}{Hernandez T.}
+\renewcommand*{\namefont}{\fontsize{34}{36}\mdseries\upshape}
+\title{Systems \& Computer Engineer}
+\address{Bogota, Colombia}
+\email{fai@ahernandezt.com}
+\social[linkedin]{linkedin.com/in/a-hernandezt}
+\social[github]{github.com/fai-aher}
+\homepage{ahernandezt.com}
+
+\photo[64pt][0pt]{./fai.png}
+
+%----------------------------------------------------------------------------------
+%            Content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------
+%            Profile / Summary
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Profile}
+\cvitem{}{%
+  Systems and Computer Engineering graduate from Universidad de los Andes with a strong focus on robotics, artificial intelligence, and full-stack web development. Proven track record of success in international robotics competitions and research, with hands-on experience in humanoid robot control, machine learning, and software architecture. Recognized with the Korean Government Scholarship for academic excellence and selected as the only Colombian student for graduate-level AI and robotics studies at Seoul National University. Passionate about building innovative solutions at the intersection of robotics and human well-being.
+}
+
+%----------------------------------------------------------------------------------
+%            Education
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Education}
+
+\cventry{2020--2025}{Bachelor's Degree in Systems and Computer Engineering}{Universidad de los Andes}{Bogotá, Colombia}{GPA: 4.52/5.0}{%
+  Specialization in Software Engineering\\
+  Focus: Robotics, AI, and Full-stack Web Development\\
+  Undergraduate Thesis: \textit{Modular Architecture for NAO V6 Robot Control with ROS 2}
+}
+
+\cventry{Feb 2025--Jun 2025}{Exchange Semester -- AI \& Robotics (Graduate-level)}{Seoul National University}{Seoul, South Korea}{GPA: 4.28/5.0 (85.60/100)}{%
+  \textbf{Scholarship:} Korean Government Scholarship (NIIED)\\
+  \textbf{Courses:} Elementary Korean, Basics of Deep Learning, Robot Learning, Space Dynamics, Theory and Practice of Humanoid Walking Control\\
+  \textbf{Achievement:} Only student selected from Colombia
+}
+
+\cventry{2013--2019}{High School Diploma}{Colegio Bilingüe Divino Niño}{Bucaramanga, Colombia}{GPA: 4.9/5.0}{%
+  \textbf{Graduated with Honors:} Highest GPA of Class of 2019\\
+  \textbf{Awards:} Most Collaborative Student Award\\
+  \textbf{Language Certification:} IELTS C1 (7.5/9, 2019)
+}
+
+%----------------------------------------------------------------------------------
+%            Work Experience
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Work Experience}
+
+\cventry{Mar 2024--Present}{Coordinator -- SEED Alumni Project}{GOROM Association}{Tokyo, Japan (Remote)}{}{%
+  \begin{itemize}
+    \item Co-founded and coordinated the SEED Alumni initiative to connect former and current SEED Program participants through community activities and a digital platform
+    \item Conceived and established the project with GOROM founder Goro Mutsuura in 2024
+    \item Helped create cultural interest clubs (geography, work culture, food, cinema, language) for the broader SEED community
+    \item Technologies: React, Django, TailwindCSS, Auth0
+  \end{itemize}
+}
+
+\cventry{Apr 2024--Present}{IT Coordinator}{GOROM Association}{Tokyo, Japan (Hybrid)}{}{%
+  \begin{itemize}
+    \item IT coordination and digital platform ownership for GOROM: intranet development, website operations, and strategic content planning
+    \item Built and maintained an intranet web application for SEED participants and alumni
+    \item Managed gorom.org website and supported yearly program logistics and participant success
+    \item Technologies: React, Django, REST APIs
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Research Experience
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Research Experience}
+
+\cventry{Jun 2025}{Presenter -- Robot Learning Poster Fair (COMPASS)}{Seoul National University}{Seoul, South Korea}{}{%
+  \begin{itemize}
+    \item Presented research on COMPASS: a comparative framework and meta-algorithm for robust imitation learning from imperfect demonstrations
+    \item Ran 300+ experiments introducing noise, failure attempts, inconsistent strategies, and embodiment mismatch
+    \item Key insight: behavioral cloning remained resilient under imperfect data, but embodiment mismatch caused major performance drops
+    \item Technologies: Python, PyTorch
+  \end{itemize}
+}
+
+\cventry{Feb 2024--Dec 2024}{Software Developer -- Pepper Robot \& Research}{SinfonIA Uniandes}{Bogotá, Colombia}{}{%
+  \begin{itemize}
+    \item Developed software enabling Pepper (SoftBank Robotics) to perform household/social tasks and explored AI integrations to increase real-world impact
+    \item Implemented behaviors and task pipelines for human-robot interaction and domestic scenarios
+    \item Explored AI/ML integrations (e.g., visual computing and model-based decision logic)
+    \item Technologies: ROS, Python, C++, YOLO, TensorFlow
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Competitions & Achievements
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Competitions \& Leadership}
+
+\cventry{Jul 2024}{First Place Winner -- RoboCup 2024 SSPL}{SinfonIA Uniandes}{Eindhoven, Netherlands}{}{%
+  \begin{itemize}
+    \item Competed in the world's leading robotics competition and won 1st place in SSPL after programming domestic tasks and presenting research progress with Pepper robot (SoftBank Robotics)
+    \item Programmed and demonstrated domestic tasks across multiple arenas
+    \item Technologies: ROS, Python, OpenAI API
+  \end{itemize}
+}
+
+\cventry{Aug 2024--Dec 2024}{Teaching Assistant -- Web Application Programming}{Universidad de los Andes}{Bogotá, Colombia}{}{%
+  \begin{itemize}
+    \item Supported students and strengthened modern web stack skills (React, Node/NestJS, UI/UX, testing) through teaching and mentoring
+    \item Provided student support, Q\&A, and practical guidance on best practices
+  \end{itemize}
+}
+
+\cventry{Nov 2023}{Finalist -- Startup Competition (Shark Tank Pitch)}{UNIANDINOS -- UPlan}{Bogotá, Colombia}{}{%
+  \begin{itemize}
+    \item Led a 5-minute investor pitch covering problem, solution, business model, revenue projections, market size, and profitability
+    \item Reached final stage and presented to investors and entrepreneurship professionals
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Selected Projects
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Selected Projects}
+
+\cventry{2024--2025}{Modular Architecture for NAO V6 Robot Control with ROS 2}{Undergraduate Thesis}{}{}{%
+  \begin{itemize}
+    \item Designed and implemented a modular software architecture based on Service-Oriented Architecture (SOA) for NAO V6 humanoid robot
+    \item Developed using Python 3, Ubuntu 24.04, ROS 2, React, Vite, Flask, and libqi middleware
+    \item Integrated web-based remote control and implemented complex tasks using OpenAI APIs for real-time natural language conversations
+    \item Technologies: Python, React, ROS 2, Flask, OpenAI
+  \end{itemize}
+}
+
+\cventry{2024}{SEED Intranet -- Collaboration Platform}{GOROM Association}{}{}{%
+  \begin{itemize}
+    \item Full-stack web intranet designed for international participants of the SEED Program at GOROM Association, Japan
+    \item Features: discussion forums with comments, activity calendar, document repository, report writing space, personal profile editing, and community member directory
+    \item Deployed on DigitalOcean with AWS MySQL database and Auth0 authentication
+    \item Used by over 100 people worldwide
+    \item Technologies: React, NestJS, MySQL, Auth0, DigitalOcean, AWS
+  \end{itemize}
+}
+
+\cventry{2024}{Platinum Clientes -- CRM for Beauty Salon}{Independent Project}{}{}{%
+  \begin{itemize}
+    \item Custom web-based CRM and basic accounting system developed for a local Colombian beauty salon
+    \item Manages customer loyalty, collects sales data, tracks customer visit frequency, identifies high/low demand products and services
+    \item Includes separate accountant profile with metrics and statistics for streamlined payroll processing
+    \item Technologies: React, Django, PostgreSQL, Vite
+  \end{itemize}
+}
+
+\cventry{2024--Present}{GOROM Association Website -- International Remodeling}{GOROM Association}{}{}{%
+  \begin{itemize}
+    \item Ongoing remodeling project of GOROM Association's main website to improve international visibility
+    \item As IT Coordinator and web developer, managed content updates including latest SEED program experiences and alumni stories
+    \item Implemented using WordPress with Elementor plugin and multilingual support (English, Japanese, Spanish, Portuguese)
+    \item Technologies: WordPress, PHP
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------
+%            Technical Skills
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Technical Skills}
+
+\cvitem{Programming Languages}{Python, JavaScript, TypeScript, Java, C++, SQL, HTML, CSS}
+\cvitem{Frameworks \& Libraries}{React, Angular, Django, FastAPI, Flask, Spring Boot, NestJS, ROS 2, PyTorch, scikit-learn, TailwindCSS, Framer Motion}
+\cvitem{Databases}{PostgreSQL, MySQL, Oracle DB, Firebase}
+\cvitem{Cloud \& DevOps}{AWS, DigitalOcean, Heroku, Linux/Ubuntu, Docker}
+\cvitem{Tools}{Git, Postman, Figma, Vite, Auth0, JWT, WordPress}
+\cvitem{Robotics}{ROS/ROS 2, Humanoid Robot Programming (NAO V6, Pepper), Computer Vision, Machine Learning for Robotics}
+\cvitem{Soft Skills}{Leadership in international teams, Fast learning, Discipline, Autonomy, Cross-cultural communication}
+
+%----------------------------------------------------------------------------------
+%            Awards & Honors
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Awards \& Honors}
+
+\cventry{Feb 2025}{Korean Government Scholarship}{NIIED / Korean Government}{Seoul, South Korea}{}{%
+  Awarded scholarship by the South Korean government through NIIED to complete an exchange semester at Seoul National University. Scholarship covered travel expenses and provided monthly financial support. Selected based on academic excellence and career achievements.
+}
+
+\cventry{Jul 2024}{First Place -- RoboCup 2024 SSPL}{RoboCup / Team SinfonIA}{Eindhoven, Netherlands}{}{%
+  Won first place in the Social Standard Platform League at RoboCup 2024, the world's largest robotics competition, representing Universidad de los Andes.
+}
+
+\cventry{Nov 2019}{Graduation with Honors -- Highest GPA}{Colegio Bilingue Divino Nino}{Bucaramanga, Colombia}{}{%
+  Graduated with the highest GPA in the Class of 2019, recognized for academic excellence throughout high school.
+}
+
+%----------------------------------------------------------------------------------
+%            Languages
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Languages}
+
+\cvitemwithcomment{Spanish}{Native}{}
+\cvitemwithcomment{English}{Bilingual}{IELTS C1 (7.5/9, 2019), TOEFL iBT C1 (95/120, 2025)}
+\cvitemwithcomment{Japanese}{Intermediate}{JLPT N4}
+\cvitemwithcomment{Korean}{Elementary}{Studied at Seoul National University}
+
+%----------------------------------------------------------------------------------
+%            International Experience
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{International Experience}
+
+\cventry{Jul--Dec 2023}{Elected Participant -- SEED Program 2023}{GOROM Association}{Kofu (Yamanashi), Japan}{}{%
+  Study trip + international teamwork to propose a socially entrepreneurial business idea for HIKARI ORIMONO. Applied design thinking, market analysis, pitching, and cross-cultural collaboration. Featured by NHK in a program report; interviewed in Japanese about the experience.
+}
+
+\cventry{Mar 2022}{Participant -- Tsukuba × Latin America Online Exchange}{University of Tsukuba}{Tsukuba, Japan (Remote)}{}{%
+  Represented Colombia and Uniandes in a program centered on UN SDGs, cross-cultural discussion, and solution ideation in work groups.
+}
+
+\cventry{Jul--Aug 2018}{Academic Exchange -- English B2-C1}{EF Education First / University of East London}{London, United Kingdom}{}{%
+  First international academic experience; improved English significantly and explored multiple cities across England.
+}
+
+%----------------------------------------------------------------------------------
+%            Additional Information
+%----------------------------------------------------------------------------------
+\vspace{1.2em}
+\section{Additional Information}
+
+\cvitem{Website}{\href{https://ahernandezt.com}{ahernandezt.com} -- Professional portfolio showcasing projects and experiences}
+\cvitem{Interests}{Robotics, Artificial Intelligence, Software Architecture, Cross-cultural Collaboration, Language Learning}
+
+\end{document}
