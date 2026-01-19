@@ -125,11 +125,11 @@ function scrollToSection(id) {
 
 function Stat({ k, v }) {
   return (
-    <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-4">
-      <div className="text-2xl font-semibold text-slate-900 dark:text-white">
+    <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 p-3 sm:p-4">
+      <div className="text-lg sm:text-2xl font-semibold text-slate-900 dark:text-white break-words">
         {k}
       </div>
-      <div className="mt-1 text-xs uppercase tracking-widest text-slate-700 dark:text-slate-300/80">
+      <div className="mt-1 text-[10px] sm:text-xs uppercase tracking-wide sm:tracking-widest text-slate-700 dark:text-slate-300/80 break-words">
         {v}
       </div>
     </div>
@@ -399,7 +399,7 @@ export default function BioSection() {
             </p>
             <div className="h-px flex-1 bg-gradient-to-r from-black/10 via-black/5 to-transparent dark:from-white/10 dark:via-white/5" />
           </div>
-          <div className="mt-3 grid grid-cols-3 gap-3">
+          <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3">
             {(tProfile.quickFacts || []).slice(0, 3).map((q) => (
               <Stat
                 key={q.id}
