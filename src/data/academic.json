@@ -1,8 +1,18 @@
 [
   {
     "id": "uniandes-bsc",
-    "institution": "Universidad de los Andes",
-    "location": "Bogotá, Colombia",
+    "institution": {
+      "en": "Universidad de los Andes",
+      "es": "Universidad de los Andes",
+      "ja": "ロス・アンデス大学",
+      "ko": "로스안데스대학교"
+    },
+    "location": {
+      "en": "Bogotá, Colombia",
+      "es": "Bogotá, Colombia",
+      "ja": "コロンビア・ボゴタ",
+      "ko": "콜롬비아 보고타"
+    },
     "logo": "/assets/logos/uniandes.jpeg",
     "featuredImage": "/assets/images/academic/uniandes-highlight.jpg",
     "organizationWebsite": "https://uniandes.edu.co",
@@ -17,8 +27,18 @@
   },
   {
     "id": "snu-exchange",
-    "institution": "Seoul National University",
-    "location": "Seoul, South Korea",
+    "institution": {
+      "en": "Seoul National University",
+      "es": "Universidad Nacional de Seúl",
+      "ja": "ソウル大学校",
+      "ko": "서울대학교"
+    },
+    "location": {
+      "en": "Seoul, South Korea",
+      "es": "Seúl, Corea del Sur",
+      "ja": "韓国・ソウル",
+      "ko": "대한민국 서울"
+    },
     "logo": "/assets/logos/snu.jpeg",
     "featuredImage": "/assets/images/academic/snu-highlight.jpg",
     "organizationWebsite": "https://www.snu.ac.kr",
@@ -40,8 +60,18 @@
   },
   {
     "id": "divino-nino",
-    "institution": "Colegio Bilingüe Divino Niño",
-    "location": "Bucaramanga, Santander, Colombia",
+    "institution": {
+      "en": "Colegio Bilingüe Divino Niño",
+      "es": "Colegio Bilingüe Divino Niño",
+      "ja": "ディビノ・ニーニョ・バイリンガル校",
+      "ko": "디비노 니뇨 이중언어 학교"
+    },
+    "location": {
+      "en": "Bucaramanga, Santander, Colombia",
+      "es": "Bucaramanga, Santander, Colombia",
+      "ja": "コロンビア・サンタンデール州ブカラマンガ",
+      "ko": "콜롬비아 산탄데르주 부카라망가"
+    },
     "logo": "/assets/logos/cbdn.jpeg",
     "featuredImage": "/assets/images/academic/cbdn-highlight.jpg",
     "organizationWebsite": "https://cbdn.edu.co/",

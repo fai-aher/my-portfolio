@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
  * - x, y: percentage positions on the map (0–100)
  * - label: translated country label
  * - subtitle: city / short label
- * - flag: emoji string
+ * - flagCode: flag code string (e.g., "co", "us", "jp")
  * - count: number of experiences for the current mode
  * - experiencesLabel: localized label for "experiences"
  * - detailsLabel: localized label for the details button
@@ -33,7 +33,7 @@ export default function MapPoint({
   y,
   label,
   subtitle,
-  flag,
+  flagCode,
   count = 0,
   experiencesLabel,
   detailsLabel,
@@ -136,7 +136,7 @@ export default function MapPoint({
         whileHover={canHover ? { scale: 1.15 } : undefined}
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 260, damping: 18 }}
-        aria-label={`${flag || ""} ${label}`.trim()}
+        aria-label={label}
         className="relative"
       >
         <span
@@ -149,16 +149,23 @@ export default function MapPoint({
 
         <span
           className={
-            "relative flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full border ring-1 transition select-none " +
+            "relative flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full border-2 ring-1 transition select-none overflow-hidden " +
             (open ? tone.pinActive : tone.pinIdle)
           }
         >
-          <span
-            aria-hidden="true"
-            className="text-lg sm:text-xl leading-none"
-          >
-            {flag || "🌍"}
-          </span>
+          {flagCode ? (
+            <span
+              className={`fi fi-${flagCode} fis`}
+              style={{
+                fontSize: '1.8rem',
+                transform: 'scale(1.1)',
+                display: 'block',
+                lineHeight: 1
+              }}
+            ></span>
+          ) : (
+            <span aria-hidden="true" className="text-lg sm:text-xl leading-none">🌍</span>
+          )}
         </span>
       </motion.button>
 
@@ -218,8 +225,27 @@ export default function MapPoint({
                     </button>
                   </div>
 
-                  <div className="shrink-0 text-3xl leading-none">
-                    <span aria-hidden="true">{flag || "🌍"}</span>
+                  <div
+                    className={
+                      "shrink-0 flex items-center justify-center w-14 h-14 rounded-full overflow-hidden border-2 " +
+                      (mode === "personal"
+                        ? "border-orange-400/30 dark:border-orange-300/20"
+                        : "border-cyan-400/30 dark:border-cyan-300/20")
+                    }
+                  >
+                    {flagCode ? (
+                      <span
+                        className={`fi fi-${flagCode} fis`}
+                        style={{
+                          fontSize: '2.8rem',
+                          transform: 'scale(1.15)',
+                          display: 'block',
+                          lineHeight: 1
+                        }}
+                      ></span>
+                    ) : (
+                      <span aria-hidden="true" className="text-3xl leading-none">🌍</span>
+                    )}
                   </div>
                 </div>
               </div>

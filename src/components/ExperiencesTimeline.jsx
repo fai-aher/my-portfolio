@@ -189,44 +189,42 @@ function useMediaQuery(query) {
   return matches;
 }
 
-function countryToFlagEmoji(country) {
+function countryToFlagCode(country) {
   if (!country) return "";
   const c = String(country).trim().toLowerCase();
 
   // Common aliases used in resumes
   const map = {
-    "united states": "🇺🇸",
-    "usa": "🇺🇸",
-    "u.s.a.": "🇺🇸",
-    "us": "🇺🇸",
-    "colombia": "🇨🇴",
-    "japan": "🇯🇵",
-    "korea": "🇰🇷",
-    "south korea": "🇰🇷",
-    "republic of korea": "🇰🇷",
-    "france": "🇫🇷",
-    "spain": "🇪🇸",
-    "germany": "🇩🇪",
-    "canada": "🇨🇦",
-    "united kingdom": "🇬🇧",
-    "uk": "🇬🇧",
-    "england": "🇬🇧",
-    "china": "🇨🇳",
-    "singapore": "🇸🇬",
-    "mexico": "🇲🇽",
-    "brazil": "🇧🇷",
-    "argentina": "🇦🇷",
-    "chile": "🇨🇱",
-    "peru": "🇵🇪",
-    "netherlands": "🇳🇱",
+    "united states": "us",
+    "usa": "us",
+    "u.s.a.": "us",
+    "us": "us",
+    "colombia": "co",
+    "japan": "jp",
+    "korea": "kr",
+    "south korea": "kr",
+    "republic of korea": "kr",
+    "france": "fr",
+    "spain": "es",
+    "germany": "de",
+    "canada": "ca",
+    "united kingdom": "gb",
+    "uk": "gb",
+    "england": "gb",
+    "china": "cn",
+    "singapore": "sg",
+    "mexico": "mx",
+    "brazil": "br",
+    "argentina": "ar",
+    "chile": "cl",
+    "peru": "pe",
+    "netherlands": "nl",
+    "belgium": "be",
+    "hong kong": "hk",
+    "panama": "pa",
   };
 
-  if (map[c]) return map[c];
-
-  // If already an emoji flag, return as-is
-  if (/^[\u{1F1E6}-\u{1F1FF}]{2}$/u.test(country)) return country;
-
-  return "";
+  return map[c] || "";
 }
 
 /* ----------------------- Modal (reused style) ----------------------- */
@@ -427,14 +425,21 @@ function ExpandableMarker({ item, hovered, onOpen, lang }) {
               <HiOutlineBriefcase className="h-5 w-5 text-cyan-600 dark:text-cyan-300" />
             )}
           </div>
-          {countryToFlagEmoji(item.country) && (
+          {countryToFlagCode(item.country) && (
             <div
-              className="absolute -right-2 -top-2 grid h-6 w-6 place-items-center rounded-full border border-black/10 dark:border-white/10 bg-white dark:bg-slate-950 shadow"
+              className="absolute -right-2 -top-2 h-6 w-6 rounded-full border-2 border-white dark:border-slate-950 shadow-md overflow-hidden flex items-center justify-center"
               title={item.country}
+              style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.15)' }}
             >
-              <span className="text-sm leading-none">
-                {countryToFlagEmoji(item.country)}
-              </span>
+              <span
+                className={`fi fi-${countryToFlagCode(item.country)} fis`}
+                style={{
+                  fontSize: '1.2rem',
+                  transform: 'scale(1.1)',
+                  display: 'block',
+                  lineHeight: 1
+                }}
+              ></span>
             </div>
           )}
         </div>

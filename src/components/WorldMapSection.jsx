@@ -163,18 +163,28 @@ function fmtDates(dates) {
   return `${s} – ${e}`;
 }
 
-function countryToFlagEmoji(country) {
+function countryToFlagCode(country) {
   const map = {
-    Colombia: "🇨🇴",
-    "South Korea": "🇰🇷",
-    Korea: "🇰🇷",
-    Japan: "🇯🇵",
-    Netherlands: "🇳🇱",
-    England: "🇬🇧",
-    "United Kingdom": "🇬🇧",
-    UK: "🇬🇧",
+    Colombia: "co",
+    "South Korea": "kr",
+    Korea: "kr",
+    Japan: "jp",
+    Netherlands: "nl",
+    England: "gb",
+    "United Kingdom": "gb",
+    UK: "gb",
+    Argentina: "ar",
+    Brazil: "br",
+    Panama: "pa",
+    Mexico: "mx",
+    "United States": "us",
+    Canada: "ca",
+    France: "fr",
+    Spain: "es",
+    Belgium: "be",
+    "Hong Kong": "hk",
   };
-  return map[country] || "🌍";
+  return map[country] || "";
 }
 
 function getCountryLabel(p, lang) {
@@ -512,9 +522,9 @@ function WorldMapSectionImpl() {
 
               {visibleTrips.map((p) => {
                 const countryLabel = getCountryLabel(p, lang);
-                const flag =
-                  p.flag ||
-                  countryToFlagEmoji(typeof p.country === "string" ? p.country : pickLang(p.country, "en"));
+                const flagCode =
+                  p.flagCode ||
+                  countryToFlagCode(typeof p.country === "string" ? p.country : pickLang(p.country, "en"));
                 const count = getModeExperienceCount(p, mode);
                 const isSelected = selectedId === p.id;
 
@@ -525,7 +535,7 @@ function WorldMapSectionImpl() {
                     y={p.y}
                     label={pickTravelText(countryLabel, lang)}
                     subtitle={pickTravelText(p.city, lang)}
-                    flag={flag}
+                    flagCode={flagCode}
                     count={count}
                     mode={mode}
                     canHover={canHover}

@@ -693,7 +693,7 @@
         "ja": "スペイン語",
         "ko": "스페인어"
       },
-      "flagEmoji": "🇨🇴",
+      "flagCode": "co",
       "level": {
         "en": "Native",
         "es": "Nativo",
@@ -711,7 +711,7 @@
         "ja": "英語",
         "ko": "영어"
       },
-      "flagEmoji": "🇺🇸",
+      "flagCode": "us",
       "level": {
         "en": "Bilingual",
         "es": "Bilingüe",
@@ -732,7 +732,7 @@
         "ja": "日本語",
         "ko": "일본어"
       },
-      "flagEmoji": "🇯🇵",
+      "flagCode": "jp",
       "level": {
         "en": "Intermediate",
         "es": "Intermedio",
@@ -750,7 +750,7 @@
         "ja": "韓国語",
         "ko": "한국어"
       },
-      "flagEmoji": "🇰🇷",
+      "flagCode": "kr",
       "level": {
         "en": "Elementary",
         "es": "Elemental",

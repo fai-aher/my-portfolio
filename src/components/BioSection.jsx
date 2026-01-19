@@ -56,6 +56,27 @@ const CTA_LABELS = {
   projects: { en: "Explore projects", es: "Explorar proyectos", ja: "プロジェクトを見る", ko: "프로젝트 보기" }
 };
 
+const HIGHLIGHT_LABELS = {
+  systemsEngineer: {
+    en: "Systems & Computer Engineer",
+    es: "Ingeniero de Sistemas y Computación",
+    ja: "システム・コンピュータ工学士",
+    ko: "시스템 및 컴퓨터 공학사"
+  },
+  fullStackEngineer: {
+    en: "Full-stack Engineer (Part Time, Remote)",
+    es: "Ingeniero Full-stack (Medio Tiempo, Remoto)",
+    ja: "フルスタックエンジニア（パートタイム・リモート）",
+    ko: "풀스택 엔지니어 (파트타임, 원격)"
+  },
+  snuAlumni: {
+    en: "Seoul National University Alumni",
+    es: "Alumni de la Universidad Nacional de Seúl",
+    ja: "ソウル大学校卒業生",
+    ko: "서울대학교 동문"
+  }
+};
+
 const CONTACT_MODAL_LABELS = {
   title: { en: "Let's work together!", es: "Trabajemos juntos!", ja: "一緒に働きましょう！", ko: "함께 일해요!" },
   description: {
@@ -492,7 +513,7 @@ export default function BioSection() {
               >
                 <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 cursor-pointer hover:bg-white/90 dark:hover:bg-white/10 transition">
                   <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">
-                    Systems & Computer Engineer
+                    {pickLang(HIGHLIGHT_LABELS.systemsEngineer, lang)}
                   </span>
                   <img
                     src="/assets/images/highlight1.jpeg"
@@ -510,7 +531,7 @@ export default function BioSection() {
               >
                 <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 cursor-pointer hover:bg-white/90 dark:hover:bg-white/10 transition">
                   <span className="text-sm text-slate-800 dark:text-slate-200">
-                    Full-stack Engineer (Part Time, Remote)
+                    {pickLang(HIGHLIGHT_LABELS.fullStackEngineer, lang)}
                   </span>
                   <img
                     src="/assets/images/highlight2.png"
@@ -528,7 +549,7 @@ export default function BioSection() {
               >
                 <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 cursor-pointer hover:bg-white/90 dark:hover:bg-white/10 transition">
                   <span className="text-sm text-slate-800 dark:text-slate-200">
-                    Seoul National University Alumni
+                    {pickLang(HIGHLIGHT_LABELS.snuAlumni, lang)}
                   </span>
                   <img
                     src="/assets/images/highlight3.jpeg"

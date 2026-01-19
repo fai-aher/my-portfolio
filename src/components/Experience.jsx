@@ -78,23 +78,24 @@ function formatDuration(dates = {}) {
   return `${totalMonths}mo`;
 }
 
-function flagEmoji(country) {
+function getFlagCode(country) {
   if (!country) return "";
   const map = {
-    Colombia: "🇨🇴",
-    Argentina: "🇦🇷",
-    Brazil: "🇧🇷",
-    Panama: "🇵🇦",
-    Mexico: "🇲🇽",
-    "United States": "🇺🇸",
-    Canada: "🇨🇦",
-    England: "🇬🇧",
-    France: "🇫🇷",
-    Spain: "🇪🇸",
-    Netherlands: "🇳🇱",
-    Belgium: "🇧🇪",
-    "South Korea": "🇰🇷",
-    Japan: "🇯🇵",
+    Colombia: "co",
+    Argentina: "ar",
+    Brazil: "br",
+    Panama: "pa",
+    Mexico: "mx",
+    "United States": "us",
+    Canada: "ca",
+    England: "gb",
+    France: "fr",
+    Spain: "es",
+    Netherlands: "nl",
+    Belgium: "be",
+    "South Korea": "kr",
+    Japan: "jp",
+    "Hong Kong": "hk",
   };
   return map[country] || "";
 }
@@ -128,9 +129,18 @@ function ExperienceCard({ item, onOpen }) {
         )}
 
         {/* Country flag */}
-        {item.country && (
-          <div className="absolute right-3 top-3 grid h-10 w-10 place-items-center rounded-xl border border-white/20 bg-black/40 backdrop-blur text-xl">
-            <span title={item.country}>{flagEmoji(item.country)}</span>
+        {item.country && getFlagCode(item.country) && (
+          <div className="absolute right-3 top-3 h-10 w-10 rounded-xl border-2 border-white/40 backdrop-blur overflow-hidden flex items-center justify-center" style={{ background: 'rgba(0, 0, 0, 0.3)' }}>
+            <span
+              className={`fi fi-${getFlagCode(item.country)} fis`}
+              title={item.country}
+              style={{
+                fontSize: '1.75rem',
+                transform: 'scale(1.1)',
+                display: 'block',
+                lineHeight: 1
+              }}
+            ></span>
           </div>
         )}
       </div>

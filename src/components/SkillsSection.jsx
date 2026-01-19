@@ -539,11 +539,11 @@ export default function SkillsSection() {
                 >
                   {/* flag background (low opacity) */}
                   <div className="pointer-events-none absolute inset-0">
-                    <div className="absolute -right-6 -top-6 text-7xl opacity-[0.12] blur-[0.2px]">
-                      {l.flagEmoji}
+                    <div className="absolute -right-6 -top-6 opacity-[0.12] blur-[0.2px]">
+                      <span className={`fi fi-${l.flagCode}`} style={{ fontSize: '5rem' }}></span>
                     </div>
-                    <div className="absolute -left-6 -bottom-8 text-7xl opacity-[0.10] blur-[0.2px]">
-                      {l.flagEmoji}
+                    <div className="absolute -left-6 -bottom-8 opacity-[0.10] blur-[0.2px]">
+                      <span className={`fi fi-${l.flagCode}`} style={{ fontSize: '5rem' }}></span>
                     </div>
                   </div>
 
@@ -558,9 +558,17 @@ export default function SkillsSection() {
                         </p>
                       </div>
 
-                      <span className="rounded-full border border-cyan-400/30 dark:border-cyan-300/20 bg-cyan-400/15 dark:bg-cyan-400/10 px-2 py-0.5 text-[22px]">
-                        {l.flagEmoji}
-                      </span>
+                      <div className="shrink-0 w-12 h-9 rounded-lg border-2 border-cyan-400/30 dark:border-cyan-300/20 bg-cyan-400/15 dark:bg-cyan-400/10 overflow-hidden flex items-center justify-center">
+                        <span
+                          className={`fi fi-${l.flagCode} fis`}
+                          style={{
+                            fontSize: '2.5rem',
+                            transform: 'scale(1.1)',
+                            display: 'block',
+                            lineHeight: 1
+                          }}
+                        ></span>
+                      </div>
                     </div>
 
                     <div className="mt-4 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/3 px-3 py-3">

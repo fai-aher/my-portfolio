@@ -24,15 +24,30 @@ function pickLang(value, lang) {
   return value[lang] || value.en || Object.values(value)[0] || "";
 }
 
-function formatPeriod(dates = {}) {
+function formatPeriod(dates = {}, lang = "en") {
+  const monthsByLang = {
+    en: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+    es: ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],
+    ja: ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+    ko: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
+  };
+  const presentByLang = {
+    en: "Present",
+    es: "Presente",
+    ja: "現在",
+    ko: "현재"
+  };
+
+  const months = monthsByLang[lang] || monthsByLang.en;
+  const present = presentByLang[lang] || presentByLang.en;
+
   const fmt = (ym) => {
     if (!ym) return "";
     const [y, m] = String(ym).split("-");
     if (!m) return y;
-    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     return `${months[Number(m)-1]} ${y}`;
   };
-  return `${fmt(dates.start)} — ${dates.end ? fmt(dates.end) : "Present"}`.trim();
+  return `${fmt(dates.start)} — ${dates.end ? fmt(dates.end) : present}`.trim();
 }
 
 const fadeUp = {
@@ -47,9 +62,9 @@ export default function AcademicSection() {
   const academicItems = useMemo(() =>
     (academic || []).map((e) => ({
       id: e.id,
-      period: formatPeriod(e.dates),
-      institution: e.institution,
-      location: e.location,
+      period: formatPeriod(e.dates, lang),
+      institution: pickLang(e.institution, lang),
+      location: pickLang(e.location, lang),
       program: pickLang(e.program, lang),
       badges: e.gpa?.value ? [`GPA ${e.gpa.value}/${e.gpa.scale}`] : [],
       links: (e.links || []).map((l) => ({ label: l.label, href: l.url || l.href })),

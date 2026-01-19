@@ -5,7 +5,7 @@
     "modes": ["professional", "personal"],
     "country": "Colombia",
     "countryCode": "CO",
-    "flag": "🇨🇴",
+    "flagCode": "co",
     "countryLabel": {
       "en": "Colombia",
       "es": "Colombia",
@@ -45,7 +45,7 @@
     "modes": ["professional", "personal"],
     "country": "South Korea",
     "countryCode": "KR",
-    "flag": "🇰🇷",
+    "flagCode": "kr",
     "countryLabel": {
       "en": "South Korea",
       "es": "Corea del Sur",
@@ -77,7 +77,7 @@
     "modes": ["professional", "personal"],
     "country": "Japan",
     "countryCode": "JP",
-    "flag": "🇯🇵",
+    "flagCode": "jp",
     "countryLabel": {
       "en": "Japan",
       "es": "Japón",
@@ -114,7 +114,7 @@
     "modes": ["professional", "personal"],
     "country": "Netherlands",
     "countryCode": "NL",
-    "flag": "🇳🇱",
+    "flagCode": "nl",
     "countryLabel": {
       "en": "Netherlands",
       "es": "Países Bajos",
@@ -143,7 +143,7 @@
     "modes": ["professional", "personal"],
     "country": "England",
     "countryCode": "GB",
-    "flag": "🇬🇧",
+    "flagCode": "gb",
     "countryLabel": {
       "en": "England",
       "es": "Inglaterra",
@@ -173,7 +173,7 @@
     "modes": ["personal"],
     "country": "Argentina",
     "countryCode": "AR",
-    "flag": "🇦🇷",
+    "flagCode": "ar",
     "countryLabel": {
       "en": "Argentina",
       "es": "Argentina",
@@ -202,7 +202,7 @@
     "modes": ["personal"],
     "country": "Brazil",
     "countryCode": "BR",
-    "flag": "🇧🇷",
+    "flagCode": "br",
     "countryLabel": {
       "en": "Brazil",
       "es": "Brasil",
@@ -231,7 +231,7 @@
     "modes": ["personal"],
     "country": "Panama",
     "countryCode": "PA",
-    "flag": "🇵🇦",
+    "flagCode": "pa",
     "countryLabel": {
       "en": "Panama",
       "es": "Panamá",
@@ -260,7 +260,7 @@
     "modes": ["personal"],
     "country": "Mexico",
     "countryCode": "MX",
-    "flag": "🇲🇽",
+    "flagCode": "mx",
     "countryLabel": {
       "en": "Mexico",
       "es": "México",
@@ -289,7 +289,7 @@
     "modes": ["personal"],
     "country": "United States",
     "countryCode": "US",
-    "flag": "🇺🇸",
+    "flagCode": "us",
     "countryLabel": {
       "en": "United States",
       "es": "Estados Unidos",
@@ -318,7 +318,7 @@
     "modes": ["personal"],
     "country": "Canada",
     "countryCode": "CA",
-    "flag": "🇨🇦",
+    "flagCode": "ca",
     "countryLabel": {
       "en": "Canada",
       "es": "Canadá",
@@ -347,7 +347,7 @@
     "modes": ["personal"],
     "country": "France",
     "countryCode": "FR",
-    "flag": "🇫🇷",
+    "flagCode": "fr",
     "countryLabel": {
       "en": "France",
       "es": "Francia",
@@ -376,7 +376,7 @@
     "modes": ["personal"],
     "country": "Spain",
     "countryCode": "ES",
-    "flag": "🇪🇸",
+    "flagCode": "es",
     "countryLabel": {
       "en": "Spain",
       "es": "España",
@@ -405,7 +405,7 @@
     "modes": ["personal"],
     "country": "Belgium",
     "countryCode": "BE",
-    "flag": "🇧🇪",
+    "flagCode": "be",
     "countryLabel": {
       "en": "Belgium",
       "es": "Bélgica",
@@ -434,7 +434,7 @@
     "modes": ["personal"],
     "country": "Hong Kong",
     "countryCode": "HK",
-    "flag": "🇭🇰",
+    "flagCode": "hk",
     "countryLabel": {
       "en": "Hong Kong",
       "es": "Hong Kong",
