@@ -121,6 +121,37 @@
       "link": null
     },
     {
+      "id": "seed-program-scholarship-2023",
+      "type": "scholarship",
+      "title": {
+        "en": "SEED Program Scholarship — GOROM Association",
+        "es": "Beca SEED Program — GOROM Association",
+        "ja": "SEED Program 奨学金 — GOROM Association",
+        "ko": "SEED Program 장학금 — GOROM Association"
+      },
+      "description": {
+        "en": "In 2023 I was selected by Universidad de los Andes (Colombia) to represent the university and Colombia in the 2023 edition of the GOROM Association SEED Program (Japan). I received a scholarship to travel to Japan and cover part of my expenses. I was one of four selected among all applicants, and later became the program's IT Coordinator and full-stack developer, which inspired me to continue part of my academic career in Japan.",
+        "es": "En 2023 fui seleccionado por la Universidad de los Andes de Colombia para representar a la universidad y a Colombia en la edición 2023 del SEED Program de la GOROM Association de Japón. Recibí una beca para viajar a Japón y cubrir parte de mis gastos. Fui uno de los cuatro seleccionados entre todos los postulantes para recibir esta beca y participar en ese programa de emprendimiento social. Más adelante me convertí en el coordinador de TI y desarrollador full stack del programa, y esta experiencia me inspiró a continuar parte de mi carrera académica en Japón.",
+        "ja": "2023年、コロンビアのアンデス大学により、GOROM協会（日本）のSEEDプログラム2023に大学とコロンビアを代表して参加するメンバーとして選出されました。渡航費の一部を支援する奨学金を受給し、応募者の中から4名の受給者の一人として選ばれました。その後、同プログラムのITコーディネーター兼フルスタック開発者となり、日本での学業を続けるきっかけになりました。",
+        "ko": "2023년 콜롬비아 Universidad de los Andes에서 선발되어 GOROM Association(일본) SEED Program 2023에 대학과 콜롬비아를 대표해 참가했습니다. 일본 방문 및 경비 일부를 지원하는 장학금을 받았고, 전체 지원자 중 4명만 선발되는 장학생으로 선정되었습니다. 이후 프로그램의 IT 코디네이터이자 풀스택 개발자로 활동했으며, 이 경험이 일본에서 학업을 이어가게 된 계기가 되었습니다."
+      },
+      "date": "2023",
+      "location": {
+        "en": "Japan",
+        "es": "Japón",
+        "ja": "日本",
+        "ko": "일본"
+      },
+      "organization": {
+        "en": "GOROM Association / Universidad de los Andes",
+        "es": "GOROM Association / Universidad de los Andes",
+        "ja": "GOROM協会 / アンデス大学",
+        "ko": "GOROM Association / Universidad de los Andes"
+      },
+      "featuredImage": "/assets/images/awards/seed.png",
+      "link": null
+    },
+    {
       "id": "high-school-honors",
       "type": "honor",
       "title": {

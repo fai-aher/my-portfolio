@@ -456,6 +456,42 @@ function WorldMapSectionImpl() {
 
             <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300/85">{subtitleText}</p>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300/70">{t.hint}</p>
+
+            <div className="mt-4 sm:hidden">
+              <div className="inline-flex w-full items-center justify-between gap-2 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-2 py-1.5">
+                <span className="text-[11px] uppercase tracking-widest text-slate-600 dark:text-slate-300/70 px-2">
+                  {t.modeLabel}
+                </span>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setMode("professional")}
+                    className={
+                      "rounded-xl px-3 py-1.5 text-xs transition focus:outline-none focus:ring-2 focus:ring-cyan-400/50 " +
+                      (mode === "professional"
+                        ? "bg-cyan-400/10 text-cyan-700 dark:text-cyan-200 border border-cyan-300/30"
+                        : "text-slate-800 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-white/10")
+                    }
+                  >
+                    {t.modeProfessional}
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setMode("personal")}
+                    className={
+                      "rounded-xl px-3 py-1.5 text-xs transition focus:outline-none focus:ring-2 focus:ring-cyan-400/50 " +
+                      (mode === "personal"
+                        ? "bg-orange-400/15 text-orange-700 dark:text-orange-200 border border-orange-300/25"
+                        : "text-slate-800 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-white/10")
+                    }
+                  >
+                    {t.modePersonal}
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="hidden sm:flex flex-col items-end gap-2">

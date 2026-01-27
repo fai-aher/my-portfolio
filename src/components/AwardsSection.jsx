@@ -6,6 +6,8 @@ import {
   HiOutlineMapPin,
   HiOutlineCalendarDays,
   HiOutlineBuildingOffice2,
+  HiOutlineChevronLeft,
+  HiOutlineChevronRight,
 } from "react-icons/hi2";
 import { RiMedalLine } from "react-icons/ri";
 
@@ -212,6 +214,7 @@ export default function AwardsSection() {
   const ui = awardsData.ui;
 
   const [filter, setFilter] = useState("all");
+  const [startIndex, setStartIndex] = useState(0);
 
   // Build UI-friendly items from awards.json
   const items = useMemo(() => {
@@ -226,12 +229,22 @@ export default function AwardsSection() {
     return items.filter((a) => a.type === filter);
   }, [filter, items]);
 
+  useEffect(() => {
+    setStartIndex(0);
+  }, [filter]);
+
   // Filter dot colors
   const filterDotColors = {
     scholarship: "bg-purple-500/80 dark:bg-purple-400/80",
     competition: "bg-amber-500/80 dark:bg-amber-400/80",
     honor: "bg-blue-500/80 dark:bg-blue-400/80",
   };
+
+  const visibleCount = 3;
+  const maxStart = Math.max(0, filtered.length - visibleCount);
+  const windowAwards = filtered.slice(startIndex, startIndex + visibleCount);
+  const canPrev = startIndex > 0;
+  const canNext = startIndex < maxStart;
 
   return (
     <div className="relative">
@@ -298,6 +311,45 @@ export default function AwardsSection() {
           />
         </div>
 
+        {filtered.length > 0 && (
+          <div className="mt-5 flex items-center justify-between gap-3">
+            <div className="text-xs text-slate-600 dark:text-slate-300/70">
+              {startIndex + 1}–{Math.min(startIndex + visibleCount, filtered.length)} / {filtered.length}
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-2xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-2 py-1.5">
+              <button
+                type="button"
+                onClick={() => setStartIndex((i) => Math.max(0, i - 1))}
+                disabled={!canPrev}
+                className={
+                  "grid h-9 w-9 place-items-center rounded-xl border transition focus:outline-none focus:ring-2 focus:ring-cyan-400/50 " +
+                  (canPrev
+                    ? "border-black/10 dark:border-white/10 bg-white/80 dark:bg-white/5 text-slate-900 dark:text-white hover:bg-white"
+                    : "cursor-not-allowed border-black/10 dark:border-white/10 bg-white/40 dark:bg-white/5 text-slate-400 dark:text-slate-500")
+                }
+                aria-label="Previous awards"
+              >
+                <HiOutlineChevronLeft className="h-5 w-5" />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setStartIndex((i) => Math.min(maxStart, i + 1))}
+                disabled={!canNext}
+                className={
+                  "grid h-9 w-9 place-items-center rounded-xl border transition focus:outline-none focus:ring-2 focus:ring-cyan-400/50 " +
+                  (canNext
+                    ? "border-black/10 dark:border-white/10 bg-white/80 dark:bg-white/5 text-slate-900 dark:text-white hover:bg-white"
+                    : "cursor-not-allowed border-black/10 dark:border-white/10 bg-white/40 dark:bg-white/5 text-slate-400 dark:text-slate-500")
+                }
+                aria-label="Next awards"
+              >
+                <HiOutlineChevronRight className="h-5 w-5" />
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Grid */}
         <motion.div
           className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
@@ -305,9 +357,9 @@ export default function AwardsSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          key={filter}
+          key={`${filter}-${startIndex}`}
         >
-          {filtered.map((award) => (
+          {windowAwards.map((award) => (
             <AwardCard
               key={award.id}
               award={award}
